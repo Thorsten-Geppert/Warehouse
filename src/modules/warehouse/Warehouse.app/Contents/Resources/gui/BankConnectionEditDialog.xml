@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="BankConnectionEditDialog">
+		<title>Edit file</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="findToolbarButton">
+								<label>Browse</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxFlexGridSizer">
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<cols>2</cols>
+								<growablecols>1</growablecols>
+								<growablerows>11</growablerows>
+
+								<!-- Description -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Description:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="descriptionTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Description -->
+
+								<!-- Bank -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Bank:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Bank -->
+
+								<!-- Bank code -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Bank code:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankCodeTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Bank code -->
+
+								<!-- Account number -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Account number:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="accountNumberTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Account number -->
+
+								<!-- BIC -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>BIC:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bicTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /BIC -->
+
+								<!-- IBAN -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>IBAN:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ibanTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /IBAN -->
+
+								<!-- Bank owner -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Bank owner:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankOwnerTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Bank owner -->
+
+								<!-- Reference number -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Reference number:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="referenceNumberTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Reference number -->
+
+								<!-- Reference date -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Reference date:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxDatePickerCtrl" subclass="DynSoft::DSDatePickerCtrl" name="referenceDateDatePickerCtrl">
+									</object>
+								</object>
+								<!-- /Reference date -->
+
+								<!-- Reference state -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Reference state:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="referenceStateComboBox">
+										<style>wxCB_READONLY</style>
+										<selection>0</selection>
+										<content>
+											<item>once</item>
+											<item>multiple</item>
+										</content>
+									</object>
+								</object>
+								<!-- /Reference state -->
+
+								<!-- Reference account -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Reference account:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="referenceAccountComboBox">
+										<style>wxCB_READONLY</style>
+										<selection>0</selection>
+										<content>
+											<item>B2B</item>
+											<item>B2C</item>
+										</content>
+									</object>
+								</object>
+								<!-- /Reference account -->
+
+								<!-- Notes -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT</flag>
+
+									<object class="wxStaticText">
+										<label>Notes:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="notesTextCtrl">
+										<style>wxTE_MULTILINE</style>
+									</object>
+								</object>
+								<!-- /Notes -->
+
+								<!-- Active -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT</flag>
+
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxCheckBox" subclass="DynSoft::DSCheckBox" name="activeCheckBox">
+										<label>active</label>
+										<checked>1</checked>
+									</object>
+								</object>
+								<!-- /Active -->
+
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

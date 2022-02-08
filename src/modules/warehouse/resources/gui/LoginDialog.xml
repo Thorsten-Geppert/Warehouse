@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="LoginDialog">
+		<title>Login</title>
+
+		<object class="wxPanel" name="loginPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<object class="wxStaticBitmap" name="loginLogoStaticBitmap">
+						<bitmap platform="win|unix">resources/images/LoginLogo.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/LoginLogo.png</bitmap>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+					<option>1</option>
+
+					<object class="wxPanel">
+
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+
+							<object class="sizeritem">
+								<flag>wxALL | wxALIGN_CENTER</flag>
+								<border>100</border>
+
+								<object class="wxFlexGridSizer">
+									<hgap>5</hgap>
+									<vgap>5</vgap>
+									<cols>2</cols>
+									<growablecols>1</growablecols>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxStaticText">
+											<label>Enterprise:</label>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxRIGHT</flag>
+
+												<object class="wxComboBox" name="enterpriseComboBox">
+													<style>wxCB_READONLY</style>
+													<size>250, -1</size>
+												</object>
+											</object>
+
+											<object class="sizeritem">
+												<flag>wxLEFT</flag>
+												<border>5</border>
+
+												<object class="wxBitmapButton" name="enterpriseConfigurationBitmapButton">
+													<bitmap platform="win|unix">resources/images/EnterpriseConfiguration.png</bitmap>
+													<bitmap platform="mac">Warehouse.app/Contents/Resources/images/EnterpriseConfiguration.png</bitmap>
+												</object>
+											</object>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxStaticText">
+											<label>Username:</label>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+										<object class="wxTextCtrl" name="usernameTextCtrl">
+											<focused>1</focused>
+											<maxlength>255</maxlength>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxStaticText">
+											<label>Password:</label>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxTextCtrl" name="passwordTextCtrl">
+											<style>wxTE_PASSWORD</style>
+											<maxlength>255</maxlength>
+										</object>
+									</object>
+								</object>
+
+							</object>
+						</object>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="wxPanel">
+						<bg>#f47e33</bg>
+
+						<object class="wxBoxSizer">
+							<orient>wxHORIZONTAL</orient>
+
+							<object class="sizeritem">
+								<flag>wxALL</flag>
+								<option>1</option>
+								<border>15</border>
+
+								<object class="wxBoxSizer">
+									<orient>wxHORIZONTAL</orient>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_CENTER_VERTICAL</flag>
+										<object class="wxButton" name="informationButton">
+											<label>Information</label>
+										</object>
+									</object>
+
+									<object class="spacer">
+										<size>5</size>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_CENTER_VERTICAL</flag>
+										<object class="wxButton" name="helpButton">
+											<label>Help</label>
+										</object>
+									</object>
+
+									<object class="spacer">
+										<option>1</option>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxButton" name="licenceButton">
+											<label>Licence number</label>
+										</object>
+									</object>
+
+									<object class="spacer">
+										<option>1</option>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxButton" name="cancelButton">
+											<label>Cancel</label>
+										</object>
+									</object>
+
+									<object class="spacer">
+										<size>5</size>
+									</object>
+
+									<object class="sizeritem">
+										<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+										<object class="wxButton" name="loginButton">
+											<label>Login</label>
+											<default>1</default>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

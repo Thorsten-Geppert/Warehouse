@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="HtmlEditPanel">
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="wxToolBar">
+					<bitmapsize>16, 16</bitmapsize>
+					<dontattachtoframe>true</dontattachtoframe>
+					<style>wxTB_FLAT | wxTB_NODIVIDER</style>
+
+					<object class="tool" name="copyTool">
+						<label>Copy</label>
+						<bitmap platform="win|unix">resources/images/TextCopy.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextCopy.png</bitmap>
+					</object>
+
+					<object class="tool" name="cutTool">
+						<label>Cut</label>
+						<bitmap platform="win|unix">resources/images/TextCut.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextCut.png</bitmap>
+					</object>
+
+					<object class="tool" name="pasteTool">
+						<label>Paste</label>
+						<bitmap platform="win|unix">resources/images/TextPaste.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextPaste.png</bitmap>
+					</object>
+
+					<object class="separator" />
+
+					<object class="tool" name="boldTool">
+						<label>Bold</label>
+						<bitmap platform="win|unix">resources/images/TextBold.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextBold.png</bitmap>
+					</object>
+
+					<object class="tool" name="italicTool">
+						<label>Italic</label>
+						<bitmap platform="win|unix">resources/images/TextItalic.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextItalic.png</bitmap>
+					</object>
+
+					<object class="tool" name="underlineTool">
+						<label>Underline</label>
+						<bitmap platform="win|unix">resources/images/TextUnderline.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextUnderline.png</bitmap>
+					</object>
+
+					<object class="separator" />
+
+					<object class="tool" name="tableTool">
+						<label>Table</label>
+						<bitmap platform="win|unix">resources/images/TextTable.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextTable.png</bitmap>
+					</object>
+				</object>
+			</object>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+				<option>1</option>
+				
+				<object class="wxTextCtrl" name="contentTextCtrl">
+					<style>wxTE_MULTILINE | wxTE_PROCESS_TAB | wxTE_RICH | wxTE_AUTO_URL | wxTE_NOHIDESEL | wxTE_DONTWRAP</style>
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

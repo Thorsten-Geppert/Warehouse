@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+WIDTH=260
+
+for f in `ls *.png`
+do
+	n="`echo ${f} | cut -d"." -f1`_Small.png"
+	echo "${f} -> ${n}"
+	convert ${f} -resize ${WIDTH}x \( +clone -background black -shadow 80x3+2+2 \) +swap -background white -layers merge +repage "${n}"
+done

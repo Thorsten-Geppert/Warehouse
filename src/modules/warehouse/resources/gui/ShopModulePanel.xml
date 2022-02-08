@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="ShopModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="newToolbarButton">
+							<label>Temp</label>
+							<bitmap platform="win|unix">resources/images/New.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+	
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+				<object class="wxPanel"> <!-- TEMP -->
+				</object>
+			</object>
+		</object>
+
+	</object>
+
+</resource>

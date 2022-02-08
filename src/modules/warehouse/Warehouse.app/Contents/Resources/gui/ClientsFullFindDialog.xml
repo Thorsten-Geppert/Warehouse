@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ClientsFullFindDialog">
+		<title>Find client(s)</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="useToolbarButton">
+								<label>Use</label>
+								<bitmap platform="win|unix">resources/images/Use.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Use.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+					<option>1</option>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<cols>2</cols>
+								<growablecols>1</growablecols>
+
+								<!-- Customer id -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Customer id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdTextCtrl">
+										<focused>1</focused>
+									</object>
+								</object>
+
+								<!-- Salutation -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Salutation:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxComboBox" name="salutationComboBox">
+									</object>
+								</object>
+
+								<!-- Title -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Title:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxComboBox" name="titleComboBox">
+									</object>
+								</object>
+
+								<!-- Firstname -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Firstname:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="firstnameTextCtrl">
+									</object>
+								</object>
+
+								<!-- Name -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Name:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="nameTextCtrl">
+									</object>
+								</object>
+
+								<!-- Address -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Address:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="addressTextCtrl">
+									</object>
+								</object>
+
+								<!-- Zipcode / city -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Zipcode / city:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxBoxSizer">
+										<orient>wxHORIZONTAL</orient>
+
+										<!-- Zipcode -->
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="zipcodeTextCtrl">
+											</object>
+										</object>
+
+										<object class="spacer">
+											<size>5</size>
+										</object>
+
+										<!-- City -->
+										<object class="sizeritem">
+											<option>1</option>
+
+											<object class="wxTextCtrl" name="cityTextCtrl">
+											</object>
+										</object>
+									</object>
+								</object>
+
+								<!-- Land -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Land:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxComboBox" name="landComboBox">
+									</object>
+								</object>
+
+								<!-- Email -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Email:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="emailTextCtrl">
+									</object>
+								</object>
+
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="clientsListCtrl">
+								<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

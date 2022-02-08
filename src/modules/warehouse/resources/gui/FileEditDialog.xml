@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="FileEditDialog">
+		<title>Edit file</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="browseToolbarButton">
+								<label>Browse</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+						
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxFlexGridSizer">
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<cols>2</cols>
+								<growablecols>1</growablecols>
+								<growablerows>2</growablerows>
+
+								<!-- File -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>File:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="fileTextCtrl">
+									</object>
+								</object>
+								<!-- /File -->
+
+								<!-- Name -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Name:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="nameTextCtrl">
+									</object>
+								</object>
+								<!-- /Name -->
+
+								<!-- Description -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT</flag>
+
+									<object class="wxStaticText" name="descriptionStaticText">
+										<label>Description:</label>
+										<fg>#0000ff</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="descriptionTextCtrl">
+										<style>wxTE_MULTILINE</style>
+										<size>-1, 200</size>
+									</object>
+								</object>
+								<!-- /Description -->
+
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

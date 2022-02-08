@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="RemindersDialog">
+		<title>Reminders</title>
+		<style>wxCAPTION | wxSYSTEM_MENU | wxCLOSE_BOX</style>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="addToolbarButton">
+								<label>Add</label>
+								<bitmap platform="win|unix">resources/images/New.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="removeToolbarButton">
+								<label>Remove</label>
+								<bitmap platform="win|unix">resources/images/Remove.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Remove.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxListBox" name="remindersListBox">
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="notesTextCtrl">
+								<style>wxTE_MULTILINE | wxTE_READONLY</style>
+								<size>-1, 150</size>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+		
+	</object>
+
+</resource>

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="LogFindDialog">
+		<title>Find client(s)</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+
+						<!-- Error -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Error:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="errorComboBox">
+								<focused>1</focused>
+							</object>
+						</object>
+						<!-- /Error -->
+
+						<!-- User -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>User:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="userComboBox">
+							</object>
+						</object>
+						<!-- /User -->
+
+						<!-- Module -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Module:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="moduleComboBox">
+							</object>
+						</object>
+						<!-- /Module -->
+
+						<!-- Description -->
+						<!--<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Description:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="descriptionTextCtrl">
+							</object>
+						</object>-->
+						<!-- /Description -->
+
+						<!-- Message -->
+						<!--<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Message:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="messageTextCtrl">
+							</object>
+						</object>-->
+						<!-- /Message -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

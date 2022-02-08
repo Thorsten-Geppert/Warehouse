@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxFrame" name="MonitionsFrame">
+		<title>Monitions</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="updateToolbarButton">
+								<label>Update</label>
+								<bitmap platform="win|unix">resources/images/Update.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Update.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="findClientToolbarButton">
+								<label>Find client</label>
+								<bitmap platform="win|unix">resources/images/Clients.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Clients.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="allToolbarButton">
+								<label>All</label>
+								<bitmap platform="win|unix">resources/images/All.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/All.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="noneToolbarButton">
+								<label>None</label>
+								<bitmap platform="win|unix">resources/images/None.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/None.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="plusToolbarButton">
+								<label>Set +1</label>
+								<bitmap platform="win|unix">resources/images/Plus.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Plus.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="minusToolbarButton">
+								<label>Set -1</label>
+								<bitmap platform="win|unix">resources/images/Minus.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Minus.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="textsToolbarButton">
+								<label>Texts</label>
+								<bitmap platform="win|unix">resources/images/Texts.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Texts.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="runToolbarButton">
+								<label>Run</label>
+								<bitmap platform="win|unix">resources/images/Run.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Run.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+					
+						<!-- Options -->
+						<object class="sizeritem">
+							<object class="wxPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+
+									<!-- Customer id -->
+									<object class="sizeritem">
+										<object class="wxStaticText">
+											<label>Customer id:</label>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdTextCtrl">
+											<size>150, -1</size>
+										</object>
+									</object>
+									<!-- /Customer id -->
+
+									<object class="spacer">
+										<size>15</size>
+									</object>
+
+									<!-- Order id -->
+									<object class="sizeritem">
+										<object class="wxStaticText">
+											<label>Order id:</label>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderIdTextCtrl">
+											<size>150, -1</size>
+										</object>
+									</object>
+									<!-- /Order id -->
+
+									<object class="spacer">
+										<size>15</size>
+									</object>
+
+									<!-- Invoice id -->
+									<object class="sizeritem">
+										<object class="wxStaticText">
+											<label>Invoice id:</label>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="invoiceIdTextCtrl">
+											<size>150, -1</size>
+										</object>
+									</object>
+									<!-- /Invoice id -->
+
+									<object class="spacer">
+										<size>15</size>
+									</object>
+
+									<!-- Date from -->
+									<object class="sizeritem">
+										<object class="wxStaticText" name="dateFromStaticText">
+											<label>Date from:</label>
+											<fg>#c65d00</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<object class="wxDatePickerCtrl" name="dateFromDatePickerCtrl">
+											<size>150, -1</size>
+										</object>
+									</object>
+									<!-- /Date from -->
+
+									<object class="spacer">
+										<size>5</size>
+									</object>
+
+									<!-- Date to -->
+									<object class="sizeritem">
+										<object class="wxStaticText" name="dateToStaticText">
+											<label>Date to:</label>
+											<fg>#c65d00</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<object class="wxDatePickerCtrl" name="dateToDatePickerCtrl">
+											<size>150, -1</size>
+										</object>
+									</object>
+									<!-- /Date to -->
+
+									<object class="spacer">
+										<size>5</size>
+									</object>
+
+									<!-- State -->
+									<object class="sizeritem">
+										<object class="wxStaticText">
+											<label>State:</label>
+											<fg>#c65d00</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<flag>wxEXPAND</flag>
+
+										<object class="wxListBox" name="statesListBox">
+											<size>-1, 250</size>
+											<style>wxLB_MULTIPLE | wxLB_EXTENDED</style>
+										</object>
+									</object>
+									<!-- /State -->
+
+									<object class="spacer">
+										<size>5</size>
+									</object>
+
+									<!-- Price -->
+									<object class="sizeritem">
+										<object class="wxStaticText">
+											<label>Monition price:</label>
+											<fg>#c65d00</fg>
+										</object>
+									</object>
+									<object class="sizeritem">
+										<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="priceTextCtrl">
+											<size>60, -1</size>
+										</object>
+									</object>
+									<!-- /Price -->
+									
+								</object>
+							</object>
+						</object>
+						<!-- /Options -->
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<!-- Data -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="monitionsListCtrl">
+								<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN</style>
+							</object>
+						</object>
+						<!-- /Data -->
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

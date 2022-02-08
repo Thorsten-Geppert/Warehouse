@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Voucher-DinA4-Positions" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="e8f792a1-6c9f-46f0-b69d-1b9566141c00">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["/home/thorsten/Development/DSWarehouse/src/modules/reports/reports/Styles.jrtx"]]></template>
+	<parameter name="voucherId" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT * FROM vouchers_positions WHERE "voucherId" = $P{voucherId}]]>
+	</queryString>
+	<field name="voucherPositionId" class="java.lang.Integer"/>
+	<field name="voucherId" class="java.lang.Integer"/>
+	<field name="quantity" class="java.lang.Integer"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="articleNumber" class="java.lang.String"/>
+	<field name="article" class="java.lang.String"/>
+	<field name="tax" class="java.lang.Integer"/>
+	<field name="taxPrice" class="java.lang.Double"/>
+	<field name="price" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement style="Headline" x="0" y="0" width="555" height="20" uuid="56911850-2400-4612-b5e8-6c7ef386e443"/>
+				<text><![CDATA[Positionen]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement style="Description" x="0" y="0" width="221" height="20" uuid="26546c67-d0fe-46fa-8f4f-2e2c75f9cd59"/>
+				<text><![CDATA[Beschreibung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="239" y="0" width="71" height="20" uuid="ef94582a-1ac6-46d3-a689-c262c0dd591a"/>
+				<text><![CDATA[Artikelnr.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="321" y="0" width="100" height="20" uuid="1562364b-c222-4e06-9b4a-a8415a1295d7"/>
+				<text><![CDATA[Artikel]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="432" y="0" width="48" height="20" uuid="c8251b44-e222-43fe-aa96-9a1950da985e"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Steuer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="488" y="0" width="67" height="20" uuid="18010562-e22d-486b-9da4-3d2f90e73f54"/>
+				<textElement textAlignment="Right"/>
+				<text><![CDATA[Preis]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="221" height="20" uuid="652f6621-b399-497e-a6f7-faca5e36ffaa"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="239" y="0" width="71" height="20" uuid="5803d377-f647-4042-a92a-ea4b235a56df"/>
+				<textFieldExpression><![CDATA[$F{articleNumber}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="321" y="0" width="100" height="20" uuid="8abff34c-16dc-4026-b88a-4ee0df5f41ee"/>
+				<textFieldExpression><![CDATA[$F{article}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="432" y="0" width="48" height="20" uuid="f5f6143d-eb9d-441e-8f2c-330e6f13087d"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{taxPrice}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="488" y="0" width="67" height="20" uuid="201d4341-58b5-4727-8479-6c5e59d378df"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

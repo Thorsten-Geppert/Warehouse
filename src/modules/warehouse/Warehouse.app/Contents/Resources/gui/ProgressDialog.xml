@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ProgressDialog">
+		<title>Progress</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<!-- Status -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Status:</label>
+								<font>
+									<weight>bold</weight>
+								</font>
+							</object>
+						</object>
+						<object class="spacer">
+							<size>5</size>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxStaticText" name="informationStaticText">
+								<focused>1</focused>
+								<label>Please wait...</label>
+							</object>
+						</object>
+						<!-- /Status -->
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<!-- Progress -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Progress:</label>
+								<font>
+									<weight>bold</weight>
+								</font>
+							</object>
+						</object>
+						<object class="spacer">
+							<size>5</size>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxGauge" name="progressGauge">
+							</object>
+						</object>
+						<!-- /Progress -->
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

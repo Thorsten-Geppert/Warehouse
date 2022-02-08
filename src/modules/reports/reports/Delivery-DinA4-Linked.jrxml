@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Delivery-DinA4-Linked" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="637ac38a-7310-4bcf-b2e4-21cbee4d1774">
+	<property name="ireport.zoom" value="1.7715610000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id" class="java.lang.Integer"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM orders]]>
+	</queryString>
+	<field name="orderId" class="java.lang.Integer"/>
+	<field name="kind" class="java.lang.Integer"/>
+	<field name="clientId" class="java.lang.Integer"/>
+	<field name="ownClientId" class="java.lang.Integer"/>
+	<field name="basedOn" class="java.lang.Integer"/>
+	<field name="taxRate" class="java.lang.Integer"/>
+	<field name="when" class="java.sql.Date"/>
+	<field name="billAddressSalutation" class="java.lang.String"/>
+	<field name="billAddressTitle" class="java.lang.String"/>
+	<field name="billAddressFirstname" class="java.lang.String"/>
+	<field name="billAddressName1" class="java.lang.String"/>
+	<field name="billAddressName2" class="java.lang.String"/>
+	<field name="billAddressName3" class="java.lang.String"/>
+	<field name="billAddressName4" class="java.lang.String"/>
+	<field name="billAddressAddress" class="java.lang.String"/>
+	<field name="billAddressNumber" class="java.lang.String"/>
+	<field name="billAddressZipcode" class="java.lang.String"/>
+	<field name="billAddressCity" class="java.lang.String"/>
+	<field name="billAddressFederalState" class="java.lang.String"/>
+	<field name="billAddressLand" class="java.lang.String"/>
+	<field name="billAddressTranslated" class="java.lang.String"/>
+	<field name="shippingAddressSalutation" class="java.lang.String"/>
+	<field name="shippingAddressTitle" class="java.lang.String"/>
+	<field name="shippingAddressFirstname" class="java.lang.String"/>
+	<field name="shippingAddressName1" class="java.lang.String"/>
+	<field name="shippingAddressName2" class="java.lang.String"/>
+	<field name="shippingAddressName3" class="java.lang.String"/>
+	<field name="shippingAddressName4" class="java.lang.String"/>
+	<field name="shippingAddressAddress" class="java.lang.String"/>
+	<field name="shippingAddressNumber" class="java.lang.String"/>
+	<field name="shippingAddressZipcode" class="java.lang.String"/>
+	<field name="shippingAddressCity" class="java.lang.String"/>
+	<field name="shippingAddressFederalState" class="java.lang.String"/>
+	<field name="shippingAddressLand" class="java.lang.String"/>
+	<field name="shippingAddressTranslated" class="java.lang.String"/>
+	<field name="payment" class="java.lang.Integer"/>
+	<field name="bank" class="java.lang.String"/>
+	<field name="bankCode" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="bic" class="java.lang.String"/>
+	<field name="iban" class="java.lang.String"/>
+	<field name="bankOwner" class="java.lang.String"/>
+	<field name="liableToTax" class="java.lang.Boolean"/>
+	<field name="beforeTax" class="java.lang.Double"/>
+	<field name="fullTax" class="java.lang.Double"/>
+	<field name="reducedTax" class="java.lang.Double"/>
+	<field name="afterTax" class="java.lang.Double"/>
+	<field name="fullTaxPercent" class="java.lang.Double"/>
+	<field name="reducedTaxPercent" class="java.lang.Double"/>
+	<field name="invoiceId" class="java.lang.Integer"/>
+	<field name="invoiceDate" class="java.sql.Date"/>
+	<field name="condition" class="java.lang.String"/>
+	<field name="orderNumber" class="java.lang.String"/>
+	<field name="delivery" class="java.lang.String"/>
+	<field name="prepandText" class="java.lang.String"/>
+	<field name="appendText" class="java.lang.String"/>
+	<field name="prints" class="java.lang.Integer"/>
+	<field name="payed" class="java.sql.Timestamp"/>
+	<field name="linkedOrderId" class="java.lang.Integer"/>
+	<field name="linkedOrderIndex" class="java.lang.Integer"/>
+	<field name="taxNumber" class="java.lang.String"/>
+	<field name="salesTaxIdentificationNumber" class="java.lang.String"/>
+	<field name="monition" class="java.lang.Boolean"/>
+	<field name="monitionState" class="java.lang.Integer"/>
+	<field name="owner" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="createdAt" class="java.sql.Timestamp"/>
+	<field name="changedBy" class="java.lang.String"/>
+	<field name="changedAt" class="java.sql.Timestamp"/>
+	<detail>
+		<band height="349" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="a9f4a900-757e-407a-8050-b10a5a018e81"/>
+				<textElement>
+					<font isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orderId}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="20" width="555" height="329" uuid="b3e40e68-41f4-4628-be86-ea836af78aa7"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Positions.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>

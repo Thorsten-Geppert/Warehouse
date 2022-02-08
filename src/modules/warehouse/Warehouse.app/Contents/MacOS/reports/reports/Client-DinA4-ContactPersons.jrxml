@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Client-DinA4-ContactPersons" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="fbca6d8f-4395-461e-afe4-4905fc80823e">
+	<property name="ireport.zoom" value="1.2100000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["Styles.jrtx"]]></template>
+	<parameter name="clientId" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT * FROM contactpersons WHERE "clientId" = $P{clientId}]]>
+	</queryString>
+	<field name="contactPersonId" class="java.lang.Integer"/>
+	<field name="clientId" class="java.lang.Integer"/>
+	<field name="function" class="java.lang.String"/>
+	<field name="department" class="java.lang.String"/>
+	<field name="salutation" class="java.lang.String"/>
+	<field name="title" class="java.lang.String"/>
+	<field name="firstname" class="java.lang.String"/>
+	<field name="lastname" class="java.lang.String"/>
+	<field name="telephoneCountry" class="java.lang.String"/>
+	<field name="telephonePrefix" class="java.lang.String"/>
+	<field name="telephoneNumber" class="java.lang.String"/>
+	<field name="mobileCountry" class="java.lang.String"/>
+	<field name="mobilePrefix" class="java.lang.String"/>
+	<field name="mobileNumber" class="java.lang.String"/>
+	<field name="faxCountry" class="java.lang.String"/>
+	<field name="faxPrefix" class="java.lang.String"/>
+	<field name="faxNumber" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="internet" class="java.lang.String"/>
+	<field name="information" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="22">
+			<staticText>
+				<reportElement style="Title" x="0" y="0" width="555" height="20" uuid="7d8c46d1-7d7f-411a-8c12-02b2b4b3b2d7"/>
+				<text><![CDATA[Ansprechpartner]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="267" splitType="Stretch">
+			<staticText>
+				<reportElement style="Description" x="0" y="2" width="100" height="20" uuid="6bc1d651-84c9-441f-9d9e-da09a60a9275"/>
+				<text><![CDATA[Funktion:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="2" width="455" height="20" uuid="1a57b4eb-1419-46d4-94f8-e8d15c4d1788"/>
+				<textFieldExpression><![CDATA[$F{function}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="22" width="100" height="20" uuid="07782c83-9507-4183-b6d6-a5b330854441"/>
+				<text><![CDATA[Abteilung:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="22" width="455" height="20" uuid="20cbf088-2761-4e82-a870-b255f6365c22"/>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="42" width="100" height="20" uuid="4a02c545-9712-484f-a1c8-ba2fbff8ef36"/>
+				<text><![CDATA[Anrede:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="42" width="455" height="20" uuid="26cea155-d98d-47c7-a22b-8408f6068bb8"/>
+				<textFieldExpression><![CDATA[$F{salutation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="62" width="100" height="20" uuid="bf53b555-3005-4d99-a9e0-3beb91f72373"/>
+				<text><![CDATA[Titel:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="62" width="455" height="20" uuid="378925e8-d175-4c0c-8e79-4ec99b97df68"/>
+				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="82" width="100" height="20" uuid="3be6468c-73ec-43bf-81f2-1d6eedca9033"/>
+				<text><![CDATA[Vorname:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="82" width="455" height="20" uuid="d7da4046-b1b9-405b-9a58-694425629504"/>
+				<textFieldExpression><![CDATA[$F{firstname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="101" width="100" height="20" uuid="319921bd-0072-408c-bb45-d631e7945b62"/>
+				<text><![CDATA[Nachname:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="102" width="455" height="20" uuid="6e492d7b-b2e1-4fcc-b9b9-e34a4d9e97c2"/>
+				<textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="121" width="100" height="20" uuid="b8273e6c-38bf-4eef-8a86-1e50b400cf0b"/>
+				<text><![CDATA[Telefon:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="121" width="42" height="20" uuid="1c24d95e-b50e-4450-afd2-20294318b4b8"/>
+				<textFieldExpression><![CDATA[$F{telephoneCountry}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="121" width="73" height="20" uuid="2fae2d7e-2352-4898-a155-fcdfd4199c24"/>
+				<textFieldExpression><![CDATA[$F{telephonePrefix}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="216" y="121" width="146" height="20" uuid="10d2d0d7-4829-48fb-a5f5-c5d90a74322f"/>
+				<textFieldExpression><![CDATA[$F{telephoneNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="141" width="100" height="20" uuid="74807c83-2bd0-4fa1-841c-af4db4cc2d37"/>
+				<text><![CDATA[Mobil:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="141" width="42" height="20" uuid="6c475b62-a2dc-4e74-a978-64d0434b69fa"/>
+				<textFieldExpression><![CDATA[$F{mobileCountry}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="141" width="73" height="20" uuid="2b59fb82-20bc-40b3-a38f-f0d30d0a9e31"/>
+				<textFieldExpression><![CDATA[$F{mobilePrefix}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="215" y="141" width="147" height="20" uuid="354d29d4-7308-4761-b064-5ed68e354c65"/>
+				<textFieldExpression><![CDATA[$F{mobileNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="161" width="100" height="20" uuid="acd1f981-0ab0-4a0e-b570-4c5f392aafed"/>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="161" width="42" height="20" uuid="e0d57fb0-5b80-455f-bd6b-28cc8859836d"/>
+				<textFieldExpression><![CDATA[$F{faxCountry}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="142" y="161" width="73" height="20" uuid="dc9630f3-c66e-4174-9315-92b7752976f8"/>
+				<textFieldExpression><![CDATA[$F{faxPrefix}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="216" y="161" width="147" height="20" uuid="0031401b-37be-431d-8308-1a507d65284d"/>
+				<textFieldExpression><![CDATA[$F{faxNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="179" width="100" height="20" uuid="9c0b6cc5-961b-499c-b8d2-1d0878691ec5"/>
+				<text><![CDATA[E-Mail:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="179" width="455" height="20" uuid="4ffb0d4d-f269-4d02-8e76-a0c4288dc032"/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="199" width="100" height="20" uuid="5266e6d8-a8b1-4081-9119-b178f1b567b1"/>
+				<text><![CDATA[Internet:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="199" width="455" height="20" uuid="3321fa82-25e1-4764-93b2-d6d60ec592e3"/>
+				<textFieldExpression><![CDATA[$F{internet}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="219" width="100" height="20" uuid="8af23497-ad09-4e1f-8914-95f061997acf"/>
+				<text><![CDATA[Information:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="100" y="219" width="455" height="20" uuid="3efdb139-7c8c-46ef-807a-9248a9b6a75b"/>
+				<textFieldExpression><![CDATA[$F{information}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement style="Spacer Line" x="0" y="250" width="555" height="1" uuid="7b517ad5-eb2b-44f0-ae56-aa3dbe2a3484"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

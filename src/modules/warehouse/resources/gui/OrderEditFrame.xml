@@ -1,0 +1,1507 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxFrame" name="OrderEditFrame">
+		<title>Edit order</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="printPreviewToolbarButton">
+								<label>Preview</label>
+								<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="findClientToolbarButton">
+								<label>Find client</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="invoicingToolbarButton">
+								<label>Invoicing</label>
+								<bitmap platform="win|unix">resources/images/Invoicing.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Invoicing.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="payedToolbarButton">
+								<label>Payed/Unpayed</label>
+								<bitmap platform="win|unix">resources/images/Payed.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Payed.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="remindersToolbarButton">
+								<label>Reminders</label>
+								<bitmap platform="win|unix">resources/images/Reminder.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Reminder.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="editedInformationsToolbarButton">
+								<label>Informations</label>
+								<bitmap platform="win|unix">resources/images/Information.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Information.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+						
+						<!-- Main data -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxFlexGridSizer">
+								<cols>1</cols>
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<growablecols>0</growablecols>
+
+								<!-- Order id -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Order id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderIdTextCtrl">
+										<style>wxTE_READONLY</style>
+										<size>200, -1</size>
+									</object>
+								</object>
+								<!-- /Order id -->
+
+								<!-- Based on -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Based on:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="basedOnTextCtrl">
+										<style>wxTE_READONLY</style>
+									</object>
+								</object>
+								<!-- /Based on -->
+
+								<!-- Kind -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Kind:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="kindComboBox">
+										<style>wxCB_READONLY</style>
+									</object>
+								</object>
+								<!-- /Kind -->
+
+								<!-- Client id -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Client id:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdTextCtrl">
+									</object>
+								</object>
+								<!-- /Client id -->
+
+								<!-- Own client id -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Own customer id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ownClientIdTextCtrl">
+									</object>
+								</object>
+								<!-- /Own client id -->
+
+								<!-- Sales tax identification number -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Sales tax identification number:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="salesTaxIdentificationNumberTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Sales tax identification number -->
+
+								<!-- Tax number -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Tax number:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="taxNumberTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Tax number -->
+
+								<!-- Taxing -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Taxing:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="taxRateComboBox">
+										<style>wxCB_READONLY</style>
+									</object>
+								</object>
+								<!-- /Taxing rate -->
+
+								<!-- Date -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Date:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxDatePickerCtrl" subclass="DynSoft::DSDatePickerCtrl" name="dateDatePickerCtrl">
+										<size>150, -1</size>
+									</object>
+								</object>
+								<!-- /Date -->
+
+								<!-- Owner -->
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Owner:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ownerTextCtrl">
+										<size>150, -1</size>
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Owner -->
+
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+									<border>5</border>
+
+									<object class="wxStaticLine" />
+								</object>
+
+								<!-- Negate position prices -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxButton" name="negatePositionPricesButton">
+										<label>Negate position prices</label>
+									</object>
+								</object>
+								<!-- /Negate position prices -->
+							</object>
+						</object>
+						<!-- /Main data -->
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<!-- Addresses and positions -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxNotebook">
+								<!-- Addresses -->
+								<object class="notebookpage">
+									<label>Addresses</label>
+
+									<object class="wxPanel">
+
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxNotebook">
+													<!-- Billing address -->
+													<object class="notebookpage">
+														<label>Billing address</label>
+														
+														<object class="wxPanel">
+	
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+																	
+																	<object class="wxButton" name="billAddressTransferButton">
+																		<label>Transfer address from client</label>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+
+																	<object class="wxFlexGridSizer">
+																		<cols>2</cols>
+																		<hgap>5</hgap>
+																		<vgap>5</vgap>
+																		<growablecols>1</growablecols>
+
+																		<!-- Salutation -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Salutation:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="billAddressSalutationComboBox">
+																				<maxlength>64</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Salutation -->
+
+																		<!-- Title -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Title:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="billAddressTitleComboBox">
+																				<maxlength>64</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Title -->
+
+																		<!-- Firstname -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Firstname:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressFirstnameTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Firstname -->
+
+																		<!-- Name 1 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 1:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressName1TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 1 -->
+
+																		<!-- Name 2 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 2:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressName2TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 2 -->
+
+																		<!-- Name 3 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 3:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressName3TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 3 -->
+
+																		<!-- Name 4 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 4:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressName4TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 4 -->
+
+																		<!-- Address and number -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Address / number:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Address -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressAddressTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Address -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Number -->
+																				<object class="sizeritem">
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressNumberTextCtrl">
+																						<maxlength>16</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Number -->
+																			</object>
+																		</object>
+																		<!-- /Address and number -->
+
+																		<!-- Zipcode / city -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Zipcode / city:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Zipcode -->
+																				<object class="sizeritem">
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressZipcodeTextCtrl">
+																						<maxlength>16</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Zipcode -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- City -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billAddressCityTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+																				<!-- /City -->
+																			</object>
+																		</object>
+																		<!-- /Zipcode / city -->
+
+																		<!-- Federal state -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Federal state:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="billAddressFederalStateComboBox">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Federal state -->
+
+																		<!-- Land -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Land:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="billAddressLandComboBox">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Land -->
+
+																		<!-- Translated -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Translated address:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+																					<option>1</option>
+
+																					<object class="wxButton" name="billAddressTranslateEditButton">
+																						<label>Edit or select</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticBitmap" name="billAddressTranslatedStaticImage">
+																						<bitmap platform="win|unix">resources/images/AddressNotTranslated.png</bitmap>
+																						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/AddressNotTranslated.png</bitmap>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Translated -->
+																	</object>
+																</object>
+															</object>
+															
+														</object>
+													</object>
+													<!-- /Billing address -->
+
+													<!-- Shipping address -->
+													<object class="notebookpage">
+														<label>Shipping address</label>
+														
+														<object class="wxPanel">
+
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+																	
+																	<object class="wxButton" name="shippingAddressTransferButton">
+																		<label>Transfer address from client</label>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+
+																	<object class="wxFlexGridSizer">
+																		<cols>2</cols>
+																		<hgap>5</hgap>
+																		<vgap>5</vgap>
+																		<growablecols>1</growablecols>
+
+																		<!-- Salutation -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Salutation:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="shippingAddressSalutationComboBox">
+																				<maxlength>64</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Salutation -->
+
+																		<!-- Title -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Title:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="shippingAddressTitleComboBox">
+																				<maxlength>64</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Title -->
+
+																		<!-- Firstname -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Firstname:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressFirstnameTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Firstname -->
+
+																		<!-- Name 1 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 1:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressName1TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 1 -->
+
+																		<!-- Name 2 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 2:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressName2TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 2 -->
+
+																		<!-- Name 3 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 3:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressName3TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 3 -->
+
+																		<!-- Name 4 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Name 4:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressName4TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Name 4 -->
+
+																		<!-- Address and number -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Address / number:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Address -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressAddressTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Address -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Number -->
+																				<object class="sizeritem">
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressNumberTextCtrl">
+																						<maxlength>16</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Number -->
+																			</object>
+																		</object>
+																		<!-- /Address and number -->
+
+																		<!-- Zipcode / city -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Zipcode / city:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Zipcode -->
+																				<object class="sizeritem">
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressZipcodeTextCtrl">
+																						<maxlength>16</maxlength>
+																					</object>
+																				</object>
+																				<!-- /Zipcode -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- City -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shippingAddressCityTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+																				<!-- /City -->
+																			</object>
+																		</object>
+																		<!-- /Zipcode / city -->
+
+																		<!-- Federal state -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Federal state:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="shippingAddressFederalStateComboBox">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Federal state -->
+
+																		<!-- Land -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Land:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="shippingAddressLandComboBox">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Land -->
+
+																		<!-- Translated -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Translated address:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+																					<option>1</option>
+
+																					<object class="wxButton" name="shippingAddressTranslateEditButton">
+																						<label>Edit or select</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticBitmap" name="shippingAddressTranslatedStaticImage">
+																						<bitmap platform="win|unix">resources/images/AddressNotTranslated.png</bitmap>
+																						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/AddressNotTranslated.png</bitmap>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Translated -->
+																	</object>
+																</object>
+
+															</object>
+													
+														</object>
+													</object>
+													<!-- /Shipping address -->
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Addresses -->
+
+								<!-- Positions -->
+								<object class="notebookpage">
+									<label>Positions</label>
+
+									<object class="wxPanel" name="positionsPanel">
+
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxBoxSizer">
+													<orient>wxVERTICAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxEXPAND | wxALL</flag>
+														<option>1</option>
+														<border>5</border>
+
+														<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="orderPositionsListCtrl">
+															<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL | wxALWAYS_SHOW_SB</style>
+														</object>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxEXPAND | wxLEFT | wxRIGHT | wxBOTTOM</flag>
+														<border>5</border>
+
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="downPositionButton">
+																	<label>Position down</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="upPositionButton">
+																	<label>Position up</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>30</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="removePositionButton">
+																	<label>Remove position</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="editPositionButton">
+																	<label>Edit position</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="addPositionButton">
+																	<label>Add position</label>
+																</object>
+															</object>
+														</object>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Positions -->
+
+								<!-- Linked orders -->
+								<object class="notebookpage">
+									<label>Linked orders</label>
+
+									<object class="wxPanel" name="linkedOrdersPanel">
+
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxBoxSizer">
+													<orient>wxVERTICAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxEXPAND | wxALL</flag>
+														<option>1</option>
+														<border>5</border>
+
+														<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="linkedOrdersListCtrl">
+															<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+														</object>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxEXPAND | wxLEFT | wxRIGHT | wxBOTTOM</flag>
+														<border>5</border>
+
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="downLinkedOrderButton">
+																	<label>Order down</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="upLinkedOrderButton">
+																	<label>Order up</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>30</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="unlinkOrderButton">
+																	<label>Unlink order</label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxButton" name="linkOrderButton">
+																	<label>Link order</label>
+																</object>
+															</object>
+														</object>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Linked orders -->
+
+								<!-- Monetary -->
+								<object class="notebookpage">
+									<label>Monetary and texts</label>
+
+									<object class="wxPanel">
+
+										<object class="wxBoxSizer">
+											<orient>wxHORIZONTAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxFlexGridSizer">
+													<cols>2</cols>
+													<hgap>5</hgap>
+													<vgap>5</vgap>
+													<growablerows>11</growablerows>
+													<growablecols>1</growablecols>
+
+													<!-- Condition -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Condition:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="conditionComboBox">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Condition -->
+
+													<!-- Payment -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Payment:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="paymentComboBox">
+																	<size>200, -1</size>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>30</size>
+															</object>
+
+															<!-- Monitions -->
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																<object class="wxStaticText">
+																	<label>Monition:</label>
+																</object>
+															</object>
+															<object class="spacer">
+																<size>5</size>
+															</object>
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																<object class="wxCheckBox" subclass="DynSoft::DSCheckBox" name="monitionCheckBox">
+																	<label>yes</label>
+																</object>
+															</object>
+															<object class="spacer">
+																<size>30</size>
+															</object>
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																<object class="wxStaticText" name="monitionStateStaticText">
+																	<label>Monition state: 0</label>
+																</object>
+															</object>
+															<!-- /Monitions -->
+														</object>
+													</object>
+													<!-- /Payment -->
+
+													<!-- Bank -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Bank:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+																<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankTextCtrl">
+																	<size>300, -1</size>
+																	<maxlength>255</maxlength>
+																</object>
+															</object>
+															<object class="spacer">
+																<size>5</size>
+															</object>
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+																<object class="wxButton" name="transferBankButton">
+																	<label>Transfer bank data from client</label>
+																</object>
+															</object>
+															<object class="spacer">
+																<size>5</size>
+															</object>
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+																<object class="wxButton" name="findBankButton">
+																	<label>Find</label>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Bank -->
+
+													<!-- Bank code -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Bank code:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankCodeTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Bank code -->
+
+													<!-- Account number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Account number:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="accountNumberTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Account number -->
+
+													<!-- BIC -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>BIC:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bicTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /BIC -->
+
+													<!-- IBAN -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>IBAN:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ibanTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /IBAN -->
+
+													<!-- Bank owner -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Bank owner:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankOwnerTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Bank owner -->
+
+													<!-- Reduction and liable on tax -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label></label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+																<object class="wxStaticText">
+																	<label></label>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<flag>wxALIGN_CENTER_VERTICAL</flag>
+																<object class="wxCheckBox" subclass="DynSoft::DSCheckBox" name="liableToTaxCheckBox">
+																	<label>Liable to tax on purchase</label>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Reduction and liable on tax -->
+
+													<!-- Delivery/Order number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Delivery:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="deliveryComboBox">
+															<maxlength>255</maxlength>
+															<size>300, -1</size>
+														</object>
+													</object>
+													<!-- /Delivery -->
+
+													<!-- Order number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Order number:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderNumberTextCtrl">
+															<maxlength>255</maxlength>
+															<size>300, -1</size>
+														</object>
+													</object>
+													<!-- /Delivery/Order number -->
+
+													<!-- Prepand/Append text -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT</flag>
+
+														<object class="wxStaticText" name="prepandTextStaticText">
+															<label>Prepand text:</label>
+															<fg>#0000ff</fg>
+														</object>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<flag>wxEXPAND</flag>
+																<option>1</option>
+
+																<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="prepandTextTextCtrl">
+																	<style>wxTE_MULTILINE</style>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<object class="wxStaticText" name="appendTextStaticText">
+																	<label>Append text:</label>
+																	<fg>#0000ff</fg>
+																</object>
+															</object>
+															<object class="spacer">
+																<size>5</size>
+															</object>
+															<object class="sizeritem">
+																<flag>wxEXPAND</flag>
+																<option>1</option>
+
+																<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="appendTextTextCtrl">
+																	<style>wxTE_MULTILINE</style>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- Prepand/Append text -->
+												</object>
+												<!-- /Conditions -->
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Monetary -->
+
+								<!-- More data -->
+								<object class="notebookpage">
+									<label>More data</label>
+
+									<object class="wxPanel" name="moreDataPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+										</object>
+									</object>
+								</object>
+								<!-- /More data -->
+
+								<!-- Media -->
+								<object class="notebookpage">
+									<label>Media</label>
+
+									<object class="wxPanel" name="mediaPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+										</object>
+									</object>
+								</object>
+								<!-- /Media -->
+
+							</object>
+						</object>
+						<!-- /Addresses and positions -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+		<object class="wxStatusBar" name="mainStatusBar">
+			<fields>3</fields>
+			<widths>230, 650, -1</widths>
+		</object>
+
+	</object>
+
+</resource>

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="MonitionsTextsDialog">
+		<title>Monitions texts</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxListBox" name="statesListBox">
+								<size>200, -1</size>
+								<minsize>200, -1</minsize>
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+
+								<object class="sizeritem">
+									<object class="wxStaticText" name="prependTextStaticText">
+										<label>Prepend text</label>
+										<fg>#0000ff</fg>
+									</object>
+								</object>
+								<object class="spacer">
+									<size>5</size>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="prependTextTextCtrl">
+										<style>wxTE_MULTILINE</style>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<object class="sizeritem">
+									<object class="wxStaticText" name="appendTextStaticText">
+										<label>Append text</label>
+										<fg>#0000ff</fg>
+									</object>
+								</object>
+								<object class="spacer">
+									<size>5</size>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="appendTextTextCtrl">
+										<style>wxTE_MULTILINE</style>
+									</object>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

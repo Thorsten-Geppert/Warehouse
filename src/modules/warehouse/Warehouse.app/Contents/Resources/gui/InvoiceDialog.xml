@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="InvoiceDialog">
+		<title>Invoice</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Set invoiced</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Invoice date:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxDatePickerCtrl" name="invoiceDatePickerCtrl">
+								<focused>1</focused>
+								<size>200, -1</size>
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

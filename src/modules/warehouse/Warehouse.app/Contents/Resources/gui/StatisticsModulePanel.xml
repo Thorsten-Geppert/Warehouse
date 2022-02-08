@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="StatisticsModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="runToolbarButton">
+							<label>Run</label>
+							<bitmap platform="win|unix">resources/images/Run.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Run.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="findProductToolbarButton">
+							<label>Find product</label>
+							<bitmap platform="win|unix">resources/images/Products.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Products.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="findClientToolbarButton">
+							<label>Find client</label>
+							<bitmap platform="win|unix">resources/images/Clients.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Clients.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="printToolbarButton">
+							<label>Print</label>
+							<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="printPreviewToolbarButton">
+							<label>Preview</label>
+							<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="exportToolbarButton">
+							<label>Export</label>
+							<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+	
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+				<object class="wxBoxSizer">
+					<orient>wxHORIZONTAL</orient>
+
+					<!-- Options -->
+					<object class="sizeritem">
+						<object class="wxPanel">
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+
+								<!-- Article number -->
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Product id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="productIdTextCtrl">
+										<size>200, -1</size>
+									</object>
+								</object>
+								<!-- /Article number -->
+
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<!-- Customer id -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxStaticText">
+										<label>Customer id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdTextCtrl">
+									</object>
+								</object>
+								<!-- /Customer id -->
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<!-- Own customer id -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxStaticText">
+										<label>Own customer id:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ownClientIdTextCtrl">
+									</object>
+								</object>
+								<!-- /Own customer id -->
+
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<!-- Date from -->
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Date from:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxDatePickerCtrl" name="dateFromDatePickerCtrl">
+									</object>
+								</object>
+								<!-- /Date from -->
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<!-- Date to -->
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Date to:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxDatePickerCtrl" name="dateToDatePickerCtrl">
+									</object>
+								</object>
+								<!-- /Date to -->
+								
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<!-- Selection -->
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Selection:</label>
+										<fg>#c65d00</fg>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxComboBox" name="selectionComboBox">
+										<style>wxCB_READONLY</style>
+										<selection>0</selection>
+										<content>
+											<item>Bills and vouchers</item>
+											<item>Only Bills</item>
+											<item>Only vouchers</item>
+										</content>
+									</object>
+								</object>
+								<!-- /Selection -->
+							</object>
+						</object>
+					</object>
+					<!-- /Options -->
+
+					<object class="spacer">
+						<size>15</size>
+					</object>
+
+					<!-- Data -->
+					<object class="sizeritem">
+						<flag>wxEXPAND</flag>
+						<option>1</option>
+
+						<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="statisticsListCtrl">
+							<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+						</object>
+					</object>
+					<!-- /Data -->
+				</object>
+			</object>
+		</object>
+
+	</object>
+
+</resource>

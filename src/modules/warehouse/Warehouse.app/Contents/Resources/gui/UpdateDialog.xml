@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="UpdateDialog">
+		<title>Updates</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="customerCenterToolbarButton">
+								<label>Customer center</label>
+								<bitmap platform="win|unix">resources/images/Download.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Download.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+				
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxStaticText" name="versionStaticText">
+								<label>0.0.0</label>
+
+								<font>
+									<weight>bold</weight>
+									<size>16</size>
+								</font>
+							</object>
+						</object>
+						<object class="spacer">
+							<size>15</size>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxHtmlWindow" name="informationHtmlWindow">
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

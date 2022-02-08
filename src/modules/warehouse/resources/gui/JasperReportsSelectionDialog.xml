@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="JasperReportsSelectionDialog">
+		<title>Select report</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="useToolbarButton">
+								<label>Use</label>
+								<bitmap platform="win|unix">resources/images/Use.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Use.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxFlexGridSizer">
+								<vgap>5</vgap>
+								<hgap>5</hgap>
+								<cols>2</cols>
+								<growablecols>1</growablecols>
+								<growablerows>1</growablerows>
+
+								<!-- Report -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText" name="reportStaticText">
+										<label>Report:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxComboBox" name="reportComboBox">
+										<style>wxCB_READONLY</style>
+									</object>
+								</object>
+								<!-- /Report -->
+
+								<!-- Description -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT</flag>
+
+									<object class="wxStaticText" name="descriptionStaticText">
+										<label>Description:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="descriptionTextCtrl">
+										<style>wxTE_READONLY | wxTE_MULTILINE</style>
+									</object>
+								</object>
+								<!-- /Description -->
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

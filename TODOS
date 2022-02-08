@@ -1,0 +1,59 @@
+Todos
+=====
+
+
+Allgemein
+~~~~~~~~~
+
+- DSListCtrl -> Sortierbar
+- Globale Suche
+- Briefe
+- Indexe
+- Downloader
+
+
+Kunden
+~~~~~~
+
+- Auftragsliste sowie Kundenmaske
+	- Saldo
+	- Einnahmen
+	- Mögliche Einnahmen (anhand von Angeboten)
+	- Offene Angebote
+- Ansprechpartner: Hauptansprechpartner
+- Nur aktive Kunden übernehmen, nicht nur bei der Suche
+
+
+Produkte
+~~~~~~~~
+
+- Barcode
+- [ ] Lagerartikel, Verkaufsartikel, Einkaufsartikel
+- Aktiv/Inaktiv (Datum von bis)
+- Lieferanten
+	- Artikelpreis
+	- Lieferantenkatalognummer
+	- Verpackungseinheit
+	- Menge pro Verpackung
+- Länge/Breite/Höhe/Volumen
+- Zollgruppe
+- Lagerverwaltung
+- Nur vorhandene Produkte übernehmen, nicht nur bei der Suche
+
+
+Aufträge
+~~~~~~~~
+
+- Auftragsbestätigung
+
+
+Einkäufe
+~~~~~~~~
+
+- In Produkte "Lieferant" umbauen
+  - Statt ComboBox TextCtrl(Numerisch)
+  - [         ] [Suchen]
+- Wenn Lieferant ausgewählt ist, dann bei Produkt hinzufügen
+  fragen, ob nur von diesem Lieferant oder von allen
+- Sequenz in Einrichtungsdialog packen
+- maxlength setzen

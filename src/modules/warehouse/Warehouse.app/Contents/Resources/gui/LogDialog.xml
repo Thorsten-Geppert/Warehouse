@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="LogDialog">
+		<title>Log</title>
+		<style>wxCAPTION | wxRESIZE_BORDER | wxSYSTEM_MENU | wxCLOSE_BOX | wxMAXIMIZE_BOX</style>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="reloadToolbarButton">
+								<label>Reload</label>
+								<bitmap platform="win|unix">resources/images/Update.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Update.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="exportToolbarButton">
+								<label>Export</label>
+								<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="logListCtrl">
+						<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

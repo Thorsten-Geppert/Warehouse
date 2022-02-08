@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Enterprise" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="64c759da-70fa-44ff-aa3f-259e931d1d17">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM enterprise]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="company" class="java.lang.String"/>
+	<field name="executive" class="java.lang.String"/>
+	<field name="address1" class="java.lang.String"/>
+	<field name="address2" class="java.lang.String"/>
+	<field name="zipcode" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="salesTaxIdentificationNumber" class="java.lang.String"/>
+	<field name="taxNumber" class="java.lang.String"/>
+	<field name="salesTaxIndicator" class="java.lang.String"/>
+	<field name="telephone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="web" class="java.lang.String"/>
+	<field name="bank" class="java.lang.String"/>
+	<field name="bankCode" class="java.lang.String"/>
+	<field name="holder" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="bic" class="java.lang.String"/>
+	<field name="iban" class="java.lang.String"/>
+	<field name="mandatoryProductsArticleNumber" class="java.lang.Boolean"/>
+	<field name="mandatoryClientsOwnClientId" class="java.lang.Boolean"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="1" width="173" height="13" uuid="731fcc81-b312-4e9d-9714-f2e1421ff55e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telephone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="1" width="69" height="13" uuid="90b1aca8-0688-46eb-94c2-df77f7854dd6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Tel.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="14" width="69" height="13" uuid="b0233827-24cc-4c40-b3b3-9956447308ee"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Fax:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="27" width="69" height="13" uuid="118bbe19-2386-42d5-a8df-47e650232b9d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Mail:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="69" height="13" uuid="9ea58516-09e6-4b1e-84be-80f62f41a493"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Web:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="53" width="69" height="13" uuid="f4721939-7196-458b-ac12-26ff5aa7c119"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[USt-IdNr:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="66" width="69" height="13" uuid="80527dd6-ff2e-4f2b-b4b2-6ffe1b70c8b2"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Steuernummer:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="14" width="173" height="13" uuid="a6797a68-c0ad-4271-9385-3a9618ce3283"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="27" width="173" height="13" uuid="9d227682-ddaa-4b08-bf53-1a5a8d0d5b7f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="40" width="173" height="13" uuid="56681e02-a83a-42c8-bf06-b5f1e10e4e4e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{web}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="53" width="173" height="13" uuid="4eeedb14-69ef-4fd3-8bb6-9fa1dc39d2f8"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salesTaxIdentificationNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="69" y="66" width="173" height="13" uuid="823d176b-7eda-43c5-bf20-dec1d3e5e2e6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxNumber}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+</jasperReport>

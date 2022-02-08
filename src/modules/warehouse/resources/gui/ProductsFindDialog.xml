@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ProductsFindDialog">
+		<title>Find product(s)</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+
+						<!-- Product id -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Product id:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="productIdTextCtrl">
+								<focused>1</focused>
+								<maxlength>11</maxlength>
+							</object>
+						</object>
+						<!-- /Product id -->
+
+						<!-- Article number -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Article number:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="articleNumberTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Article number -->
+
+						<!-- Group -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Group:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxComboBox" name="groupComboBox">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Group -->
+
+						<!-- Distributor -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Distributor:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxComboBox" name="distributorComboBox">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Distributor -->
+
+						<!-- Manufacturer -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Manufacturer:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxComboBox" name="manufacturerComboBox">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Manufacturer -->
+
+						<!-- Publisher -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Publisher:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxComboBox" name="publisherComboBox">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Publisher -->
+
+						<!-- EAN -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>EAN:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="eanTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /EAN -->
+
+						<!-- Short name -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Short name:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="shortNameTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Short name -->
+
+						<!-- Name -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Name:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="nameTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Name -->
+
+						<!-- Description -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Description:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="descriptionTextCtrl">
+							</object>
+						</object>
+						<!-- /Description -->
+
+						<!-- Note -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Note:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="noteTextCtrl">
+							</object>
+						</object>
+						<!-- /Note -->
+
+						<!-- ISBN 10 -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>ISBN 10:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="isbn10TextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /ISBN 10 -->
+
+						<!-- ISBN 13 -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>ISBN 13:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							
+							<object class="wxTextCtrl" name="isbn13TextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /ISBN 13 -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

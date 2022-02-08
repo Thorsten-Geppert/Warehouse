@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="UserDialog">
+		<title>Edit User</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+						<growablerows>3</growablerows>
+
+						<!-- Username -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Username:</label>
+								<fg>#c65d00</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="usernameTextCtrl">
+								<maxlength>64</maxlength>
+							</object>
+						</object>
+
+						<!-- Password -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Password:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="passwordTextCtrl">
+								<style>wxTE_PASSWORD</style>
+								<maxlength>64</maxlength>
+							</object>
+						</object>
+
+						<!-- Real name -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Real name:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="realNameTextCtrl">
+								<maxlength>128</maxlength>
+							</object>
+						</object>
+
+						<!-- E-Mail -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Email:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="emailTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+
+						<!-- Description -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT</flag>
+
+							<object class="wxStaticText" name="descriptionStaticText">
+								<label>Description:</label>
+								<fg>#0000ff</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" name="descriptionTextCtrl">
+								<style>wxTE_MULTILINE</style>
+								<size>-1, 100</size>
+							</object>
+						</object>
+
+						<!-- Status -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Status:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="statusComboBox">
+								<style>wxCB_READONLY</style>
+								<selection>0</selection>
+
+								<content>
+									<item>Inactive</item>
+									<item>Reader</item>
+									<item>Reader and Writer</item>
+									<item>Reader, Writer and Remover</item>
+									<item>Administrator</item>
+								</content>
+							</object>
+						</object>
+
+						<!-- Reminder -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxCheckBox" name="remindCheckBox">
+								<label>Open reminders</label>
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

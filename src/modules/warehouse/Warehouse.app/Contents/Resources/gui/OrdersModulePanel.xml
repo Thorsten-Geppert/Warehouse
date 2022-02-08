@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="OrdersModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="newToolbarButton">
+							<label>New</label>
+							<bitmap platform="win|unix">resources/images/New.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="copyToolbarButton">
+							<label>Copy</label>
+							<bitmap platform="win|unix">resources/images/Copy.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Copy.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="editToolbarButton">
+							<label>Edit</label>
+							<bitmap platform="win|unix">resources/images/Edit.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Edit.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="removeToolbarButton">
+							<label>Remove</label>
+							<bitmap platform="win|unix">resources/images/Remove.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Remove.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="findToolbarButton">
+							<label>Find</label>
+							<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="payedToolbarButton">
+							<label>Payed/Unpayed</label>
+							<bitmap platform="win|unix">resources/images/Payed.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Payed.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="monitionsToolbarButton">
+							<label>Monitions</label>
+							<bitmap platform="win|unix">resources/images/Monitions.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Monitions.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="exportToolbarButton">
+							<label>Export</label>
+							<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+	
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+				<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="ordersListCtrl">
+					<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+				</object>
+			</object>
+		</object>
+
+	</object>
+
+</resource>

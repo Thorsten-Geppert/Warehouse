@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxFrame" name="ReportGeneratorFrame">
+		<title>Report Generator</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Close.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Close.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<!-- Lists -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<cols>5</cols>
+								<growablecols>0, 2, 4</growablecols>
+
+								<!-- First Line -->
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Areas</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Elements</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText">
+										<label>Placeholders</label>
+									</object>
+								</object>
+								<!-- /First Line -->
+
+								<!-- Second Line -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxListBox" name="areasListBox">
+										<size>200, 100</size>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticBitmap">
+										<bitmap platform="win|unix">resources/images/ArrowRightSingle.png</bitmap>
+										<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ArrowRightSingle.png</bitmap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxListBox" name="elementsListBox">
+										<size>200, 100</size>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticBitmap">
+										<bitmap platform="win|unix">resources/images/ArrowRightSingle.png</bitmap>
+										<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ArrowRightSingle.png</bitmap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxListBox" name="placeholdersListBox">
+										<size>200, 100</size>
+									</object>
+								</object>
+								<!-- /Second Line -->
+
+
+
+								<!-- Third Line -->
+								<object class="sizeritem">
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticBitmap">
+										<bitmap platform="win|unix">resources/images/ArrowDownSingle.png</bitmap>
+										<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ArrowDownSingle.png</bitmap>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticText" />
+								</object>
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticBitmap">
+										<bitmap platform="win|unix">resources/images/ArrowDownDouble.png</bitmap>
+										<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ArrowDownDouble.png</bitmap>
+									</object>
+								</object>
+								<!-- /Third Line -->
+
+
+
+
+
+							</object>
+						</object>
+						<!-- /Lists -->
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<!-- Edit -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxPanel" name="editPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+								</object>
+							</object>
+						</object>
+						<!-- /Edit -->
+					</object>
+
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

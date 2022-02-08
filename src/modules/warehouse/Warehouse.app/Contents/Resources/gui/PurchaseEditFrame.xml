@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxFrame" name="PurchaseEditFrame">
+		<title>Edit purchase</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="printPreviewToolbarButton">
+								<label>Preview</label>
+								<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="doneToolbarButton">
+								<label>Set done</label>
+								<bitmap platform="win|unix">resources/images/Finish.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Finish.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="remindersToolbarButton">
+								<label>Reminders</label>
+								<bitmap platform="win|unix">resources/images/Reminder.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Reminder.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="editedInformationsToolbarButton">
+								<label>Informations</label>
+								<bitmap platform="win|unix">resources/images/Information.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Information.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxNotebook">
+						<!-- Voucher -->
+						<object class="notebookpage">
+							<label>Details</label>
+
+							<object class="wxPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+									
+									<object class="sizeritem">
+										<flag>wxALL | wxEXPAND</flag>
+										<option>1</option>
+										<border>5</border>
+
+										<object class="wxPanel">
+											<object class="wxBoxSizer">
+												<orient>wxHORIZONTAL</orient>
+
+												<!-- Data -->
+												<object class="sizeritem">
+													<flag>wxEXPAND</flag>
+
+													<object class="wxFlexGridSizer">
+														<cols>1</cols>
+														<growablecols>0</growablecols>
+														<growablerows>15</growablerows>
+														<hgap>5</hgap>
+														<vgap>5</vgap>
+
+														<!-- Purchase id -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Purchase id:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchaseIdTextCtrl">
+																<style>wxTE_READONLY</style>
+															</object>
+														</object>
+														<!-- /Purchase id -->
+
+														<!-- Distributor -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Distributor id:</label>
+																<fg>#c65d00</fg>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="distributorIdTextCtrl">
+																<style>wxTE_READONLY</style>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Distributor address:</label>
+																<fg>#c65d00</fg>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="distributorAddressTextCtrl">
+																<style>wxTE_MULTILINE</style>
+																<size>250, 100</size>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+
+															<object class="wxButton" name="findDistributorButton">
+																<label>Find distributor</label>
+															</object>
+														</object>
+														<!-- /Distributor -->
+
+														<!-- Line -->
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															
+															<object class="wxStaticLine" />
+														</object>
+														<!-- /Line -->
+
+														<!-- Client id -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Client id:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdTextCtrl">
+															</object>
+														</object>
+														<!-- /Client id -->
+
+														<!-- Order id -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Order id:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderIdTextCtrl">
+															</object>
+														</object>
+														<!-- /Order id -->
+
+														<!-- Order date -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Order date:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+
+															<object class="wxDatePickerCtrl" subclass="DynSoft::DSDatePickerCtrl" name="orderDateDatePickerCtrl">
+															</object>
+														</object>
+														<!-- /Order date -->
+
+														<!-- Informations -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Informations:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															<option>1</option>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="informationsTextCtrl">
+																<style>wxTE_MULTILINE</style>
+															</object>
+														</object>
+														<!-- /Informations -->
+
+														<!-- Purchaser -->
+														<object class="sizeritem">
+															<object class="wxStaticText">
+																<label>Purchaser:</label>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchaserTextCtrl">
+															</object>
+														</object>
+														<!-- /Purchaser -->
+													</object>
+												</object>
+												<!-- /Data -->
+
+												<!-- Line -->
+												<object class="sizeritem">
+													<flag>wxEXPAND | wxLEFT | wxRIGHT</flag>
+													<border>5</border>
+
+													<object class="wxStaticLine">
+														<style>wxLI_VERTICAL</style>
+													</object>
+												</object>
+												<!-- /Line -->
+
+												<!-- Addresses Texts -->
+												<object class="sizeritem">
+													<flag>wxEXPAND</flag>
+													<option>1</option>
+
+													<object class="wxFlexGridSizer">
+														<cols>1</cols>
+														<hgap>5</hgap>
+														<vgap>5</vgap>
+														<growablecols>0</growablecols>
+														<growablerows>3, 5</growablerows>
+
+														<!-- Addresses -->
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															<option>1</option>
+
+															<object class="wxFlexGridSizer">
+																<cols>2</cols>
+																<hgap>5</hgap>
+																<vgap>5</vgap>
+																<growablerows>1</growablerows>
+																<growablecols>0, 1</growablecols>
+
+																<object class="sizeritem">
+																	<object class="wxStaticText">
+																		<label>Billing address:</label>
+																		<fg>#c65d00</fg>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<object class="wxStaticText">
+																		<label>Delivery address:</label>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND</flag>
+																	<option>1</option>
+
+																	<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="billingAddressTextCtrl">
+																		<style>wxTE_MULTILINE</style>
+																		<size>-1, 100</size>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND</flag>
+																	<option>1</option>
+
+																	<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="deliveryAddressTextCtrl">
+																		<style>wxTE_MULTILINE</style>
+																		<size>-1, 100</size>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND</flag>
+
+																	<object class="wxButton" name="pasteBillingAddressButton">
+																		<label>Paste own address</label>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND</flag>
+
+																	<object class="wxButton" name="pasteDeliveryAddressButton">
+																		<label>Paste own address</label>
+																	</object>
+																</object>
+															</object>
+														</object>
+														<!-- /Addresses -->
+
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															<object class="wxStaticLine" />
+														</object>
+
+														<!-- Text head -->
+														<object class="sizeritem">
+															<object class="wxStaticText" name="textHeadStaticText">
+																<label>Text head:</label>
+																<fg>#0000ff</fg>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															<option>1</option>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="textHeadTextCtrl">
+																<style>wxTE_MULTILINE</style>
+															</object>
+														</object>
+														<!-- /Text head -->
+
+														<!-- Text foot -->
+														<object class="sizeritem">
+															<object class="wxStaticText" name="textFootStaticText">
+																<label>Text foot:</label>
+																<fg>#0000ff</fg>
+															</object>
+														</object>
+														<object class="sizeritem">
+															<flag>wxEXPAND</flag>
+															<option>1</option>
+
+															<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="textFootTextCtrl">
+																<style>wxTE_MULTILINE</style>
+															</object>
+														</object>
+														<!-- /Text foot -->
+													</object>
+												</object>
+												<!-- /Addresses and Texts -->
+											</object>
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Voucher -->
+
+						<!-- Positions -->
+						<object class="notebookpage">
+							<label>Positions</label>
+
+							<object class="wxPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+									
+									<object class="sizeritem">
+										<flag>wxALL | wxEXPAND</flag>
+										<option>1</option>
+										<border>5</border>
+
+										<object class="wxPanel">
+											<object class="wxBoxSizer">
+												<orient>wxVERTICAL</orient>
+
+												<object class="sizeritem">
+													<flag>wxEXPAND | wxALL</flag>
+													<option>1</option>
+													<border>5</border>
+
+													<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="purchasePositionsListCtrl">
+														<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL | wxALWAYS_SHOW_SB</style>
+													</object>
+												</object>
+
+												<object class="sizeritem">
+													<flag>wxEXPAND | wxLEFT | wxRIGHT | wxBOTTOM</flag>
+													<border>5</border>
+
+													<object class="wxBoxSizer">
+														<orient>wxHORIZONTAL</orient>
+
+														<object class="sizeritem">
+															<option>1</option>
+
+															<object class="wxButton" name="removePositionButton">
+																<label>Remove position</label>
+															</object>
+														</object>
+
+														<object class="spacer">
+															<size>5</size>
+														</object>
+
+														<object class="sizeritem">
+															<option>1</option>
+
+															<object class="wxButton" name="editPositionButton">
+																<label>Edit position</label>
+															</object>
+														</object>
+
+														<object class="spacer">
+															<size>5</size>
+														</object>
+
+														<object class="sizeritem">
+															<option>1</option>
+
+															<object class="wxButton" name="addPositionButton">
+																<label>Add position</label>
+															</object>
+														</object>
+													</object>
+												</object>
+											</object>
+
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Positions -->
+
+						<!-- More data -->
+						<object class="notebookpage">
+							<label>More data</label>
+
+							<object class="wxPanel" name="moreDataPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+								</object>
+							</object>
+						</object>
+						<!-- /More data -->
+
+						<!-- Media -->
+						<object class="notebookpage">
+							<label>Media</label>
+
+							<object class="wxPanel" name="mediaPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+								</object>
+							</object>
+						</object>
+						<!-- /Media -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+		<object class="wxStatusBar" name="mainStatusBar">
+			<fields>2</fields>
+			<widths>300, -1</widths>
+		</object>
+	</object>
+
+</resource>

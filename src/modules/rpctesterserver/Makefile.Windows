@@ -1,0 +1,122 @@
+CPP       = g++.exe
+LINK      = g++.exe
+
+OBJ      = 	RPCTesterServer.o \
+			\
+			../lib/RpcThread.o \
+			../lib/RpcRunnerThread.o \
+			../lib/RpcRunnerThreads.o \
+			\
+			../../../../DSLib/cpp/src/DSLib.o \
+			../../../../DSLib/cpp/src/DSCasts.o \
+			../../../../DSLib/cpp/src/DSClassInfo.o \
+			../../../../DSLib/cpp/src/DSDebug.o \
+			../../../../DSLib/cpp/src/DSDatabase.o \
+			../../../../DSLib/cpp/src/DSQueryParser.o \
+			../../../../DSLib/cpp/src/DSQuery.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLDatabase.o \
+			../../../../DSLib/cpp/src/dsPostgreSQL.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLQuery.o \
+			../../../../DSLib/cpp/src/DSLog.o \
+			../../../../DSLib/cpp/src/DSError.o \
+			../../../../DSLib/cpp/src/DSTable.o \
+			../../../../DSLib/cpp/src/DSTemplate.o \
+			../../../../DSLib/cpp/src/DSLogType.o \
+			../../../../DSLib/cpp/src/DSErrorType.o \
+			../../../../DSLib/cpp/src/DSContainer.o \
+			../../../../DSLib/cpp/src/DSContainerType.o \
+			../../../../DSLib/cpp/src/DSType.o \
+			../../../../DSLib/cpp/src/DSDateTime.o \
+			../../../../DSLib/cpp/src/DSTemplateContainer.o \
+			../../../../DSLib/cpp/src/DSFile.o \
+			../../../../DSLib/cpp/src/DSCurrency.o \
+			../../../../DSLib/cpp/src/DSListCtrl.o \
+			../../../../DSLib/cpp/src/DSTest.o \
+			../../../../DSLib/cpp/src/DSTesting.o \
+			../../../../DSLib/cpp/src/DSEntity.o \
+			../../../../DSLib/cpp/src/DSEntityData.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLEntityData.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLDatabaseEntity.o \
+			../../../../DSLib/cpp/src/DSData.o \
+			../../../../DSLib/cpp/src/DSDatabaseEntity.o \
+			../../../../DSLib/cpp/src/DSTextCtrl.o \
+			../../../../DSLib/cpp/src/DSListBox.o \
+			../../../../DSLib/cpp/src/DSCheckBox.o \
+			../../../../DSLib/cpp/src/DSDatePickerCtrl.o \
+			../../../../DSLib/cpp/src/DSChangeInterface.o \
+			../../../../DSLib/cpp/src/DSComboBox.o \
+			../../../../DSLib/cpp/src/DSBind.o \
+			../../../../DSLib/cpp/src/DSPosixSocket.o
+
+LIBS      = -L"C:/CodeBlocks/MinGW/lib" \
+			-L"C:/wxWidgets-3.0.2/lib/gcc_dll" \
+			-L"C:/Programme/PostgreSQL/9.2/lib" \
+			-L"C:/Programme/PostgreSQL/9.2/bin" \
+			-L"C:/Program Files (x86)/PostgreSQL/9.2/lib" \
+			-L"C:/Program Files (x86)/PostgreSQL/9.2/bin" \
+			-L"C:/Program Files (x86)/PostgreSQL/9.4/lib" \
+			-L"C:/Program Files (x86)/PostgreSQL/9.4/bin" \
+			-mwindows \
+			-lwxexpat \
+			-lwxjpeg \
+			-lwxmsw30u \
+			-lwxpng \
+			-lwxregexu \
+			-lwxtiff \
+			-lwxzlib \
+			-lkernel32 \
+			-luser32 \
+			-lgdi32 \
+			-lcomdlg32 \
+			-lwinspool \
+			-lwinmm \
+			-lshell32 \
+			-lcomctl32 \
+			-lole32 \
+			-loleaut32 \
+			-luuid \
+			-lrpcrt4 \
+			-ladvapi32 \
+			-lwsock32 \
+			-lodbc32 \
+			-lopengl32 \
+			-lpq
+
+INCS      = -I"../../../../DSLib/cpp/include" \
+			-I"C:/wxWidgets-3.0.2/include" \
+			-I"C:/wxWidgets-3.0.2/lib/gcc_dll/mswu" \
+			-I"C:/CodeBlocks/MinGW/include" \
+			-I"C:/Programme/PostgreSQL/9.0/include" \
+			-I"C:/Program Files (x86)/PostgreSQL/9.2/include" \
+			-I"C:/Program Files (x86)/PostgreSQL/9.4/include"
+
+BIN       = rpctestserver.exe
+
+CXXFLAGS  = $(INCS) \
+			-D__WXMSW__ \
+			-D__GNUWIN32__ \
+			-D__WIN95__ \
+			-fno-exceptions \
+			-fno-pcc-struct-return \
+			-fstrict-aliasing \
+			-Wall \
+			-fexpensive-optimizations \
+			-O3
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+open: all
+	$(BIN)
+
+start: all
+	$(BIN)
+
+$(BIN): $(OBJ)
+	$(LINK) $(OBJ) -DUNICODE=1 -DWXUSINGDLL=1 -o $(BIN) $(LIBS)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -DUNICODE=1 -DWXUSINGDLL=1 -g -c $*.cpp -o $*.o

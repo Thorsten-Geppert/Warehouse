@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="NotesModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="newToolbarButton">
+							<label>New</label>
+							<bitmap platform="win|unix">resources/images/New.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="editToolbarButton">
+							<label>Edit</label>
+							<bitmap platform="win|unix">resources/images/Edit.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Edit.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="removeToolbarButton">
+							<label>Remove</label>
+							<bitmap platform="win|unix">resources/images/Remove.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Remove.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="printToolbarButton">
+							<label>Print</label>
+							<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="printPreviewToolbarButton">
+							<label>Preview</label>
+							<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="updateToolbarButton">
+							<label>Update</label>
+							<bitmap platform="win|unix">resources/images/Update.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Update.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="templateToolbarButton">
+							<label>Templates</label>
+							<bitmap platform="win|unix">resources/images/TextTemplateSelect.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextTemplateSelect.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="exportToolbarButton">
+							<label>Export</label>
+							<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="importToolbarButton">
+							<label>Import</label>
+							<bitmap platform="win|unix">resources/images/Import.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Import.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="editedInformationsToolbarButton">
+							<label>Informations</label>
+							<bitmap platform="win|unix">resources/images/Information.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Information.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+	
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+
+				<object class="wxSplitterWindow">
+					<orientation>vertical</orientation>
+					<sashpos>200</sashpos>
+					<minsize>100</minsize>
+
+					<object class="wxListBox" name="notesListBox">
+					</object>
+
+					<object class="wxTextCtrl" name="noteTextCtrl">
+						<style>wxTE_MULTILINE</style>
+					</object>
+				</object>
+			</object>
+		</object>
+
+	</object>
+
+</resource>

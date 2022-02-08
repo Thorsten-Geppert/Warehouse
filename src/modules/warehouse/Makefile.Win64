@@ -1,0 +1,114 @@
+# Install
+# =======
+#
+# - Load CodeBlocks and install it to c:\ (not in Programs, etc.)
+# - Load wxWidgets and install it also to c:\
+# - Compile wxWidgets:
+#   mingw32-make.exe -f makefile.gcc USE_XRC=1 SHARED=1 MONOLITHIC=1 BUILD=release UNICODE=1
+# - Let's rock, you've got unicode
+
+CPP       = g++.exe
+LINK      = g++.exe
+
+include Makefile.Objects
+
+OBJ      += ../../../../DSLib/cpp/src/DSLib.o \
+			../../../../DSLib/cpp/src/DSCasts.o \
+			../../../../DSLib/cpp/src/DSClassInfo.o \
+			../../../../DSLib/cpp/src/DSDebug.o \
+			../../../../DSLib/cpp/src/DSDatabase.o \
+			../../../../DSLib/cpp/src/DSQueryParser.o \
+			../../../../DSLib/cpp/src/DSQuery.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLDatabase.o \
+			../../../../DSLib/cpp/src/dsPostgreSQL.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLQuery.o \
+			../../../../DSLib/cpp/src/DSLog.o \
+			../../../../DSLib/cpp/src/DSError.o \
+			../../../../DSLib/cpp/src/DSTable.o \
+			../../../../DSLib/cpp/src/DSTemplate.o \
+			../../../../DSLib/cpp/src/DSLogType.o \
+			../../../../DSLib/cpp/src/DSErrorType.o \
+			../../../../DSLib/cpp/src/DSContainer.o \
+			../../../../DSLib/cpp/src/DSContainerType.o \
+			../../../../DSLib/cpp/src/DSType.o \
+			../../../../DSLib/cpp/src/DSDateTime.o \
+			../../../../DSLib/cpp/src/DSTemplateContainer.o \
+			../../../../DSLib/cpp/src/DSFile.o \
+			../../../../DSLib/cpp/src/DSCurrency.o \
+			../../../../DSLib/cpp/src/DSListCtrl.o \
+			../../../../DSLib/cpp/src/DSTest.o \
+			../../../../DSLib/cpp/src/DSTesting.o \
+			../../../../DSLib/cpp/src/DSEntity.o \
+			../../../../DSLib/cpp/src/DSEntityData.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLEntityData.o \
+			../../../../DSLib/cpp/src/DSPostgreSQLDatabaseEntity.o \
+			../../../../DSLib/cpp/src/DSData.o \
+			../../../../DSLib/cpp/src/DSDatabaseEntity.o \
+			../../../../DSLib/cpp/src/DSTextCtrl.o \
+			../../../../DSLib/cpp/src/DSListBox.o \
+			../../../../DSLib/cpp/src/DSCheckBox.o \
+			../../../../DSLib/cpp/src/DSDatePickerCtrl.o \
+			../../../../DSLib/cpp/src/DSChangeInterface.o \
+			../../../../DSLib/cpp/src/DSComboBox.o \
+			../../../../DSLib/cpp/src/DSBind.o \
+			../../../../DSLib/cpp/src/DSPosixSocket.o
+
+LIBS      = -L"/c/msys64/mingw64/lib" \
+			-L"/c/wxWidgets-3.1.2/build-release/lib" \
+			-L"/c/PostgreSQL/11/lib" \
+			-L"/c/PostgreSQL/11/bin" \
+			-mwindows \
+			-lwxmsw312u_gcc_custom \
+			-lkernel32 \
+			-luser32 \
+			-lgdi32 \
+			-lcomdlg32 \
+			-lwinspool \
+			-lwinmm \
+			-lshell32 \
+			-lcomctl32 \
+			-lole32 \
+			-loleaut32 \
+			-luuid \
+			-lrpcrt4 \
+			-ladvapi32 \
+			-lwsock32 \
+			-lodbc32 \
+			-lopengl32 \
+			-lpq
+
+INCS      = -I"../../../../DSLib/cpp/include" \
+			-I"/c/wxWidgets-3.1.2/include" \
+			-I"/c/msys64/mingw64/include" \
+			-I"/c/PostgreSQL/11/include"
+
+BIN       = Warehouse.exe
+
+RESOURCE  = resource.o
+
+CXXFLAGS  = $(INCS) \
+			-D__WXMSW__ \
+			-fstrict-aliasing \
+			-Wall \
+			-O3
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN) $(RESOURCE)
+
+open: all
+	$(BIN)
+
+start: all
+	$(BIN)
+
+$(RESOURCE): resource.rc
+	/c/msys64/mingw64/bin/windres.exe -I/c/wxWidgets-3.1.2/include resource.rc -o $(RESOURCE)
+
+$(BIN): $(OBJ) $(RESOURCE)
+	$(LINK) $(OBJ) -DUNICODE=1 -DWXUSINGDLL=1 -o $(BIN) $(LIBS) $(RESOURCE)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -DUNICODE=1 -DWXUSINGDLL=1 -c $*.cpp -o $*.o

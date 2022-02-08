@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ReminderDialog">
+		<title>Reminders</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="updateToolbarButton">
+								<label>Update</label>
+								<bitmap platform="win|unix">resources/images/Update.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Update.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="openToolbarButton">
+								<label>Open</label>
+								<bitmap platform="win|unix">resources/images/Open.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Open.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+
+						<!-- Calendars -->
+						<object class="sizeritem">
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+			
+								<object class="sizeritem">
+									<object class="wxCalendarCtrl" name="firstCalendarCtrl">
+										<style>wxCAL_MONDAY_FIRST | wxCAL_SHOW_SURROUNDING_WEEKS | wxCAL_SEQUENTIAL_MONTH_SELECTION</style>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<object class="sizeritem">
+									<object class="wxCalendarCtrl" name="secondCalendarCtrl">
+										<style>wxCAL_MONDAY_FIRST | wxCAL_SHOW_SURROUNDING_WEEKS | wxCAL_SEQUENTIAL_MONTH_SELECTION</style>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>15</size>
+								</object>
+
+								<object class="sizeritem">
+									<object class="wxCalendarCtrl" name="thirdCalendarCtrl">
+										<style>wxCAL_MONDAY_FIRST | wxCAL_SHOW_SURROUNDING_WEEKS | wxCAL_SEQUENTIAL_MONTH_SELECTION</style>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Calendars -->
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<!-- List -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+
+								<!-- Options -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxBoxSizer">
+										<orient>wxHORIZONTAL</orient>
+
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxStaticText" name="changeStaticText">
+												<label>Change remind:</label>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>5</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxDatePickerCtrl" name="reminderDatePickerCtrl">
+												<size>120, -1</size>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>5</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxComboBox" name="hourComboBox">
+												<size>70, -1</size>
+												<style>wxCB_READONLY</style>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>5</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxStaticText">
+												<label>:</label>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>5</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxComboBox" name="minuteComboBox">
+												<size>70, -1</size>
+												<style>wxCB_READONLY</style>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>5</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxButton" name="saveButton">
+												<label>save</label>
+											</object>
+										</object>
+										<object class="spacer">
+											<size>15</size>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+											<object class="wxButton" name="doneButton">
+												<label>done</label>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Options -->
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<!-- Reminders -->
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="remindersListCtrl">
+										<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+										<size>600, -1</size>
+									</object>
+								</object>
+								<!-- /Reminders -->
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<!-- Preferences -->
+								<object class="sizeritem">
+									<object class="wxCheckBox" name="openToRemindCheckBox">
+										<label>Open this dialog to remind me</label>
+									</object>
+								</object>
+								<!-- /Preferences -->
+							</object>
+						</object>
+						<!-- /List -->
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<!-- Notes -->
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+
+								<object class="sizeritem">
+									<object class="wxStaticText" name="notesStaticText">
+										<label>Notes:</label>
+										<fg>#0000ff</fg>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="notesTextCtrl">
+										<style>wxTE_MULTILINE</style>
+										<size>200, -1</size>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Notes -->
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="MoreDataPanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+				<option>1</option>
+
+				<object class="wxBoxSizer">	
+					<orient>wxVERTICAL</orient>
+
+					<object class="sizeritem">
+						<flag>wxEXPAND</flag>
+
+						<object class="wxFlexGridSizer">
+							<hgap>5</hgap>
+							<vgap>5</vgap>
+							<cols>6</cols>
+							<growablecols>1, 3</growablecols>
+
+							<!-- Description -->
+							<object class="sizeritem">
+								<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxStaticText">
+									<label>Description:</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="descriptionComboBox">
+									<maxlenth>255</maxlenth>
+								</object>
+							</object>
+							<!-- /Description -->
+
+							<!-- Value -->
+							<object class="sizeritem">
+								<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxStaticText">
+									<label>Value:</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="valueTextCtrl">
+									<style>wxTE_PROCESS_ENTER</style>
+									<maxlenth>255</maxlenth>
+								</object>
+							</object>
+							<!-- /Value -->
+
+							<!-- Options -->
+							<object class="sizeritem">
+								<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxButton" name="saveButton">
+									<label>Add</label>
+								</object>
+							</object>
+							<object class="sizeritem">
+								<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+								<object class="wxButton" name="abortButton">
+									<label>Abort</label>
+								</object>
+							</object>
+							<!-- /Options -->
+						</object>
+					</object>
+
+					<object class="spacer">
+						<size>5</size>
+					</object>
+
+					<object class="sizeritem">
+						<flag>wxEXPAND</flag>
+						<option>1</option>
+
+						<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="dataListCtrl">
+							<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+						</object>
+					</object>
+
+					<object class="spacer">
+						<size>5</size>
+					</object>
+
+					<object class="sizeritem">
+						<flag>wxALIGN_RIGHT</flag>
+
+						<object class="wxButton" name="removeButton">
+							<label>Remove</label>
+						</object>
+					</object>
+				</object>
+			</object>
+	
+		</object>
+
+	</object>
+
+</resource>

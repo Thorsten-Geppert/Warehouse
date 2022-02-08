@@ -1,0 +1,3685 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\use_default_options true
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language danish
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+
+\lang english
+DynSoft.com - Thorsten Geppert - Warehouse - Handbuch
+\end_layout
+
+\begin_layout Author
+
+\lang english
+Thorsten Geppert
+\end_layout
+
+\begin_layout Date
+
+\lang english
+Version 1.0.3
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang ngerman
+Technische Voraussetzungen
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Für einen reibungslosen und einwandfreien Betrieb von DynSoft.com Warehouse
+ sollten Sie auf folgende Dinge achten.
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Datenbank
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Als Datenbank kommt PostgreSQL in der Version 9.0 zum Einsatz\SpecialChar \@.
+ Eine Kopie
+ der Datenbanksoftware ist auf 
+\begin_inset CommandInset href
+LatexCommand href
+name "www.postgresql.org"
+target "http://www.postgresql.org"
+
+\end_inset
+
+ erhältlich.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Bei Verwendung von anderen Versionen von PostgreSQL kann es zu Fehlern und
+ undefiniertem Verhalten der Software kommen.
+ Deshalb sollten Sie nur die von DynSoft.com Warehouse unterstützte Version
+ verwenden.
+ Auf keinen Fall werden PostgreSQL-Version über 9.0 unterstützt.
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+LicenceGenerator
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der LicenceGenerator dient dazu, mittels weniger Eckdaten Ihres Computers
+ eine eindeutige Aktivierungsnummer zu erstellen.
+ Diese Aktivierungsnummer benötigen Sie, um auf 
+\begin_inset CommandInset href
+LatexCommand href
+name "www.dynsoft.com"
+target "http://www.dynsoft.com"
+
+\end_inset
+
+ Ihre DynSoft.com Warehouse Lizenz zu aktivieren.
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+DynSoft.com Warehouse
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Eine aktuelle Version von DynSoft.com Warehouse können Sie in Ihrem Kundencenter
+ auf 
+\begin_inset CommandInset href
+LatexCommand href
+name "www.dynsoft.com"
+target "http://www.dynsoft.com"
+
+\end_inset
+
+ herunterladen.
+ Sollten Sie noch keine Lizenz erworben haben, steht Ihnen natürlich auch
+ eine Demoversion von DynSoft.com Warehouse zur Verfügung, die 90 Tage uneingesch
+ränkt lauffähig ist.
+\end_layout
+
+\begin_layout Section
+
+\lang english
+Computer
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Generell stellt DynSoft.com Warehouse folgende Anforderungen an Ihren Computer:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+1-GHz-Prozessor oder höher mit 32 Bit (x86) oder 64 Bit (x64) (bei FreeBSD
+ und Linux wird nur amd64 unterstützt)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+1 GB RAM
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+500 MB verfügbarer Festplattenspeicher
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Bildschirmauflösung von mindestens 1024x768
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Möchten Sie neben DynSoft.com Warehouse auch die benötigte Datenbank auf
+ dem selben Computer betreiben, erhöhen sich die Anforderungen:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+1,5-GHz-Dual-Core-Prozessor oder höher mit 32 Bit (x86) oder 64 Bit (x64)
+ (bei FreeBSD und Linux wird nur amd64 unterstützt)
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+2 GB RAM
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+800 MB verfügbarer Festplattenspeicher
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Genügend Speicherplatz für Ihre Daten, die Sie mit DynSoft.com Warehouse
+ pflegen
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Bildschirmauflösung von mindestens 1024x768
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Allerdings ist es beim Arbeiten im Team sinnvoll, die Datenbank auf einem
+ separaten Computer, einem Server, zu betreiben.
+ Dadurch erhalten sie eine zentrale und jederzeit verfügbare Datenbank.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die Anforderungen an den Computer mit der Datenbank, den sogenannten Datenbank-S
+erver, steigen mit der Anzahl der Personen, die in Ihrem Team gleichzeitig
+ auf die Datenbank zugreifen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Eine sinnvolle Mindestanforderung ist:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+1-GHz-Prozessor
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+2 GB RAM
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+500 MB verfügbarer Festplattenspeicher für die Datenbank
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+Genügend Speicherplatz für Ihre Daten, die Sie mit DynSoft.com Warehouse
+ pflegen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Es ist zudem darauf zu achten, dass die Anforderungen des verwendeten Betriebssy
+stems zu diesen Mindestanforderungen hinzuaddiert werden sollten.
+\end_layout
+
+\begin_layout Chapter
+
+\lang english
+Installation
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation auf Windows Vista, Windows 7 und Windows 8
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+DynSoft.com Warehouse & LicenceGenerator
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Nach einem Doppelklick auf die Installationsdatei öffnet sich folgendes
+ Fenster.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/1.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Begrüßungsfenster der DynSoft.com Warehouse-Installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage pagebreak
+\end_inset
+
+Nach einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Weiter
+\begin_inset Quotes ard
+\end_inset
+
+ gelangen Sie zum nächsten Dialog, in dem Sie das Installationsverzeichnis
+ auswählen können.
+ Sollten Sie kein spezielles Verzeichnis benötigen, genügt es hier, den
+ Dialog mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Weiter
+\begin_inset Quotes ard
+\end_inset
+
+ zu bestätigen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/2.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Abfrage des Installationsverzeichnisses
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit diesem Dialog können Sie bestimmen, welche Komponenten installiert werden
+ sollen.
+ Hier können Sie zwischen einer vollständigen Installation, nur der Datenbankins
+tallation oder nur der DynSoft.com Warehouse-Installation wählen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/3.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Auswahl der zu installierenden Komponenten
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage pagebreak
+\end_inset
+
+In diesem Fenster können Sie die Bezeichnung in der 
+\begin_inset Quotes ald
+\end_inset
+
+Programmübersicht
+\begin_inset Quotes ard
+\end_inset
+
+ festlegen.
+ Auch hierbei genügt es, mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Weiter
+\begin_inset Quotes ard
+\end_inset
+
+, den Dialog zu bestätigen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/4.png
+	width 75text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Abfrage der Bezeichnung für den Startmenüeintrag von 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Anschließend können Sie bestimmen, welche Verknüpfungen nach der Installation
+ erstellt werden sollen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/5.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Auswahl für die zu erstellenden Verknüpfungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage pagebreak
+\end_inset
+
+Anschließend erhalten Sie eine Zusammenfassung der gewählten Einstellungen.
+ Mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Installieren
+\begin_inset Quotes ard
+\end_inset
+
+ starten Sie die Installation.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/6.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Zusammenfassung vor Beginn der Installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Während der Installation kann diese jeder Zeit mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Abbrechen
+\begin_inset Quotes ard
+\end_inset
+
+ abgebrochen werden.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/7.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Installationsfortschritt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage pagebreak
+\end_inset
+
+Sobald die Installation abgeschloßen ist, informiert Sie folgender Dialog
+ darüber.
+ Mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Fertigstellen
+\begin_inset Quotes ard
+\end_inset
+
+ schließen Sie die Installation ab.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/8.png
+	width 75text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Abschluß der Installation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sie finden die Programme 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ und 
+\begin_inset Quotes ald
+\end_inset
+
+LicenceGenerator
+\begin_inset Quotes ard
+\end_inset
+
+ sowie 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse Admin
+\begin_inset Quotes ard
+\end_inset
+
+ unter 
+\begin_inset Quotes ald
+\end_inset
+
+Start
+\begin_inset Quotes ard
+\end_inset
+
+ beziehungsweise im Startmenü im Bereich 
+\begin_inset Quotes ald
+\end_inset
+
+Programme
+\begin_inset Quotes ard
+\end_inset
+
+ und dort unter der Bezeichnung, die Sie während der Installation angegeben
+ haben.
+ Sollten Sie keine Bezeichnung gewählt haben, sind die Programme unter 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ zu finden.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/windows/9.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Menüeintrag von 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ und 
+\begin_inset Quotes ald
+\end_inset
+
+LicenceGenerator
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Möchten Sie DynSoft.com Warehouse und alle zughörigen Dateien deinstallieren,
+ können Sie dies über 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse entfernen
+\begin_inset Quotes ard
+\end_inset
+
+.
+ Sollten Sie PostgreSQL mitinstalliert haben, müssen Sie es unter 
+\begin_inset Quotes ald
+\end_inset
+
+Programme entfernen
+\begin_inset Quotes ard
+\end_inset
+
+ in der Systemsteuerung deinstallieren.
+ Vergessen Sie nicht, eine Datensicherung durchzuführen.
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation auf Mac OS X Mountain Lion
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Laden Sie sich im Kundencenter DynSoft.com Warehouse für Mac OS X herunter.
+ Doppelklicken Sie die 
+\begin_inset Quotes ald
+\end_inset
+
+DMG
+\begin_inset Quotes ard
+\end_inset
+
+-Datei und ziehen Sie die benötigten Programme 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+, 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse Admin
+\begin_inset Quotes ard
+\end_inset
+
+ und 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com LicenceGenerator
+\begin_inset Quotes ard
+\end_inset
+
+ in 
+\begin_inset Quotes ald
+\end_inset
+
+Programme
+\begin_inset Quotes ard
+\end_inset
+
+ hinein.
+ Installieren Sie, sofern Sie keinen PostgreSQL-Server haben, noch PostgreSQL
+ mit einem Doppelklick auf die Installationsdatei.
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation auf Ubuntu 12.04 amd64
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+DynSoft.com Warehouse & LicenceGenerator
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Um DynSoft.com Warehouse zu installieren, klicken Sie doppelt auf die Installatio
+nsdatei.
+ Es öffnet sich folgender Dialog.
+ Hier betätigen Sie die Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Installieren
+\begin_inset Quotes ard
+\end_inset
+
+, um die Installation zu starten.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/ubuntu/1.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Ausgewähltes Paket 
+\begin_inset Quotes ald
+\end_inset
+
+warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ im 
+\begin_inset Quotes ald
+\end_inset
+
+Ubuntu Software-Center
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sobald der Fortschrittsbalken vollständig gefüllt ist, ist die Installation
+ abgeschlossen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/ubuntu/2.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Installation von 
+\begin_inset Quotes ald
+\end_inset
+
+warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage pagebreak
+\end_inset
+
+Nach erfolgreicher Installation ist die Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Erneut installieren
+\begin_inset Quotes ard
+\end_inset
+
+ anstelle von 
+\begin_inset Quotes ald
+\end_inset
+
+Installieren
+\begin_inset Quotes ard
+\end_inset
+
+ zu sehen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/ubuntu/3.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Das Paket 
+\begin_inset Quotes ald
+\end_inset
+
+warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ wurde installiert
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sie finden die Programme 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ und 
+\begin_inset Quotes ald
+\end_inset
+
+LicenceGenerator
+\begin_inset Quotes ard
+\end_inset
+
+ im Menü unter 
+\begin_inset Quotes ald
+\end_inset
+
+Anwendungen
+\begin_inset Quotes ard
+\end_inset
+
+ im Bereich 
+\begin_inset Quotes ald
+\end_inset
+
+Büro
+\begin_inset Quotes ard
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/install/ubuntu/4.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Menüeintrag von 
+\begin_inset Quotes ald
+\end_inset
+
+DynSoft.com Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+ und 
+\begin_inset Quotes ald
+\end_inset
+
+LicenceGenerator
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation auf FreeBSD 9 amd64
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Schnellinstallation
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Für die, die sich auskennen, hier die Schnellinstallation (als root ausführen!):
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+pkg_add -r postgresql90-server wxgtk2-unicode
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+echo 'postgresql_enable="YES"' >> /etc/rc.conf
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+echo 'postgresql_data="/usr/local/pgsql/data"' >> /etc/rc.conf
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+echo 'postgresql_flags="-w -s -m fast"' >> /etc/rc.conf
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+echo 'postgresql_initdb_flags="--encoding=utf-8 --lc-collate=C"' >> /etc/rc.conf
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+echo 'postgresql_class="default"' >> /etc/rc.conf
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+mkdir -p /usr/local/pgsql/data
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+chown -R pgsql:pgsql /usr/local/pgsql
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+service postgresql initdb
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+service postgresql start
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Datenbank und Bibliotheken
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Als Datenbank kommt PostgreSQL 9.0 zum Einsatz.
+ Ebenfalls wird wxWidgets (Unicode) benötigt.
+ Im Folgenden wird Ihnen Schritt für Schritt erläutert, wie Sie die Datenbank
+ auf den unterstützten Betriebssystemen installieren können.
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang ngerman
+FreeBSD 9
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Um PostgreSQL und wxWidgets auf einem FreeBSD zu installieren, bietet Ihnen
+ das System die Möglichkeit, dies über die Ports-Sammlung oder über das
+ Paketsystem zu tun.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang ngerman
+Paketsystem
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Zunächst sollten Sie mit dem Befehlt 
+\begin_inset Quotes ald
+\end_inset
+
+su -
+\begin_inset Quotes ard
+\end_inset
+
+ oder 
+\begin_inset Quotes ald
+\end_inset
+
+sudo su -
+\begin_inset Quotes ard
+\end_inset
+
+ root-Rechte erlangen.
+ Anschließend genügt es, folgenden Befehl auszuführen um PostgreSQL und
+ wxWidgets (Unicode) zu installieren:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+pkg_add -r postgresql90-server wxgtk2-unicode
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Hierbei ist zu beachten, dass eine Internetverbindung erforderlich ist.
+\end_layout
+
+\begin_layout Paragraph
+
+\lang ngerman
+Ports-Sammlung
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Als ersten Schritt sollten Sie auch hierbei root-Rechte erlangen, indem
+ Sie den Befehlt 
+\begin_inset Quotes ald
+\end_inset
+
+su -
+\begin_inset Quotes ard
+\end_inset
+
+ oder 
+\begin_inset Quotes ald
+\end_inset
+
+sudo su -
+\begin_inset Quotes ard
+\end_inset
+
+ ausführen.
+ Als nächstes wechseln Sie in das Verzeichnis 
+\begin_inset Quotes ald
+\end_inset
+
+/usr/ports/databases/postgresql90-server/
+\begin_inset Quotes ard
+\end_inset
+
+ mit folgendem Befehl:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+cd /usr/ports/databases/postgresql90-server/
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Um PostgreSQL zu installieren, führen Sie folgenden Befehl aus:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+make install
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Gehen Sie analog bei der wxWidgets-Installation vor:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+cd /usr/ports/x11-toolkits/wxgtk28-unicode && make install
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang ngerman
+Konfiguration
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Folgende Optionen sollten in die 
+\begin_inset Quotes ald
+\end_inset
+
+/etc/rc.conf
+\begin_inset Quotes ard
+\end_inset
+
+ eingetragen werden.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Automatischer Start von PostgreSQL beim Systemstart:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+postgresql_enable="YES"
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Pfadangabe für das Datenverzeichnis der Datenbank:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+postgresql_data="/usr/local/pgsql/data"
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit folgenden 
+\begin_inset Quotes ald
+\end_inset
+
+Flags
+\begin_inset Quotes ard
+\end_inset
+
+ wird PostgreSQL veranlasst durch das 
+\begin_inset Quotes ald
+\end_inset
+
+Flag
+\begin_inset Quotes ard
+\end_inset
+
+ 
+\begin_inset Quotes ald
+\end_inset
+
+-w
+\begin_inset Quotes ard
+\end_inset
+
+ bei einem 
+\begin_inset Quotes ald
+\end_inset
+
+Start
+\begin_inset Quotes ard
+\end_inset
+
+ oder 
+\begin_inset Quotes ald
+\end_inset
+
+Shutdown
+\begin_inset Quotes ard
+\end_inset
+
+ der Datenbank diesen komplett abzuwarten bis weitere Befahle verarbeitet
+ werden.
+ Mit dem 
+\begin_inset Quotes ald
+\end_inset
+
+Flag
+\begin_inset Quotes ard
+\end_inset
+
+ 
+\begin_inset Quotes ald
+\end_inset
+
+-s
+\begin_inset Quotes ard
+\end_inset
+
+ gibt PostgreSQL nur Fehlermeldungen und keine Informationen aus.
+ Durch das 
+\begin_inset Quotes ald
+\end_inset
+
+Flag
+\begin_inset Quotes ard
+\end_inset
+
+ 
+\begin_inset Quotes ald
+\end_inset
+
+-m fast
+\begin_inset Quotes ard
+\end_inset
+
+ wird der 
+\begin_inset Quotes ald
+\end_inset
+
+Shutdown-Mode
+\begin_inset Quotes ard
+\end_inset
+
+ auf 
+\begin_inset Quotes ald
+\end_inset
+
+fast
+\begin_inset Quotes ard
+\end_inset
+
+ eingestellt.
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+postgresql_flags="-w -s -m fast"
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Hiermit bestimmen Sie, mit welchen 
+\begin_inset Quotes ald
+\end_inset
+
+Encoding
+\begin_inset Quotes ard
+\end_inset
+
+ neue Datenbanken erstellt werden sollen:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+postgresql_initdb_flags="--encoding=utf-8 --lc-collate=C"
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Diese Option bestimmt die verwendete 
+\begin_inset Quotes ald
+\end_inset
+
+class
+\begin_inset Quotes ard
+\end_inset
+
+ von PostgreSQL:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+postgresql_class="default"
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Erstellen Sie die benötigten Verzeichnisse und setzen die Rechte korrekt:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+mkdir -p /usr/local/pgsql/data
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+chown -R pgsql:pgsql /usr/local/pgsql
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Initialisieren Sie dann die Datenbank:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+service postgresql initdb
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+und starten Sie sie:
+\end_layout
+
+\begin_layout Itemize
+
+\lang ngerman
+service postgresql start
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Alle Computer, die Zugriff auf die lokale Datenbank erhalten sollen, müssen
+ in die Datei 
+\begin_inset Quotes ald
+\end_inset
+
+pg_hba.conf
+\begin_inset Quotes ard
+\end_inset
+
+ im Datenbankverzeichnis eingetragen werden.
+ Wahlweise ist es auch möglich, das Netzwerk einzutragen.
+ Beachten Sie dazu die PostgreSQL-Dokumentation.
+\end_layout
+
+\begin_layout Chapter
+
+\lang ngerman
+LicenceGenerator
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der Dynsoft.com LicenceGenerator ist notwendig, um eine Lizenz anhand weniger
+ Hardwaredaten Ihres Computers zu erstellen, damit Bolso Warehouse verwendet
+ werden kann.
+ Er liegt jeder Installation von Bolso Warehouse bei.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Um eine Lizenz zu erstellen, wählen Sie zuerst das Produkt aus.
+ Im zweiten Schritt kopieren Sie mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Aktivierungsnummer in die Zwischenablage kopieren
+\begin_inset Quotes ard
+\end_inset
+
+ die Aktivierungsnummer.
+ Im dritten Schritt rufen Sie das Kundencenter von Bolso GbR auf.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/licencegenerator/licencegenerator.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang ngerman
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+DynSoft.com LicenceGenerator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Nach einer Registrierung auf der Internetseite können Sie sich im Kundencenter
+ anmelden.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/licencegenerator/kundencenter.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Anmeldung im Kundencenter auf www.bolso.de
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Im Bereich 
+\begin_inset Quotes ald
+\end_inset
+
+Lizenzen
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie nun die zuvor kopierte Aktivierungsnummer einfügen und mit einem
+ Klick auf Lizenz erstellen Ihre Lizenz erstellen.
+ Mit dieser erstellten Lizenz ist es Ihnen nun möglich, Ihr Produkt zu aktiviere
+n.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/licencegenerator/kundencenter_lizenzen.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Lizenzen im Kundencenter auf www.bolso.de
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang ngerman
+DynSoft.com Warehouse
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Datenbankverbindung eintragen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wenn Sie Bolso Warehouse zum ersten Mal starten und noch keine Datenbank
+ vorhanden ist, erhalten Sie folgende Meldung.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/init/datenbank_fehler.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Fehlermeldung beim ersten Start von 
+\begin_inset Quotes ald
+\end_inset
+
+Bolso Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In diesem Fenster tragen Sie unter 
+\begin_inset Quotes ald
+\end_inset
+
+Server
+\begin_inset Quotes ard
+\end_inset
+
+ die IP-Adresse oder den Namen des Computers, auf dem Sie zuvor die Datenbank
+ eingerichtet haben ein.
+ Unter 
+\begin_inset Quotes ald
+\end_inset
+
+Datenbank
+\begin_inset Quotes ard
+\end_inset
+
+ wählen Sie eine Bezeichnung für die neue Datenbank.
+ Im Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Benutzer
+\begin_inset Quotes ard
+\end_inset
+
+ tragen Sie 
+\begin_inset Quotes ald
+\end_inset
+
+postgres
+\begin_inset Quotes ard
+\end_inset
+
+ ein, falls Sie keinen anderen Benutzer angelegt haben.
+ In das Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Kennwort
+\begin_inset Quotes ard
+\end_inset
+
+ tragen Sie das gleiche Kennwort wie bei der Installation der Datenbank
+ ein.
+ Im letzten Feld tragen Sie den 
+\begin_inset Quotes ald
+\end_inset
+
+Port
+\begin_inset Quotes ard
+\end_inset
+
+ 
+\begin_inset Quotes ald
+\end_inset
+
+5432
+\begin_inset Quotes ard
+\end_inset
+
+ ein, falls Sie bei der Installation der Datenbank keinen anderen gewählt
+ haben.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Nun können Sie die Datenbank erstellen.
+ Hierzu klicken Sie einfach auf 
+\begin_inset Quotes ald
+\end_inset
+
+Neue Datenbank erstellen
+\begin_inset Quotes ard
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/init/konfiguration.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Einstellen der Datenbank für 
+\begin_inset Quotes ald
+\end_inset
+
+Bolso Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Folgende Meldung bestätigt, dass die Datenbank erfolgreich erstellt wurde.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/init/datenbank_erstellen.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erfolgsmeldung nach dem Erstellen der Datenbank
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Verbindung testen
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie überprüfen ob Sie eine Verbindung zur Datenbank aufbauen können.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/init/datenbank_verbindung.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erfolgsmeldung nach dem Testen der Datenbankverbindung
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Abschließend sichern Sie die Einstellungen mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Diese Einstellungen sind für jeden Computer mit Bolso Warehouse beim ersten
+ Start vorzunehmen.
+ Eine Übersicht der verwendeten Einstellungen finden Sie im Bolso Warehouse
+ im Bereich 
+\begin_inset Quotes ald
+\end_inset
+
+Einstellungen
+\begin_inset Quotes ard
+\end_inset
+
+.
+ ACHTUNG: Das Erstellen der neuen Datenbank ist nur einmalig durchzuführen.
+ Beim einbinden weiterer Arbeitsplätze mit 
+\begin_inset Quotes ald
+\end_inset
+
+Bolso Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+, sollten die Einstellungen lediglich mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Verbindung testen
+\begin_inset Quotes ard
+\end_inset
+
+ getestet werden und anschließend mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+ gespeichert werden.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Abschließend gelangen Sie zum Anmeldebildschirm.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/init/anmeldung.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Anmeldebildschirm von 
+\begin_inset Quotes ald
+\end_inset
+
+Bolso Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Lizenznummer eintragen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Im Anmeldefenster erreichen Sie über einen Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Lizenznummer eingeben
+\begin_inset Quotes ard
+\end_inset
+
+ das Fenster für die Eingabe der Lizenznummer.
+ Hier tragen Sie Ihre Lizenznummer ein und speichern diese mit einem Klick
+ auf 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/anmelden/lizenznummer.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Eingabe der Lizenznummer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Mandanten einrichten
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Beim ersten Start von Bolso Warehouse müssen Sie mindestens einen Mandanten
+ einrichten.
+ Klicken Sie hierzu im Anmeldefenster auf die Schaltfläche mit dem Schraubenschl
+üssel.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In diesem Fenster verwalten Sie Ihre Mandanten.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/firmenkonfiguration_leer.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Firmenkonfiguration, eine Übersicht aller Mandanten
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Um einen neuen Mandanten einzurichten, klicken Sie auf 
+\begin_inset Quotes ald
+\end_inset
+
+Neu
+\begin_inset Quotes ard
+\end_inset
+
+.
+ Als nächstes tragen Sie im Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Firma
+\begin_inset Quotes ard
+\end_inset
+
+ den gewünschten Firmennamen ein.
+ In die restlichen Felder tragen Sie die Verbindungsdaten für Ihre Datenbank
+ ein.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/firmenkonfiguration_eingaben.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erstellen der ersten Mandanten-Datenbank
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Verbindung testen
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie überprüfen, ob Ihre Eingaben korrekt sind und die Verbindung
+ zur Datenbank testen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/verbindung_testen.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erfolgsmeldung nach dem Verbindungstest zur Datenbank
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Im nächsten Schritt klicken Sie auf 
+\begin_inset Quotes ald
+\end_inset
+
+Neue Datenbank erstellen
+\begin_inset Quotes ard
+\end_inset
+
+.
+ Anschließend füllen Sie mindestens alle Pflichtfelder aus, diese erkennen
+ Sie an ihrer organenen Farbe.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/mandant_hauptdaten.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Eintragen der Hauptdaten für das Unternehmen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Im Reiter 
+\begin_inset Quotes ald
+\end_inset
+
+Monitäres
+\begin_inset Quotes ard
+\end_inset
+
+ tragen Sie Ihre Bankdaten und USt-Ident-Nr.
+ ein.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/mandant_monitaeres.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Eintragen der monitären Daten des Unternehmens
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der Reiter 
+\begin_inset Quotes ald
+\end_inset
+
+Steuer
+\begin_inset Quotes ard
+\end_inset
+
+ enthält Felder für den verminderten und erhöhten Steuersatz.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/mandant_steuer.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Einstellen der Mehrwertsteuersätze
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+In der letzten Registerkarte 
+\begin_inset Quotes ald
+\end_inset
+
+Nummern
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie festlegen, bei welcher Zahl Ihre Kundennummern, Produktnummern,
+ Auftragsnummern, Rechnungsnummern und Gutschriftennummer beginnen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/mandant_nummern.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Einstellen der Anfangsnummern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Abschließend erstellen Sie den Mandanten mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Ausführen
+\begin_inset Quotes ard
+\end_inset
+
+.
+ Eine Meldung signalisiert Ihnen den Erfolg des Vorgangs.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/mandanten/datenbank_erstellt.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erfolgsmeldung nach dem erstellen der Datenbank
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Erste Anmeldung
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Nach dem Erstellen eines neuen Mandanten können Sie sich nur mit dem Benutzer
+ 
+\begin_inset Quotes ald
+\end_inset
+
+admin
+\begin_inset Quotes ard
+\end_inset
+
+ und dem Kennwort 
+\begin_inset Quotes ald
+\end_inset
+
+admin
+\begin_inset Quotes ard
+\end_inset
+
+ anmelden.
+ Nachdem Sie sich angemeldet haben, sollten Sie das Kennwort des 
+\begin_inset Quotes ald
+\end_inset
+
+admin-Benutzers
+\begin_inset Quotes ard
+\end_inset
+
+ ändern und separate Benutzer erstellen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename /home/thorsten/Development/ExBolso/DSBolsoWarehouse/docs/handbuch/images/warehouse/anmelden/anmeldung.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Erste Anmeldung am 
+\begin_inset Quotes ald
+\end_inset
+
+Bolso Warehouse
+\begin_inset Quotes ard
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+
+\lang ngerman
+DynSoft.com Warehouse Admin
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+ACHTUNG: Das Programm sollte ausschließlich von erfahrenen Benutzern verwendet
+ werden.
+ Bei fehlerhafter Anwendung kann es zu fehlerhaften Konfigurationen, Datenbanksc
+häden, Datenverlust und Verlust der gesamten Datenbank kommen! 
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Installation & Inbetriebnahme
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Die Software DynSoft.com Warehouse Admin wird zusammen mit DynSoft.com Warehouse
+ ausgeliefert und installiert.
+ Bei jedem Start von Warehouse Admin erscheint folgendes Fenster, um Sie
+ auf die Gefahren bei der Nutzung zu informieren.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/startmeldung.png
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Warnmeldung beim Start von DynSoft.com Warehouse Admin 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Hauptdialog
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Der Hauptdialog vom DynSoft.com Warehouse Admin zeigt eine Übersicht aller
+ vorhanden Datenbanken.
+ Diese Übersicht können Sie mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Aktualisieren
+\begin_inset Quotes ard
+\end_inset
+
+ neu laden.
+ Durch das Auswählen der benötigten »Aktion«  und betätigen dieser mit der
+ Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Ausführen
+\begin_inset Quotes ard
+\end_inset
+
+, wird diese ohne weitere Rückfrage durchgeführt.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/hauptdialog.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Hauptdialog vom DynSoft.com Warehouse Admin
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang ngerman
+Aktionen der Admin-Software
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+DynSoft.com Warehouse Admin verfügt über verschiedene Aktionen.
+ Im Folgenden werden diese erläutert.
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Benutzer in der ausgewählten Datenbank hinzufügen/bearbeiten
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit folgendem Dialog ist es Ihnen möglich, einen Benutzer in die zuvor gewählte
+ Datenbank hinzuzufügen oder das Benutzerkennwort zu ändern.
+ Vergeben Sie einen Benutzernamen und ein Kennwort und führen Sie die Aktion
+ mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Hinzufügen
+\begin_inset Quotes ard
+\end_inset
+
+ aus.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/benutzer.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Hinzufügen eines Benutzers 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Ausgewählte Mandantendatenbank sichern
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sobald Sie diese Aktion ausführen, werden Sie nach dem Zielort für die Datensich
+erung gefragt.
+ Anschließend können Sie die Sicherung mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+ starten.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/mandant_sichern.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Sichern eines Mandanten
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Neue Datenbank erstellen und Mandaten importieren
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit dieser Aktion können Sie in einem Schritt einen Mandaten in der Datenbank
+ erstellen und eine zuvor erstellte Datensicherung zurückspielen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Geben Sie im ersten Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Dateiname
+\begin_inset Quotes ard
+\end_inset
+
+ den Speicherort der Datensicherung an, welche zurückgespielt werden soll.
+ Vergeben Sie dann einen Namen für den Mandaten.
+ Ein Automatismus sorgt dafür, dass der Name für die Datenbank entsprechend
+ formatiert in das Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Datenbank
+\begin_inset Quotes ard
+\end_inset
+
+ eingetragen wird.
+ Es ist Ihnen auch möglich, einen eigenen Namen für die Datenbank zu vergeben.
+ Im Feld 
+\begin_inset Quotes ald
+\end_inset
+
+Server
+\begin_inset Quotes ard
+\end_inset
+
+ tragen Sie die IP-Adresse des Computers, auf dem die Datenbank erstellt
+ werden soll, ein.
+ Anschließend tragen Sie einen Benutzer und dessen Kennwort ein.
+ Dieser Benutzer muss die notwendigen Rechte besitzen, um die Datenbank
+ steuern zu dürfen.
+ Abschließend tragen Sie den Port ein.
+ Sollten Sie hierbei keinen spziellen Port benötigen, so tragen Sie den
+ Standardport 
+\begin_inset Quotes ald
+\end_inset
+
+5432
+\begin_inset Quotes ard
+\end_inset
+
+ ein.
+ Mit einem Klick auf 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+ wird der Mandant erstellt und die 
+\begin_inset Quotes ald
+\end_inset
+
+Datenbanksicherung
+\begin_inset Quotes ard
+\end_inset
+
+ eingespielt.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/mandant_import.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Sichern eines Mandanten
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Ausgewählten Mandanten inklusive Datenbank und Daten löschen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit dieser Aktion können Sie eine Mandantendatenbank mit allen zugehörigen
+ Daten löschen.
+ Bevor die Aktion ausgeführt wird, muss folgende Sicherheitsabfrage bestätigt
+ werden.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/mandant_entfernen.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Mandanten entfernen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang ngerman
+Kennwörter anzeigen/verbergen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Führen Sie diese Aktion aus, werden die Kennwörter der Datenbankbenutzer
+ angezeigt.
+ Bei erneutem Ausführen der Aktion werden diese wieder verborgen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/passwort_anzeigen.png
+	width 70text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Kennwort wird angezeigt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Netzwerkzugänge bearbeiten (pg_hba.conf)
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Nach Auswahl der Konfigurationsdatei 
+\begin_inset Quotes ald
+\end_inset
+
+pg_hba.conf
+\begin_inset Quotes ard
+\end_inset
+
+ über die Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Durchsuchen...
+\begin_inset Quotes ard
+\end_inset
+
+, wird Ihnen eine Liste der aktuellen Konfiguration angezeigt.
+ Für gewöhnlich finden Sie die Konfigurationsdatei im 
+\begin_inset Quotes ald
+\end_inset
+
+data
+\begin_inset Quotes ard
+\end_inset
+
+-Verzeichnis der Datenbank.
+ Hierfür ist es in der Regel notwendig, Administratorrechte zu besitzen.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Entfernen
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie Einträge aus der Liste löschen.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/pg_hba_list.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Hauptdialog der Netzwerkzugänge
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Bearbeiten
+\begin_inset Quotes ard
+\end_inset
+
+ können Sie Einträge der Liste anpassen.
+ Mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Hinzufügen
+\begin_inset Quotes ard
+\end_inset
+
+ ist es Ihnen möglich, neue Einträge anzulegen.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Graphics
+	filename images/admin/pg_hba_bearbeiten.png
+	width 30text%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Dialog zum Bearbeiten und Hinzufügen von Netzwerkzugängen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Abschließend können Sie Ihre Änderungen mit der Schaltfläche 
+\begin_inset Quotes ald
+\end_inset
+
+Speichern
+\begin_inset Quotes ard
+\end_inset
+
+ in die Konfigurationsdatei schreiben.
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Datenbankkennwort zurücksetzen
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Sobald diese Aktion ausgeführt wird, wird das Kennwort des Hauptdatenbankbenutze
+rs 
+\begin_inset Quotes ald
+\end_inset
+
+postgres
+\begin_inset Quotes ard
+\end_inset
+
+ auf 
+\begin_inset Quotes ald
+\end_inset
+
+postgres
+\begin_inset Quotes ard
+\end_inset
+
+ gesetzt.
+\end_layout
+
+\begin_layout Subsection
+
+\lang ngerman
+Über
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+Wenn Sie diese Aktion ausführen, werden Ihnen Informationen zu den Entwicklern
+ der Admin-Software angezeigt.
+\end_layout
+
+\begin_layout Part
+
+\lang ngerman
+DynSoft.com Warehouse Admin
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

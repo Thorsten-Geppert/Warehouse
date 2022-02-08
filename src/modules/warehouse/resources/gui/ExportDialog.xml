@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ExportDialog">
+		<title>Export preferences</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="runToolbarButton">
+								<label>Run</label>
+								<bitmap platform="win|unix">resources/images/Run.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Run.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<cols>2</cols>
+						<hgap>2</hgap>
+						<vgap>2</vgap>
+						<growablecols>1</growablecols>
+
+						<!-- File -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>File:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="fileTextCtrl">
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxButton" name="browseButton">
+										<label>Browse</label>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /File -->
+
+						<!-- Field delimiter -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Field delimiter:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxComboBox" name="fieldDelimiterComboBox">
+								<size>80, -1</size>
+
+								<selection>0</selection>
+								<content>
+									<item>;</item>
+									<item>,</item>
+									<item>{tab}</item>
+									<item>|</item>
+									<item></item>
+								</content>
+							</object>
+						</object>
+						<!-- /Field delimiter -->
+
+						<!-- Text delimiter -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Text delimiter:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxComboBox" name="textDelimiterComboBox">
+								<size>80, -1</size>
+
+								<selection>0</selection>
+								<content>
+									<item>"</item>
+									<item>'</item>
+									<item></item>
+								</content>
+							</object>
+						</object>
+						<!-- /Text delimiter -->
+
+						<!-- Linefeed -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Linefeed:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxComboBox" name="lineFeedComboBox">
+								<size>300, -1</size>
+
+								<selection>0</selection>
+								<content>
+									<item>Mac OS X / Unix / Linux (Windows)</item>
+									<item>Windows</item>
+									<item>Mac OS 9 and older</item>
+								</content>
+							</object>
+						</object>
+						<!-- /Linefeed -->
+
+						<!-- Replace inner linefeeds -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Replace inner linefeeds:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxCheckBox" name="replaceLineFeedCheckBox">
+								<label>yes</label>
+							</object>
+						</object>
+						<!-- /Replace inner linefeeds -->
+
+						<!-- Replace inner linefeeds with -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Replace inner linefeeds with:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxTextCtrl" name="replaceLineFeedWithTextCtrl" />
+						</object>
+						<!-- /Replace inner linefeeds with -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

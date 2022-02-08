@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="DemoVersionDialog">
+		<title>Demo Version</title>
+
+		<object class="wxPanel" name="demoVersionPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<object class="wxStaticBitmap">
+						<bitmap platform="win|unix">resources/images/LoginLogo.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/LoginLogo.png</bitmap>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+					<option>1</option>
+
+					<object class="wxPanel">
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+
+							<object class="sizeritem">
+								<flag>wxTOP | wxLEFT | wxRIGHT | wxEXPAND</flag>
+								<border>15</border>
+								<option>1</option>
+
+								<object class="wxHtmlWindow">
+									<borders>5d</borders>
+									<url platform="win|unix">resources/informations/DemoVersion.html</url>
+									<url platform="mac">Warehouse.app/Contents/Resources/informations/DemoVersion.html</url>
+								</object>
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxLEFT | wxRIGHT | wxALIGN_CENTER</flag>
+								<border>15</border>
+
+								<object class="wxFlexGridSizer">
+									<hgap>30</hgap>
+									<vgap>5</vgap>
+									<cols>4</cols>
+
+									<object class="sizeritem">
+										<object class="wxHyperlinkCtrl">
+											<label>DynSoft.com - Thorsten Geppert</label>
+											<!-- TODO DS -->
+											<url>https://www.dynsoft.com</url>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<object class="wxHyperlinkCtrl">
+											<label>More informations about Warehouse</label>
+											<!-- TODO DS -->
+											<url>https://www.dynsoft.com/seiten/Warehouse/Funktionen.html</url>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<object class="wxHyperlinkCtrl">
+											<label>Customer center</label>
+											<!-- TODO DS -->
+											<url>https://www.dynsoft.com/seiten/Kundencenter/index.html</url>
+										</object>
+									</object>
+
+									<object class="sizeritem">
+										<object class="wxHyperlinkCtrl">
+											<label>Register for free</label>
+											<!-- TODO DS -->
+											<url>https://www.dynsoft.com/seiten/Registrieren/index.html</url>
+										</object>
+									</object>
+								</object>
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxLEFT | wxRIGHT | wxEXPAND</flag>
+								<border>15</border>
+
+								<object class="wxStaticLine" />
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxLEFT | wxRIGHT | wxALIGN_RIGHT</flag>
+								<border>15</border>
+
+								<object class="wxStaticText" name="versionStaticText" />
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxLEFT | wxRIGHT | wxEXPAND</flag>
+								<border>15</border>
+
+								<object class="wxStaticLine" />
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxLEFT | wxBOTTOM | wxRIGHT | wxALIGN_RIGHT</flag>
+								<border>15</border>
+
+								<object class="wxButton" name="closeButton">
+									<label>Close</label>
+								</object>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

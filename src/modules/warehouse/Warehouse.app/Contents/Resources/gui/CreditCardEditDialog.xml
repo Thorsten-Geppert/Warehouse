@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="CreditCardEditDialog">
+		<title>Edit credit card data</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+						<growablerows>3</growablerows>
+
+						<!-- Description -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Description:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="descriptionComboBox">
+							</object>
+						</object>
+
+						<!-- Card -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Card:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="cardComboBox">
+							</object>
+						</object>
+
+						<!-- Card number -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Card number:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="cardNumberTextCtrl">
+							</object>
+						</object>
+
+						<!-- Holder -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Holder:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="holderTextCtrl">
+							</object>
+						</object>
+
+						<!-- Security -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Security:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="securityTextCtrl">
+							</object>
+						</object>
+
+						<!-- Expiration -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Expiration:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+
+								<object class="sizeritem">
+									<object class="wxComboBox" name="monthComboBox">
+										<size>60, -1</size>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<object class="sizeritem">
+									<object class="wxComboBox" name="yearComboBox">
+										<size>80, -1</size>
+									</object>
+								</object>
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

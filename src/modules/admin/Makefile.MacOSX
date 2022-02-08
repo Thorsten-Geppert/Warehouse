@@ -1,0 +1,54 @@
+CPP       = g++
+LINK      = g++
+
+include Makefile.Objects
+
+LIBS      = -L"/usr/local/lib" \
+			-L"/usr/local/pgsql/lib" \
+			-L"/usr/local/DSLib/lib" \
+			-L"." \
+			-lpq \
+			-lds2 \
+			`/usr/local/wxMac-3.1.6/bin/wx-config --libs`
+
+INCS      = -I"/usr/include" \
+			-I"include" \
+			-I"/usr/local/include" \
+			-I"/usr/local/DSLib/include" \
+			-I"/usr/local/pgsql/include"
+
+BIN       = WarehouseAdmin
+
+CXXFLAGS  = $(INCS) \
+			-Wall \
+			-O3 \
+			`/usr/local/wxMac-3.1.6/bin/wx-config --cppflags`
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+bundle: all
+	if test -d WarehouseAdmin.app; then rm -Rf WarehouseAdmin.app; fi
+	mkdir -p WarehouseAdmin.app/Contents/MacOS
+	mkdir -p WarehouseAdmin.app/Contents/Resources/languages/de
+	mkdir -p WarehouseAdmin.app/Contents/Resources/postgresql/mac
+	cp WarehouseAdmin WarehouseAdmin.app/Contents/MacOS
+	cp AdminIcon.icns WarehouseAdmin.app/Contents/Resources
+	cp resources/languages/de/Admin.mo WarehouseAdmin.app/Contents/Resources/languages/de/
+	cp resources/postgresql/mac/* WarehouseAdmin.app/Contents/Resources/postgresql/mac
+	cp Info.plist WarehouseAdmin.app/Contents/
+
+open: bundle
+	open WarehouseAdmin.app
+
+start: bundle
+	open WarehouseAdmin.app
+
+$(BIN): $(OBJ)
+	$(LINK) $(LIBS) $(OBJ) -stdlib=libc++ -o $(BIN)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -g -c $*.cpp -o $*.o

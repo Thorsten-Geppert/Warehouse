@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="BanksFullFindDialog">
+		<title>Find client(s)</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="useToolbarButton">
+								<label>Use</label>
+								<bitmap platform="win|unix">resources/images/Use.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Use.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+					<option>1</option>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<cols>2</cols>
+								<growablecols>1</growablecols>
+
+								<!-- Bank -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Bank:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" name="bankTextCtrl">
+										<focused>1</focused>
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Bank -->
+
+								<!-- Bank code -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>Bank code:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="bankCodeTextCtrl" subclass="DynSoft::DSTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /Bank code -->
+
+								<!-- BIC -->
+								<object class="sizeritem">
+									<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxStaticText">
+										<label>BIC:</label>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+									
+									<object class="wxTextCtrl" name="bicTextCtrl" subclass="DynSoft::DSTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+								<!-- /BIC -->
+
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="banksListCtrl">
+								<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

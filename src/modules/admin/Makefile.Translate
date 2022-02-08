@@ -1,0 +1,17 @@
+XGT      = xgettext
+WGT      = wxrc
+MSG      = msgfmt
+SED      = sed
+POTARGET = resources/languages/de/Admin.po
+MOTARGET = resources/languages/de/Admin.mo
+LNTARGET = resources/languages/de/Admin.lang
+ENCODING = UTF8
+
+translate:
+	if ! test -f $(POTARGET); then touch $(POTARGET); fi
+	$(SED) -i -e 's/CHARSET/iso-8859-1/g' $(POTARGET)
+	$(XGT) -o $(POTARGET) --from-code=$(ENCODING) -k_ -k__ *.cpp *.h --force-po -j
+	$(XGT) -o $(POTARGET) --from-code=$(ENCODING) -k_ -k__ ../lib/*.cpp ../lib/*.h --force-po -j
+	$(XGT) -k_ -k__ -L C -j -s -o $(POTARGET) --from-code=$(ENCODING) -D . $(LNTARGET) --force-po
+	$(MSG) -f $(POTARGET) -o $(MOTARGET)
+

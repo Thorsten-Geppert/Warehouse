@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="HtmlTableCreationDialog">
+		<title>Create table</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="insertToolbarButton">
+								<label>Insert</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Columns:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxSpinCtrl" name="columnsSpinCtrl">
+								<min>1</min>
+								<max>10000</max>
+								<value>1</value>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Rows:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxSpinCtrl" name="rowsSpinCtrl">
+								<min>1</min>
+								<max>10000</max>
+								<value>1</value>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxCheckBox" name="borderCheckBox">
+								<label>create border</label>
+								<checked>1</checked>
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

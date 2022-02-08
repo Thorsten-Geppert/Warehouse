@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="FileOpenOrDownloadDialog">
+		<title>Choose</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxButton" name="openButton">
+								<label>Open file</label>
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>15</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxButton" name="downloadButton">
+								<label>Download file</label>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

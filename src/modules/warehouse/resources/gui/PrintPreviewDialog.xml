@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="PrintPreviewDialog">
+		<title>Print preview</title>
+		<style>wxCAPTION | wxRESIZE_BORDER | wxSYSTEM_MENU | wxCLOSE_BOX | wxMAXIMIZE_BOX | wxMINIMIZE_BOX</style>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="firstPageToolbarButton">
+								<label>First</label>
+								<bitmap platform="win|unix">resources/images/First.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/First.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="previousPageToolbarButton">
+								<label>Previous</label>
+								<bitmap platform="win|unix">resources/images/Previous.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Previous.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="nextPageToolbarButton">
+								<label>Next</label>
+								<bitmap platform="win|unix">resources/images/Next.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Next.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="lastPageToolbarButton">
+								<label>Last</label>
+								<bitmap platform="win|unix">resources/images/Last.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Last.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="zoomInToolbarButton">
+								<label>Zoom in</label>
+								<bitmap platform="win|unix">resources/images/ZoomIn.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ZoomIn.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="zoomNormalToolbarButton">
+								<label>1:1</label>
+								<bitmap platform="win|unix">resources/images/ZoomNormal.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ZoomNormal.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="zoomOutToolbarButton">
+								<label>Zoom out</label>
+								<bitmap platform="win|unix">resources/images/ZoomOut.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ZoomOut.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+			
+					<object class="wxPanel" name="printPanel">
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+						</object>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="wxStatusBar" name="mainStatusBar">
+						<fields>3</fields>
+						<widths>200, 200, -1</widths>
+					</object>
+				</object>
+			</object>
+		</object>
+		
+	</object>
+
+</resource>

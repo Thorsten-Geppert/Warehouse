@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="YesNoDialog">
+		<title></title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="yesToolbarButton">
+								<label>Yes</label>
+								<bitmap platform="win|unix">resources/images/Yes.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Yes.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="noToolbarButton">
+								<label>No</label>
+								<bitmap platform="win|unix">resources/images/No.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/No.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" name="messageTextCtrl">
+								<minsize>300, 150</minsize>
+								<size>300, 150</size>
+								<style>wxTE_READONLY | wxTE_MULTILINE</style>
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

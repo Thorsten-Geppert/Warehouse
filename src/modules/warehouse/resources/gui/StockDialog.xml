@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="StockDialog">
+		<title>Edit stock</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+						<growablerows>3</growablerows>
+
+						<!-- Name -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Name:</label>
+								<fg>#c65d00</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="nameTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Name -->
+
+						<!-- Address -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Address / Number:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="addressTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" name="numberTextCtrl">
+										<maxlength>16</maxlength>
+										<size>50, -1</size>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Address -->
+
+						<!-- Zipcode/city -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Zipcode / City:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxBoxSizer">
+								<orient>wxHORIZONTAL</orient>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+									<object class="wxTextCtrl" name="zipcodeTextCtrl">
+										<maxlength>16</maxlength>
+										<size>50, -1</size>
+									</object>
+								</object>
+
+								<object class="spacer">
+									<size>5</size>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+
+									<object class="wxTextCtrl" name="cityTextCtrl">
+										<maxlength>255</maxlength>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /City/zipcode -->
+
+						<!-- Comment -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT</flag>
+
+							<object class="wxStaticText">
+								<label>Comment:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" name="commentTextCtrl">
+								<style>wxTE_MULTILINE</style>
+							</object>
+						</object>
+						<!-- /Comment -->
+
+						<!-- Active -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxCheckBox" name="activeCheckBox">
+								<label>active</label>
+							</object>
+						</object>
+						<!-- /Active -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

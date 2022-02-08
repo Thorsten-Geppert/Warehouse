@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="FilesPanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+				<option>1</option>
+
+				<object class="wxSplitterWindow" name="contentSplitterWindow">
+					<style>wxSP_LIVE_UPDATE</style>
+					<orientation>vertical</orientation>
+					<sashpos>250</sashpos>
+					<minsize>250</minsize>
+
+					<object class="wxPanel" name="categoriesPanel">
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+						</object>
+					</object>
+
+					<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="filesListCtrl">
+						<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+					</object>
+				</object>
+			</object>
+	
+		</object>
+
+	</object>
+
+</resource>

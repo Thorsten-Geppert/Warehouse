@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="DatabaseConfigurationDialog">
+		<title>Database Configuration</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="testConnectionToolbarButton">
+								<label>Test connection</label>
+								<bitmap platform="win|unix">resources/images/TestConnection.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TestConnection.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="newConnectionToolbarButton">
+								<label>Create new database</label>
+								<bitmap platform="win|unix">resources/images/New.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+
+						<!-- Hostname -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Hostname:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="hostnameComboBox">
+								<focused>1</focused>
+								<content>
+									<item>localhost</item>
+								</content>
+							</object>
+						</object>
+
+						<!-- Database -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Database:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="databaseComboBox">
+								<content>
+									<item translate="0">warehouse</item>
+									<item translate="0">bolso</item>
+								</content>
+							</object>
+						</object>
+
+						<!-- Username -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Username:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" name="usernameComboBox">
+								<content>
+									<item translate="0">postgres</item>
+									<item translate="0">root</item>
+								</content>
+							</object>
+						</object>
+
+						<!-- Password -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Password:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" name="passwordTextCtrl">
+								<style>wxTE_PASSWORD</style>
+							</object>
+						</object>
+
+						<!-- Port -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Port:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxComboBox" name="portComboBox">
+								<size>100, -1</size>
+
+								<content>
+									<item translate="0">5432</item>
+								</content>
+							</object>
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

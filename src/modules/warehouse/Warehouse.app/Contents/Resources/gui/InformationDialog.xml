@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="InformationDialog">
+		<title>Information</title>
+
+		<object class="wxPanel" name="informationPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<object class="wxStaticBitmap">
+						<bitmap platform="win|unix">resources/images/LoginLogo.png</bitmap>
+						<bitmap platform="mac">Warehouse.app/Contents/Resources/images/LoginLogo.png</bitmap>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+					<option>1</option>
+
+					<object class="wxPanel">
+						<object class="wxBoxSizer">
+							<orient>wxVERTICAL</orient>
+
+							<object class="sizeritem">
+								<flag>wxTOP | wxLEFT | wxRIGHT | wxEXPAND</flag>
+								<border>15</border>
+								<option>1</option>
+
+								<object class="wxNotebook">
+									<object class="notebookpage">
+										<label>Common</label>
+
+										<object class="wxHtmlWindow">
+											<borders>5d</borders>
+											<url platform="win|unix">resources/informations/Information.html</url>
+											<url platform="mac">Warehouse.app/Contents/Resources/informations/Information.html</url>
+										</object>
+									</object>
+
+									<object class="notebookpage">
+										<label>Credits</label>
+
+										<object class="wxHtmlWindow">
+											<borders>5d</borders>
+											<url platform="win|unix">resources/informations/Credits.html</url>
+											<url platform="mac">Warehouse.app/Contents/Resources/informations/Credits.html</url>
+										</object>
+									</object>
+
+									<object class="notebookpage">
+										<label>GTC</label>
+
+										<object class="wxHtmlWindow" name="gtcHtmlWindow">
+											<borders>5d</borders>
+										</object>
+									</object>
+								</object>
+							</object>
+
+							<object class="spacer">
+								<size>5</size>
+							</object>
+
+							<object class="sizeritem">
+								<flag>wxBOTTOM | wxLEFT | wxRIGHT | wxALIGN_RIGHT</flag>
+								<border>15</border>
+
+								<object class="wxStaticText" name="versionStaticText" />
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

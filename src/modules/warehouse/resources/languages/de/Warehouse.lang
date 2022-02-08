@@ -1,0 +1,2016 @@
+#line 5 "resources/gui/AddressEditDialog.xml"
+_("Edit address");
+#line 17 "resources/gui/AddressEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/AddressEditDialog.xml"
+_("Close");
+#line 50 "resources/gui/AddressEditDialog.xml"
+_("Description:");
+#line 68 "resources/gui/AddressEditDialog.xml"
+_("Salutation:");
+#line 85 "resources/gui/AddressEditDialog.xml"
+_("Title:");
+#line 102 "resources/gui/AddressEditDialog.xml"
+_("Firstname:");
+#line 119 "resources/gui/AddressEditDialog.xml"
+_("Name 1:");
+#line 137 "resources/gui/AddressEditDialog.xml"
+_("Name 2:");
+#line 154 "resources/gui/AddressEditDialog.xml"
+_("Name 3:");
+#line 171 "resources/gui/AddressEditDialog.xml"
+_("Name 4:");
+#line 188 "resources/gui/AddressEditDialog.xml"
+_("Address / number:");
+#line 224 "resources/gui/AddressEditDialog.xml"
+_("Zipcode / city:");
+#line 260 "resources/gui/AddressEditDialog.xml"
+_("Federal state:");
+#line 277 "resources/gui/AddressEditDialog.xml"
+_("Land:");
+#line 294 "resources/gui/AddressEditDialog.xml"
+_("Information:");
+#line 5 "resources/gui/AddressSelectDialog.xml"
+_("Choose address");
+#line 17 "resources/gui/AddressSelectDialog.xml"
+_("Use");
+#line 25 "resources/gui/AddressSelectDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/BankConnectionEditDialog.xml"
+_("Edit file");
+#line 17 "resources/gui/BankConnectionEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/BankConnectionEditDialog.xml"
+_("Browse");
+#line 33 "resources/gui/BankConnectionEditDialog.xml"
+_("Close");
+#line 65 "resources/gui/BankConnectionEditDialog.xml"
+_("Description:");
+#line 82 "resources/gui/BankConnectionEditDialog.xml"
+_("Bank:");
+#line 99 "resources/gui/BankConnectionEditDialog.xml"
+_("Bank code:");
+#line 116 "resources/gui/BankConnectionEditDialog.xml"
+_("Account number:");
+#line 133 "resources/gui/BankConnectionEditDialog.xml"
+_("BIC:");
+#line 150 "resources/gui/BankConnectionEditDialog.xml"
+_("IBAN:");
+#line 167 "resources/gui/BankConnectionEditDialog.xml"
+_("Bank owner:");
+#line 184 "resources/gui/BankConnectionEditDialog.xml"
+_("Reference number:");
+#line 201 "resources/gui/BankConnectionEditDialog.xml"
+_("Reference date:");
+#line 217 "resources/gui/BankConnectionEditDialog.xml"
+_("Reference state:");
+#line 227 "resources/gui/BankConnectionEditDialog.xml"
+_("once");
+#line 228 "resources/gui/BankConnectionEditDialog.xml"
+_("multiple");
+#line 239 "resources/gui/BankConnectionEditDialog.xml"
+_("Reference account:");
+#line 249 "resources/gui/BankConnectionEditDialog.xml"
+_("B2B");
+#line 250 "resources/gui/BankConnectionEditDialog.xml"
+_("B2C");
+#line 261 "resources/gui/BankConnectionEditDialog.xml"
+_("Notes:");
+#line 283 "resources/gui/BankConnectionEditDialog.xml"
+_("active");
+#line 5 "resources/gui/BankConnectionSelectDialog.xml"
+_("Choose bank");
+#line 17 "resources/gui/BankConnectionSelectDialog.xml"
+_("Use");
+#line 25 "resources/gui/BankConnectionSelectDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/BankEditDialog.xml"
+_("Edit bank data");
+#line 17 "resources/gui/BankEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/BankEditDialog.xml"
+_("Find");
+#line 33 "resources/gui/BankEditDialog.xml"
+_("Cancel");
+#line 57 "resources/gui/BankEditDialog.xml"
+_("Description:");
+#line 72 "resources/gui/BankEditDialog.xml"
+_("Bank:");
+#line 88 "resources/gui/BankEditDialog.xml"
+_("Bank code:");
+#line 104 "resources/gui/BankEditDialog.xml"
+_("Account number:");
+#line 120 "resources/gui/BankEditDialog.xml"
+_("Holder:");
+#line 5 "resources/gui/BanksFullFindDialog.xml"
+_("Find client(s)");
+#line 17 "resources/gui/BanksFullFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/BanksFullFindDialog.xml"
+_("Use");
+#line 33 "resources/gui/BanksFullFindDialog.xml"
+_("Cancel");
+#line 63 "resources/gui/BanksFullFindDialog.xml"
+_("Bank:");
+#line 81 "resources/gui/BanksFullFindDialog.xml"
+_("Bank code:");
+#line 98 "resources/gui/BanksFullFindDialog.xml"
+_("BIC:");
+#line 5 "resources/gui/BugDialog.xml"
+_("Send Bug");
+#line 17 "resources/gui/BugDialog.xml"
+_("Send");
+#line 25 "resources/gui/BugDialog.xml"
+_("Cancel");
+#line 50 "resources/gui/BugDialog.xml"
+_("Your name:");
+#line 68 "resources/gui/BugDialog.xml"
+_("Email:");
+#line 85 "resources/gui/BugDialog.xml"
+_("Bug:");
+#line 102 "resources/gui/BugDialog.xml"
+_("Module:");
+#line 111 "resources/gui/BugDialog.xml"
+_("Clients");
+#line 112 "resources/gui/BugDialog.xml"
+_("Products");
+#line 113 "resources/gui/BugDialog.xml"
+_("Orders");
+#line 114 "resources/gui/BugDialog.xml"
+_("Vouchers");
+#line 115 "resources/gui/BugDialog.xml"
+_("Monitions");
+#line 116 "resources/gui/BugDialog.xml"
+_("Reminders");
+#line 117 "resources/gui/BugDialog.xml"
+_("Statistics");
+#line 118 "resources/gui/BugDialog.xml"
+_("Files");
+#line 119 "resources/gui/BugDialog.xml"
+_("Reports");
+#line 120 "resources/gui/BugDialog.xml"
+_("Stocks");
+#line 121 "resources/gui/BugDialog.xml"
+_("Notes");
+#line 122 "resources/gui/BugDialog.xml"
+_("Preferences");
+#line 123 "resources/gui/BugDialog.xml"
+_("Other (please specify)");
+#line 134 "resources/gui/BugDialog.xml"
+_("Priority:");
+#line 143 "resources/gui/BugDialog.xml"
+_("low");
+#line 144 "resources/gui/BugDialog.xml"
+_("normal");
+#line 145 "resources/gui/BugDialog.xml"
+_("high");
+#line 146 "resources/gui/BugDialog.xml"
+_("very high");
+#line 157 "resources/gui/BugDialog.xml"
+_("Description:");
+#line 5 "resources/gui/CashJournalFrame.xml"
+_("Cash journal");
+#line 19 "resources/gui/CashJournalFrame.xml"
+_("Close");
+#line 5 "resources/gui/CategoryMoveDialog.xml"
+_("Edit file");
+#line 17 "resources/gui/CategoryMoveDialog.xml"
+_("Use");
+#line 25 "resources/gui/CategoryMoveDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/ClientEditFrame.xml"
+_("Edit client");
+#line 17 "resources/gui/ClientEditFrame.xml"
+_("Save");
+#line 25 "resources/gui/ClientEditFrame.xml"
+_("Print");
+#line 31 "resources/gui/ClientEditFrame.xml"
+_("Preview");
+#line 39 "resources/gui/ClientEditFrame.xml"
+_("Orders");
+#line 47 "resources/gui/ClientEditFrame.xml"
+_("Reminders");
+#line 55 "resources/gui/ClientEditFrame.xml"
+_("Hidden informations");
+#line 61 "resources/gui/ClientEditFrame.xml"
+_("Informations");
+#line 69 "resources/gui/ClientEditFrame.xml"
+_("Close");
+#line 85 "resources/gui/ClientEditFrame.xml"
+_("Client");
+#line 122 "resources/gui/ClientEditFrame.xml"
+_("Customer id:");
+#line 138 "resources/gui/ClientEditFrame.xml"
+_("Own customer id:");
+#line 154 "resources/gui/ClientEditFrame.xml"
+_("Kind:");
+#line 170 "resources/gui/ClientEditFrame.xml"
+_("Form:");
+#line 186 "resources/gui/ClientEditFrame.xml"
+_("Circular letter:");
+#line 202 "resources/gui/ClientEditFrame.xml"
+_("Salutation:");
+#line 218 "resources/gui/ClientEditFrame.xml"
+_("Title:");
+#line 234 "resources/gui/ClientEditFrame.xml"
+_("Firstname:");
+#line 250 "resources/gui/ClientEditFrame.xml"
+_("Name 1:");
+#line 267 "resources/gui/ClientEditFrame.xml"
+_("Name 2:");
+#line 283 "resources/gui/ClientEditFrame.xml"
+_("Birthday:");
+#line 301 "resources/gui/ClientEditFrame.xml"
+_(".");
+#line 314 "resources/gui/ClientEditFrame.xml"
+_(".");
+#line 350 "resources/gui/ClientEditFrame.xml"
+_("Short name:");
+#line 366 "resources/gui/ClientEditFrame.xml"
+_("Liable to tax on purchase:");
+#line 373 "resources/gui/ClientEditFrame.xml"
+_("yes");
+#line 382 "resources/gui/ClientEditFrame.xml"
+_("Group:");
+#line 398 "resources/gui/ClientEditFrame.xml"
+_("Sector:");
+#line 414 "resources/gui/ClientEditFrame.xml"
+_("Address / number:");
+#line 451 "resources/gui/ClientEditFrame.xml"
+_("Zipcode / city:");
+#line 488 "resources/gui/ClientEditFrame.xml"
+_("Federal state:");
+#line 505 "resources/gui/ClientEditFrame.xml"
+_("Land:");
+#line 522 "resources/gui/ClientEditFrame.xml"
+_("Name 3:");
+#line 538 "resources/gui/ClientEditFrame.xml"
+_("Name 4:");
+#line 554 "resources/gui/ClientEditFrame.xml"
+_("Active:");
+#line 561 "resources/gui/ClientEditFrame.xml"
+_("active");
+#line 583 "resources/gui/ClientEditFrame.xml"
+_("Contact");
+#line 612 "resources/gui/ClientEditFrame.xml"
+_("Telephone 1:");
+#line 640 "resources/gui/ClientEditFrame.xml"
+_("Telephone 2:");
+#line 668 "resources/gui/ClientEditFrame.xml"
+_("Telephone 3:");
+#line 696 "resources/gui/ClientEditFrame.xml"
+_("Fax 1:");
+#line 724 "resources/gui/ClientEditFrame.xml"
+_("Fax 2:");
+#line 752 "resources/gui/ClientEditFrame.xml"
+_("Fax 3:");
+#line 804 "resources/gui/ClientEditFrame.xml"
+_("Mobile 1:");
+#line 843 "resources/gui/ClientEditFrame.xml"
+_("Mobile 2:");
+#line 882 "resources/gui/ClientEditFrame.xml"
+_("Email 1:");
+#line 898 "resources/gui/ClientEditFrame.xml"
+_("Email 2:");
+#line 914 "resources/gui/ClientEditFrame.xml"
+_("Internet 1:");
+#line 930 "resources/gui/ClientEditFrame.xml"
+_("Internet 2:");
+#line 956 "resources/gui/ClientEditFrame.xml"
+_("Informations");
+#line 978 "resources/gui/ClientEditFrame.xml"
+_("Addresses");
+#line 1005 "resources/gui/ClientEditFrame.xml"
+_("Change address");
+#line 1017 "resources/gui/ClientEditFrame.xml"
+_("Remove address");
+#line 1029 "resources/gui/ClientEditFrame.xml"
+_("Add address");
+#line 1042 "resources/gui/ClientEditFrame.xml"
+_("Contact persons");
+#line 1069 "resources/gui/ClientEditFrame.xml"
+_("Remove contact person");
+#line 1081 "resources/gui/ClientEditFrame.xml"
+_("Add contact person");
+#line 1094 "resources/gui/ClientEditFrame.xml"
+_("Liquidity");
+#line 1117 "resources/gui/ClientEditFrame.xml"
+_("Default discount (%):");
+#line 1142 "resources/gui/ClientEditFrame.xml"
+_("%");
+#line 1154 "resources/gui/ClientEditFrame.xml"
+_("Tax number:");
+#line 1174 "resources/gui/ClientEditFrame.xml"
+_("Sales tax identification number:");
+#line 1192 "resources/gui/ClientEditFrame.xml"
+_("Condition:");
+#line 1212 "resources/gui/ClientEditFrame.xml"
+_("monitionable");
+#line 1227 "resources/gui/ClientEditFrame.xml"
+_("Bank connections");
+#line 1254 "resources/gui/ClientEditFrame.xml"
+_("Remove bank connection");
+#line 1266 "resources/gui/ClientEditFrame.xml"
+_("Add bank connection");
+#line 1290 "resources/gui/ClientEditFrame.xml"
+_("More data");
+#line 1302 "resources/gui/ClientEditFrame.xml"
+_("Media");
+#line 5 "resources/gui/ClientOrdersDialog.xml"
+_("Orders");
+#line 17 "resources/gui/ClientOrdersDialog.xml"
+_("Update");
+#line 25 "resources/gui/ClientOrdersDialog.xml"
+_("New");
+#line 31 "resources/gui/ClientOrdersDialog.xml"
+_("Edit");
+#line 37 "resources/gui/ClientOrdersDialog.xml"
+_("Remove");
+#line 45 "resources/gui/ClientOrdersDialog.xml"
+_("Find");
+#line 53 "resources/gui/ClientOrdersDialog.xml"
+_("Export");
+#line 61 "resources/gui/ClientOrdersDialog.xml"
+_("Use");
+#line 69 "resources/gui/ClientOrdersDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/ClientsFindDialog.xml"
+_("Find client(s)");
+#line 17 "resources/gui/ClientsFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/ClientsFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/ClientsFindDialog.xml"
+_("Customer id:");
+#line 62 "resources/gui/ClientsFindDialog.xml"
+_("Salutation:");
+#line 77 "resources/gui/ClientsFindDialog.xml"
+_("Title:");
+#line 92 "resources/gui/ClientsFindDialog.xml"
+_("Firstname:");
+#line 107 "resources/gui/ClientsFindDialog.xml"
+_("Name:");
+#line 122 "resources/gui/ClientsFindDialog.xml"
+_("Address:");
+#line 137 "resources/gui/ClientsFindDialog.xml"
+_("Zipcode / city:");
+#line 171 "resources/gui/ClientsFindDialog.xml"
+_("Land:");
+#line 186 "resources/gui/ClientsFindDialog.xml"
+_("Email:");
+#line 5 "resources/gui/ClientsFullFindDialog.xml"
+_("Find client(s)");
+#line 17 "resources/gui/ClientsFullFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/ClientsFullFindDialog.xml"
+_("Use");
+#line 33 "resources/gui/ClientsFullFindDialog.xml"
+_("Cancel");
+#line 61 "resources/gui/ClientsFullFindDialog.xml"
+_("Customer id:");
+#line 75 "resources/gui/ClientsFullFindDialog.xml"
+_("Salutation:");
+#line 90 "resources/gui/ClientsFullFindDialog.xml"
+_("Title:");
+#line 105 "resources/gui/ClientsFullFindDialog.xml"
+_("Firstname:");
+#line 120 "resources/gui/ClientsFullFindDialog.xml"
+_("Name:");
+#line 135 "resources/gui/ClientsFullFindDialog.xml"
+_("Address:");
+#line 150 "resources/gui/ClientsFullFindDialog.xml"
+_("Zipcode / city:");
+#line 184 "resources/gui/ClientsFullFindDialog.xml"
+_("Land:");
+#line 199 "resources/gui/ClientsFullFindDialog.xml"
+_("Email:");
+#line 16 "resources/gui/ClientsModulePanel.xml"
+_("New");
+#line 22 "resources/gui/ClientsModulePanel.xml"
+_("Edit");
+#line 28 "resources/gui/ClientsModulePanel.xml"
+_("Remove");
+#line 36 "resources/gui/ClientsModulePanel.xml"
+_("Find");
+#line 44 "resources/gui/ClientsModulePanel.xml"
+_("Export");
+#line 5 "resources/gui/ConfigurationDialog.xml"
+_("Database Wizard");
+#line 17 "resources/gui/ConfigurationDialog.xml"
+_("Run");
+#line 24 "resources/gui/ConfigurationDialog.xml"
+_("Manual");
+#line 32 "resources/gui/ConfigurationDialog.xml"
+_("Cancel");
+#line 68 "resources/gui/ConfigurationDialog.xml"
+_("1) Create enterprise:");
+#line 84 "resources/gui/ConfigurationDialog.xml"
+_("Enterprise:");
+#line 96 "resources/gui/ConfigurationDialog.xml"
+_("Database:");
+#line 127 "resources/gui/ConfigurationDialog.xml"
+_("2) Create databases:");
+#line 138 "resources/gui/ConfigurationDialog.xml"
+_("automatic");
+#line 169 "resources/gui/ConfigurationDialog.xml"
+_("Hostname:");
+#line 178 "resources/gui/ConfigurationDialog.xml"
+_("localhost");
+#line 189 "resources/gui/ConfigurationDialog.xml"
+_("Database:");
+#line 198 "resources/gui/ConfigurationDialog.xml"
+_("warehouse");
+#line 209 "resources/gui/ConfigurationDialog.xml"
+_("Username:");
+#line 218 "resources/gui/ConfigurationDialog.xml"
+_("postgres");
+#line 229 "resources/gui/ConfigurationDialog.xml"
+_("Password:");
+#line 239 "resources/gui/ConfigurationDialog.xml"
+_("postgres");
+#line 249 "resources/gui/ConfigurationDialog.xml"
+_("Port:");
+#line 258 "resources/gui/ConfigurationDialog.xml"
+_("5432");
+#line 5 "resources/gui/ContactDialog.xml"
+_("Send message to us");
+#line 17 "resources/gui/ContactDialog.xml"
+_("Send");
+#line 25 "resources/gui/ContactDialog.xml"
+_("Cancel");
+#line 50 "resources/gui/ContactDialog.xml"
+_("Your name:");
+#line 68 "resources/gui/ContactDialog.xml"
+_("Email:");
+#line 85 "resources/gui/ContactDialog.xml"
+_("Subject:");
+#line 102 "resources/gui/ContactDialog.xml"
+_("Message:");
+#line 5 "resources/gui/ContactPersonEditDialog.xml"
+_("Edit contact person");
+#line 17 "resources/gui/ContactPersonEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/ContactPersonEditDialog.xml"
+_("Close");
+#line 50 "resources/gui/ContactPersonEditDialog.xml"
+_("Function:");
+#line 68 "resources/gui/ContactPersonEditDialog.xml"
+_("Department:");
+#line 85 "resources/gui/ContactPersonEditDialog.xml"
+_("Salutation:");
+#line 102 "resources/gui/ContactPersonEditDialog.xml"
+_("Title:");
+#line 119 "resources/gui/ContactPersonEditDialog.xml"
+_("Firstname:");
+#line 136 "resources/gui/ContactPersonEditDialog.xml"
+_("Lastname:");
+#line 154 "resources/gui/ContactPersonEditDialog.xml"
+_("Telephone:");
+#line 193 "resources/gui/ContactPersonEditDialog.xml"
+_("Mobile:");
+#line 232 "resources/gui/ContactPersonEditDialog.xml"
+_("Fax:");
+#line 271 "resources/gui/ContactPersonEditDialog.xml"
+_("Email:");
+#line 288 "resources/gui/ContactPersonEditDialog.xml"
+_("Internet:");
+#line 305 "resources/gui/ContactPersonEditDialog.xml"
+_("Information:");
+#line 5 "resources/gui/CreditCardEditDialog.xml"
+_("Edit credit card data");
+#line 17 "resources/gui/CreditCardEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/CreditCardEditDialog.xml"
+_("Cancel");
+#line 49 "resources/gui/CreditCardEditDialog.xml"
+_("Description:");
+#line 64 "resources/gui/CreditCardEditDialog.xml"
+_("Card:");
+#line 79 "resources/gui/CreditCardEditDialog.xml"
+_("Card number:");
+#line 94 "resources/gui/CreditCardEditDialog.xml"
+_("Holder:");
+#line 109 "resources/gui/CreditCardEditDialog.xml"
+_("Security:");
+#line 122 "resources/gui/CreditCardEditDialog.xml"
+_("Expiration:");
+#line 5 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Database Configuration");
+#line 17 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Save");
+#line 25 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Test connection");
+#line 31 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Create new database");
+#line 39 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Cancel");
+#line 62 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Hostname:");
+#line 71 "resources/gui/DatabaseConfigurationDialog.xml"
+_("localhost");
+#line 81 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Database:");
+#line 100 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Username:");
+#line 119 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Password:");
+#line 135 "resources/gui/DatabaseConfigurationDialog.xml"
+_("Port:");
+#line 5 "resources/gui/DemoVersionDialog.xml"
+_("Demo Version");
+#line 53 "resources/gui/DemoVersionDialog.xml"
+_("DynSoft.com - Thorsten Geppert");
+#line 61 "resources/gui/DemoVersionDialog.xml"
+_("More informations about Warehouse");
+#line 69 "resources/gui/DemoVersionDialog.xml"
+_("Customer center");
+#line 77 "resources/gui/DemoVersionDialog.xml"
+_("Register for free");
+#line 127 "resources/gui/DemoVersionDialog.xml"
+_("Close");
+#line 5 "resources/gui/EditedInformationsDialog.xml"
+_("Informations");
+#line 22 "resources/gui/EditedInformationsDialog.xml"
+_("Created by:");
+#line 31 "resources/gui/EditedInformationsDialog.xml"
+_("- Unknown -");
+#line 44 "resources/gui/EditedInformationsDialog.xml"
+_("Created at:");
+#line 53 "resources/gui/EditedInformationsDialog.xml"
+_("- Unknown -");
+#line 66 "resources/gui/EditedInformationsDialog.xml"
+_("Changed by:");
+#line 75 "resources/gui/EditedInformationsDialog.xml"
+_("- Unknown -");
+#line 88 "resources/gui/EditedInformationsDialog.xml"
+_("Changed at:");
+#line 97 "resources/gui/EditedInformationsDialog.xml"
+_("- Unknown -");
+#line 5 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Enterprise Configuration");
+#line 17 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("New");
+#line 23 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Remove");
+#line 31 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Save");
+#line 37 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Test connection");
+#line 43 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Create new database");
+#line 49 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Cancel");
+#line 57 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Close");
+#line 94 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Comany and Database");
+#line 116 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Company:");
+#line 132 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Hostname:");
+#line 142 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("localhost");
+#line 152 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Database:");
+#line 168 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Username:");
+#line 178 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("root");
+#line 188 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Password:");
+#line 205 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("Port:");
+#line 215 "resources/gui/EnterpriseConfigurationDialog.xml"
+_("5432");
+#line 5 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Create enterprise database");
+#line 17 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Run");
+#line 25 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Cancel");
+#line 47 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Master data");
+#line 69 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Company:");
+#line 87 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Executive:");
+#line 104 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Address 1:");
+#line 122 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Address 2:");
+#line 139 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Zipcode/city:");
+#line 176 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Telephone:");
+#line 194 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Fax:");
+#line 211 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Email:");
+#line 228 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Web:");
+#line 248 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Financial");
+#line 270 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Sales tax identification number:");
+#line 287 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Tax number:");
+#line 304 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Sales tax indicator:");
+#line 321 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Bank:");
+#line 338 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Bank code:");
+#line 354 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Account number:");
+#line 370 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("BIC:");
+#line 387 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("IBAN:");
+#line 404 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Holder:");
+#line 424 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Tax");
+#line 445 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Minor value added tax:");
+#line 451 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("7,00");
+#line 468 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Major value added tax:");
+#line 474 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("19,00");
+#line 481 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("%");
+#line 494 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Numbers");
+#line 515 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Client id begin:");
+#line 531 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Product id begin:");
+#line 547 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Order id begin:");
+#line 563 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Invoice id begin:");
+#line 579 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Credit id begin:");
+#line 595 "resources/gui/EnterpriseCreateDatabaseDialog.xml"
+_("Purchase id begin:");
+#line 5 "resources/gui/ExportDialog.xml"
+_("Export preferences");
+#line 17 "resources/gui/ExportDialog.xml"
+_("Run");
+#line 25 "resources/gui/ExportDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/ExportDialog.xml"
+_("File:");
+#line 73 "resources/gui/ExportDialog.xml"
+_("Browse");
+#line 85 "resources/gui/ExportDialog.xml"
+_("Field delimiter:");
+#line 96 "resources/gui/ExportDialog.xml"
+_(";");
+#line 97 "resources/gui/ExportDialog.xml"
+_(",");
+#line 98 "resources/gui/ExportDialog.xml"
+_("{tab}");
+#line 99 "resources/gui/ExportDialog.xml"
+_("|");
+#line 111 "resources/gui/ExportDialog.xml"
+_("Text delimiter:");
+#line 122 "resources/gui/ExportDialog.xml"
+_(""");
+#line 123 "resources/gui/ExportDialog.xml"
+_("'");
+#line 135 "resources/gui/ExportDialog.xml"
+_("Linefeed:");
+#line 146 "resources/gui/ExportDialog.xml"
+_("Mac OS X / Unix / Linux (Windows)");
+#line 147 "resources/gui/ExportDialog.xml"
+_("Windows");
+#line 148 "resources/gui/ExportDialog.xml"
+_("Mac OS 9 and older");
+#line 159 "resources/gui/ExportDialog.xml"
+_("Replace inner linefeeds:");
+#line 166 "resources/gui/ExportDialog.xml"
+_("yes");
+#line 176 "resources/gui/ExportDialog.xml"
+_("Replace inner linefeeds with:");
+#line 5 "resources/gui/ExportProgressDialog.xml"
+_("Export progress");
+#line 17 "resources/gui/ExportProgressDialog.xml"
+_("Cancel");
+#line 35 "resources/gui/ExportProgressDialog.xml"
+_("Status:");
+#line 50 "resources/gui/ExportProgressDialog.xml"
+_("Please wait...");
+#line 62 "resources/gui/ExportProgressDialog.xml"
+_("Preparing:");
+#line 87 "resources/gui/ExportProgressDialog.xml"
+_("Exporting:");
+#line 5 "resources/gui/FileEditDialog.xml"
+_("Edit file");
+#line 17 "resources/gui/FileEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/FileEditDialog.xml"
+_("Browse");
+#line 33 "resources/gui/FileEditDialog.xml"
+_("Close");
+#line 65 "resources/gui/FileEditDialog.xml"
+_("File:");
+#line 81 "resources/gui/FileEditDialog.xml"
+_("Name:");
+#line 97 "resources/gui/FileEditDialog.xml"
+_("Description:");
+#line 5 "resources/gui/FileOpenOrDownloadDialog.xml"
+_("Choose");
+#line 22 "resources/gui/FileOpenOrDownloadDialog.xml"
+_("Open file");
+#line 34 "resources/gui/FileOpenOrDownloadDialog.xml"
+_("Download file");
+#line 16 "resources/gui/FilesModulePanel.xml"
+_("Reload");
+#line 24 "resources/gui/FilesModulePanel.xml"
+_("New category");
+#line 30 "resources/gui/FilesModulePanel.xml"
+_("Edit category");
+#line 36 "resources/gui/FilesModulePanel.xml"
+_("Remove category");
+#line 44 "resources/gui/FilesModulePanel.xml"
+_("New file");
+#line 50 "resources/gui/FilesModulePanel.xml"
+_("Edit file");
+#line 56 "resources/gui/FilesModulePanel.xml"
+_("Remove file");
+#line 62 "resources/gui/FilesModulePanel.xml"
+_("Move file");
+#line 70 "resources/gui/FilesModulePanel.xml"
+_("Download file");
+#line 17 "resources/gui/HtmlEditPanel.xml"
+_("Copy");
+#line 23 "resources/gui/HtmlEditPanel.xml"
+_("Cut");
+#line 29 "resources/gui/HtmlEditPanel.xml"
+_("Paste");
+#line 37 "resources/gui/HtmlEditPanel.xml"
+_("Bold");
+#line 43 "resources/gui/HtmlEditPanel.xml"
+_("Italic");
+#line 49 "resources/gui/HtmlEditPanel.xml"
+_("Underline");
+#line 57 "resources/gui/HtmlEditPanel.xml"
+_("Table");
+#line 5 "resources/gui/HtmlTableCreationDialog.xml"
+_("Create table");
+#line 17 "resources/gui/HtmlTableCreationDialog.xml"
+_("Insert");
+#line 25 "resources/gui/HtmlTableCreationDialog.xml"
+_("Cancel");
+#line 44 "resources/gui/HtmlTableCreationDialog.xml"
+_("Columns:");
+#line 57 "resources/gui/HtmlTableCreationDialog.xml"
+_("Rows:");
+#line 74 "resources/gui/HtmlTableCreationDialog.xml"
+_("create border");
+#line 5 "resources/gui/InformationDialog.xml"
+_("Information");
+#line 33 "resources/gui/InformationDialog.xml"
+_("Common");
+#line 43 "resources/gui/InformationDialog.xml"
+_("Credits");
+#line 53 "resources/gui/InformationDialog.xml"
+_("GTC");
+#line 5 "resources/gui/InvoiceDialog.xml"
+_("Invoice");
+#line 17 "resources/gui/InvoiceDialog.xml"
+_("Set invoiced");
+#line 25 "resources/gui/InvoiceDialog.xml"
+_("Cancel");
+#line 42 "resources/gui/InvoiceDialog.xml"
+_("Invoice date:");
+#line 5 "resources/gui/JasperReportsSelectionDialog.xml"
+_("Select report");
+#line 17 "resources/gui/JasperReportsSelectionDialog.xml"
+_("Use");
+#line 25 "resources/gui/JasperReportsSelectionDialog.xml"
+_("Cancel");
+#line 53 "resources/gui/JasperReportsSelectionDialog.xml"
+_("Report:");
+#line 70 "resources/gui/JasperReportsSelectionDialog.xml"
+_("Description:");
+#line 5 "resources/gui/LogDialog.xml"
+_("Log");
+#line 18 "resources/gui/LogDialog.xml"
+_("Reload");
+#line 26 "resources/gui/LogDialog.xml"
+_("Find");
+#line 34 "resources/gui/LogDialog.xml"
+_("Export");
+#line 42 "resources/gui/LogDialog.xml"
+_("Close");
+#line 5 "resources/gui/LogFindDialog.xml"
+_("Find client(s)");
+#line 17 "resources/gui/LogFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/LogFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/LogFindDialog.xml"
+_("Error:");
+#line 65 "resources/gui/LogFindDialog.xml"
+_("User:");
+#line 81 "resources/gui/LogFindDialog.xml"
+_("Module:");
+#line 5 "resources/gui/LoginDialog.xml"
+_("Login");
+#line 41 "resources/gui/LoginDialog.xml"
+_("Enterprise:");
+#line 76 "resources/gui/LoginDialog.xml"
+_("Username:");
+#line 92 "resources/gui/LoginDialog.xml"
+_("Password:");
+#line 131 "resources/gui/LoginDialog.xml"
+_("Information");
+#line 142 "resources/gui/LoginDialog.xml"
+_("Help");
+#line 154 "resources/gui/LoginDialog.xml"
+_("Licence number");
+#line 166 "resources/gui/LoginDialog.xml"
+_("Cancel");
+#line 178 "resources/gui/LoginDialog.xml"
+_("Login");
+#line 33 "resources/gui/MediaPanel.xml"
+_("Add selected file as:");
+#line 51 "resources/gui/MediaPanel.xml"
+_("Add");
+#line 84 "resources/gui/MediaPanel.xml"
+_("Change selected description:");
+#line 109 "resources/gui/MediaPanel.xml"
+_("change");
+#line 118 "resources/gui/MediaPanel.xml"
+_("Remove");
+#line 5 "resources/gui/MonitionsFrame.xml"
+_("Monitions");
+#line 17 "resources/gui/MonitionsFrame.xml"
+_("Update");
+#line 25 "resources/gui/MonitionsFrame.xml"
+_("Find client");
+#line 33 "resources/gui/MonitionsFrame.xml"
+_("All");
+#line 39 "resources/gui/MonitionsFrame.xml"
+_("None");
+#line 47 "resources/gui/MonitionsFrame.xml"
+_("Set +1");
+#line 53 "resources/gui/MonitionsFrame.xml"
+_("Set -1");
+#line 61 "resources/gui/MonitionsFrame.xml"
+_("Texts");
+#line 69 "resources/gui/MonitionsFrame.xml"
+_("Run");
+#line 77 "resources/gui/MonitionsFrame.xml"
+_("Close");
+#line 102 "resources/gui/MonitionsFrame.xml"
+_("Customer id:");
+#line 121 "resources/gui/MonitionsFrame.xml"
+_("Order id:");
+#line 140 "resources/gui/MonitionsFrame.xml"
+_("Invoice id:");
+#line 159 "resources/gui/MonitionsFrame.xml"
+_("Date from:");
+#line 177 "resources/gui/MonitionsFrame.xml"
+_("Date to:");
+#line 195 "resources/gui/MonitionsFrame.xml"
+_("State:");
+#line 216 "resources/gui/MonitionsFrame.xml"
+_("Monition price:");
+#line 5 "resources/gui/MonitionsTextsDialog.xml"
+_("Monitions texts");
+#line 17 "resources/gui/MonitionsTextsDialog.xml"
+_("Save");
+#line 25 "resources/gui/MonitionsTextsDialog.xml"
+_("Close");
+#line 63 "resources/gui/MonitionsTextsDialog.xml"
+_("Prepend text");
+#line 85 "resources/gui/MonitionsTextsDialog.xml"
+_("Append text");
+#line 30 "resources/gui/MoreDataPanel.xml"
+_("Description:");
+#line 47 "resources/gui/MoreDataPanel.xml"
+_("Value:");
+#line 65 "resources/gui/MoreDataPanel.xml"
+_("Add");
+#line 72 "resources/gui/MoreDataPanel.xml"
+_("Abort");
+#line 100 "resources/gui/MoreDataPanel.xml"
+_("Remove");
+#line 16 "resources/gui/NotesModulePanel.xml"
+_("New");
+#line 22 "resources/gui/NotesModulePanel.xml"
+_("Edit");
+#line 28 "resources/gui/NotesModulePanel.xml"
+_("Remove");
+#line 36 "resources/gui/NotesModulePanel.xml"
+_("Print");
+#line 42 "resources/gui/NotesModulePanel.xml"
+_("Preview");
+#line 50 "resources/gui/NotesModulePanel.xml"
+_("Update");
+#line 58 "resources/gui/NotesModulePanel.xml"
+_("Templates");
+#line 66 "resources/gui/NotesModulePanel.xml"
+_("Export");
+#line 72 "resources/gui/NotesModulePanel.xml"
+_("Import");
+#line 80 "resources/gui/NotesModulePanel.xml"
+_("Informations");
+#line 5 "resources/gui/OrderEditFrame.xml"
+_("Edit order");
+#line 17 "resources/gui/OrderEditFrame.xml"
+_("Save");
+#line 25 "resources/gui/OrderEditFrame.xml"
+_("Print");
+#line 31 "resources/gui/OrderEditFrame.xml"
+_("Preview");
+#line 39 "resources/gui/OrderEditFrame.xml"
+_("Find client");
+#line 47 "resources/gui/OrderEditFrame.xml"
+_("Invoicing");
+#line 53 "resources/gui/OrderEditFrame.xml"
+_("Payed/Unpayed");
+#line 61 "resources/gui/OrderEditFrame.xml"
+_("Reminders");
+#line 69 "resources/gui/OrderEditFrame.xml"
+_("Informations");
+#line 77 "resources/gui/OrderEditFrame.xml"
+_("Close");
+#line 108 "resources/gui/OrderEditFrame.xml"
+_("Order id:");
+#line 126 "resources/gui/OrderEditFrame.xml"
+_("Based on:");
+#line 143 "resources/gui/OrderEditFrame.xml"
+_("Kind:");
+#line 161 "resources/gui/OrderEditFrame.xml"
+_("Client id:");
+#line 178 "resources/gui/OrderEditFrame.xml"
+_("Own customer id:");
+#line 194 "resources/gui/OrderEditFrame.xml"
+_("Sales tax identification number:");
+#line 211 "resources/gui/OrderEditFrame.xml"
+_("Tax number:");
+#line 228 "resources/gui/OrderEditFrame.xml"
+_("Taxing:");
+#line 246 "resources/gui/OrderEditFrame.xml"
+_("Date:");
+#line 263 "resources/gui/OrderEditFrame.xml"
+_("Owner:");
+#line 288 "resources/gui/OrderEditFrame.xml"
+_("Negate position prices");
+#line 308 "resources/gui/OrderEditFrame.xml"
+_("Addresses");
+#line 323 "resources/gui/OrderEditFrame.xml"
+_("Billing address");
+#line 335 "resources/gui/OrderEditFrame.xml"
+_("Transfer address from client");
+#line 354 "resources/gui/OrderEditFrame.xml"
+_("Salutation:");
+#line 371 "resources/gui/OrderEditFrame.xml"
+_("Title:");
+#line 388 "resources/gui/OrderEditFrame.xml"
+_("Firstname:");
+#line 405 "resources/gui/OrderEditFrame.xml"
+_("Name 1:");
+#line 423 "resources/gui/OrderEditFrame.xml"
+_("Name 2:");
+#line 440 "resources/gui/OrderEditFrame.xml"
+_("Name 3:");
+#line 457 "resources/gui/OrderEditFrame.xml"
+_("Name 4:");
+#line 474 "resources/gui/OrderEditFrame.xml"
+_("Address / number:");
+#line 514 "resources/gui/OrderEditFrame.xml"
+_("Zipcode / city:");
+#line 554 "resources/gui/OrderEditFrame.xml"
+_("Federal state:");
+#line 571 "resources/gui/OrderEditFrame.xml"
+_("Land:");
+#line 588 "resources/gui/OrderEditFrame.xml"
+_("Translated address:");
+#line 602 "resources/gui/OrderEditFrame.xml"
+_("Edit or select");
+#line 631 "resources/gui/OrderEditFrame.xml"
+_("Shipping address");
+#line 643 "resources/gui/OrderEditFrame.xml"
+_("Transfer address from client");
+#line 662 "resources/gui/OrderEditFrame.xml"
+_("Salutation:");
+#line 679 "resources/gui/OrderEditFrame.xml"
+_("Title:");
+#line 696 "resources/gui/OrderEditFrame.xml"
+_("Firstname:");
+#line 713 "resources/gui/OrderEditFrame.xml"
+_("Name 1:");
+#line 730 "resources/gui/OrderEditFrame.xml"
+_("Name 2:");
+#line 747 "resources/gui/OrderEditFrame.xml"
+_("Name 3:");
+#line 764 "resources/gui/OrderEditFrame.xml"
+_("Name 4:");
+#line 781 "resources/gui/OrderEditFrame.xml"
+_("Address / number:");
+#line 820 "resources/gui/OrderEditFrame.xml"
+_("Zipcode / city:");
+#line 859 "resources/gui/OrderEditFrame.xml"
+_("Federal state:");
+#line 876 "resources/gui/OrderEditFrame.xml"
+_("Land:");
+#line 893 "resources/gui/OrderEditFrame.xml"
+_("Translated address:");
+#line 907 "resources/gui/OrderEditFrame.xml"
+_("Edit or select");
+#line 943 "resources/gui/OrderEditFrame.xml"
+_("Positions");
+#line 979 "resources/gui/OrderEditFrame.xml"
+_("Position down");
+#line 991 "resources/gui/OrderEditFrame.xml"
+_("Position up");
+#line 1003 "resources/gui/OrderEditFrame.xml"
+_("Remove position");
+#line 1015 "resources/gui/OrderEditFrame.xml"
+_("Edit position");
+#line 1027 "resources/gui/OrderEditFrame.xml"
+_("Add position");
+#line 1041 "resources/gui/OrderEditFrame.xml"
+_("Linked orders");
+#line 1077 "resources/gui/OrderEditFrame.xml"
+_("Order down");
+#line 1089 "resources/gui/OrderEditFrame.xml"
+_("Order up");
+#line 1101 "resources/gui/OrderEditFrame.xml"
+_("Unlink order");
+#line 1113 "resources/gui/OrderEditFrame.xml"
+_("Link order");
+#line 1127 "resources/gui/OrderEditFrame.xml"
+_("Monetary and texts");
+#line 1151 "resources/gui/OrderEditFrame.xml"
+_("Condition:");
+#line 1168 "resources/gui/OrderEditFrame.xml"
+_("Payment:");
+#line 1195 "resources/gui/OrderEditFrame.xml"
+_("Monition:");
+#line 1205 "resources/gui/OrderEditFrame.xml"
+_("yes");
+#line 1215 "resources/gui/OrderEditFrame.xml"
+_("Monition state: 0");
+#line 1228 "resources/gui/OrderEditFrame.xml"
+_("Bank:");
+#line 1250 "resources/gui/OrderEditFrame.xml"
+_("Transfer bank data from client");
+#line 1259 "resources/gui/OrderEditFrame.xml"
+_("Find");
+#line 1271 "resources/gui/OrderEditFrame.xml"
+_("Bank code:");
+#line 1287 "resources/gui/OrderEditFrame.xml"
+_("Account number:");
+#line 1303 "resources/gui/OrderEditFrame.xml"
+_("BIC:");
+#line 1319 "resources/gui/OrderEditFrame.xml"
+_("IBAN:");
+#line 1335 "resources/gui/OrderEditFrame.xml"
+_("Bank owner:");
+#line 1372 "resources/gui/OrderEditFrame.xml"
+_("Liable to tax on purchase");
+#line 1384 "resources/gui/OrderEditFrame.xml"
+_("Delivery:");
+#line 1400 "resources/gui/OrderEditFrame.xml"
+_("Order number:");
+#line 1416 "resources/gui/OrderEditFrame.xml"
+_("Prepand text:");
+#line 1441 "resources/gui/OrderEditFrame.xml"
+_("Append text:");
+#line 1469 "resources/gui/OrderEditFrame.xml"
+_("More data");
+#line 1481 "resources/gui/OrderEditFrame.xml"
+_("Media");
+#line 5 "resources/gui/OrderPositionEditDialog.xml"
+_("Edit position");
+#line 17 "resources/gui/OrderPositionEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/OrderPositionEditDialog.xml"
+_("Find article");
+#line 33 "resources/gui/OrderPositionEditDialog.xml"
+_("Close");
+#line 59 "resources/gui/OrderPositionEditDialog.xml"
+_("Amount:");
+#line 74 "resources/gui/OrderPositionEditDialog.xml"
+_("Product id:");
+#line 88 "resources/gui/OrderPositionEditDialog.xml"
+_("Stock reservation:");
+#line 120 "resources/gui/OrderPositionEditDialog.xml"
+_("Product informations:");
+#line 139 "resources/gui/OrderPositionEditDialog.xml"
+_("Text:");
+#line 159 "resources/gui/OrderPositionEditDialog.xml"
+_("Price:");
+#line 173 "resources/gui/OrderPositionEditDialog.xml"
+_("Reduction (%):");
+#line 187 "resources/gui/OrderPositionEditDialog.xml"
+_("Sum:");
+#line 192 "resources/gui/OrderPositionEditDialog.xml"
+_("0,00");
+#line 5 "resources/gui/OrdersFindDialog.xml"
+_("Find order(s)");
+#line 17 "resources/gui/OrdersFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/OrdersFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/OrdersFindDialog.xml"
+_("Kind:");
+#line 65 "resources/gui/OrdersFindDialog.xml"
+_("Order id:");
+#line 80 "resources/gui/OrdersFindDialog.xml"
+_("Invoice id:");
+#line 94 "resources/gui/OrdersFindDialog.xml"
+_("Customer id:");
+#line 109 "resources/gui/OrdersFindDialog.xml"
+_("Salutation:");
+#line 125 "resources/gui/OrdersFindDialog.xml"
+_("Title:");
+#line 141 "resources/gui/OrdersFindDialog.xml"
+_("Firstname:");
+#line 157 "resources/gui/OrdersFindDialog.xml"
+_("Name:");
+#line 173 "resources/gui/OrdersFindDialog.xml"
+_("Address:");
+#line 189 "resources/gui/OrdersFindDialog.xml"
+_("Zipcode / city:");
+#line 224 "resources/gui/OrdersFindDialog.xml"
+_("Land:");
+#line 240 "resources/gui/OrdersFindDialog.xml"
+_("Only unpayed:");
+#line 256 "resources/gui/OrdersFindDialog.xml"
+_("Year:");
+#line 16 "resources/gui/OrdersModulePanel.xml"
+_("New");
+#line 22 "resources/gui/OrdersModulePanel.xml"
+_("Copy");
+#line 28 "resources/gui/OrdersModulePanel.xml"
+_("Edit");
+#line 34 "resources/gui/OrdersModulePanel.xml"
+_("Remove");
+#line 42 "resources/gui/OrdersModulePanel.xml"
+_("Find");
+#line 50 "resources/gui/OrdersModulePanel.xml"
+_("Payed/Unpayed");
+#line 56 "resources/gui/OrdersModulePanel.xml"
+_("Monitions");
+#line 64 "resources/gui/OrdersModulePanel.xml"
+_("Export");
+#line 5 "resources/gui/PayedDialog.xml"
+_("Set payed");
+#line 17 "resources/gui/PayedDialog.xml"
+_("Set payed");
+#line 25 "resources/gui/PayedDialog.xml"
+_("Cancel");
+#line 42 "resources/gui/PayedDialog.xml"
+_("Payed date:");
+#line 16 "resources/gui/PreferencesModulePanel.xml"
+_("Log");
+#line 38 "resources/gui/PreferencesModulePanel.xml"
+_("Help");
+#line 44 "resources/gui/PreferencesModulePanel.xml"
+_("Information");
+#line 72 "resources/gui/PreferencesModulePanel.xml"
+_("Informations");
+#line 88 "resources/gui/PreferencesModulePanel.xml"
+_("Informations");
+#line 105 "resources/gui/PreferencesModulePanel.xml"
+_("Version:");
+#line 125 "resources/gui/PreferencesModulePanel.xml"
+_("0.0.0");
+#line 135 "resources/gui/PreferencesModulePanel.xml"
+_("Check for updates now");
+#line 178 "resources/gui/PreferencesModulePanel.xml"
+_("Connection");
+#line 203 "resources/gui/PreferencesModulePanel.xml"
+_("System");
+#line 236 "resources/gui/PreferencesModulePanel.xml"
+_("Enterprises preferences");
+#line 252 "resources/gui/PreferencesModulePanel.xml"
+_("Master data");
+#line 274 "resources/gui/PreferencesModulePanel.xml"
+_("Company:");
+#line 292 "resources/gui/PreferencesModulePanel.xml"
+_("Executive:");
+#line 309 "resources/gui/PreferencesModulePanel.xml"
+_("Address 1:");
+#line 327 "resources/gui/PreferencesModulePanel.xml"
+_("Address 2:");
+#line 344 "resources/gui/PreferencesModulePanel.xml"
+_("Zipcode/city:");
+#line 381 "resources/gui/PreferencesModulePanel.xml"
+_("Telephone:");
+#line 399 "resources/gui/PreferencesModulePanel.xml"
+_("Fax:");
+#line 416 "resources/gui/PreferencesModulePanel.xml"
+_("Email:");
+#line 433 "resources/gui/PreferencesModulePanel.xml"
+_("Web:");
+#line 453 "resources/gui/PreferencesModulePanel.xml"
+_("Financial");
+#line 475 "resources/gui/PreferencesModulePanel.xml"
+_("Sales tax identification number:");
+#line 492 "resources/gui/PreferencesModulePanel.xml"
+_("Tax number:");
+#line 509 "resources/gui/PreferencesModulePanel.xml"
+_("Sales tax indicator:");
+#line 526 "resources/gui/PreferencesModulePanel.xml"
+_("Bank:");
+#line 550 "resources/gui/PreferencesModulePanel.xml"
+_("Find");
+#line 562 "resources/gui/PreferencesModulePanel.xml"
+_("Bank code:");
+#line 579 "resources/gui/PreferencesModulePanel.xml"
+_("Account number:");
+#line 596 "resources/gui/PreferencesModulePanel.xml"
+_("BIC:");
+#line 613 "resources/gui/PreferencesModulePanel.xml"
+_("IBAN:");
+#line 630 "resources/gui/PreferencesModulePanel.xml"
+_("Holder:");
+#line 650 "resources/gui/PreferencesModulePanel.xml"
+_("Mandatory fields");
+#line 674 "resources/gui/PreferencesModulePanel.xml"
+_("Clients");
+#line 703 "resources/gui/PreferencesModulePanel.xml"
+_("Own customer id");
+#line 723 "resources/gui/PreferencesModulePanel.xml"
+_("Products");
+#line 752 "resources/gui/PreferencesModulePanel.xml"
+_("Article number");
+#line 773 "resources/gui/PreferencesModulePanel.xml"
+_("Save changes");
+#line 785 "resources/gui/PreferencesModulePanel.xml"
+_("Common preferences");
+#line 800 "resources/gui/PreferencesModulePanel.xml"
+_("Common Preferences");
+#line 822 "resources/gui/PreferencesModulePanel.xml"
+_("Minor value added tax:");
+#line 844 "resources/gui/PreferencesModulePanel.xml"
+_("Major value added tax:");
+#line 856 "resources/gui/PreferencesModulePanel.xml"
+_("%");
+#line 866 "resources/gui/PreferencesModulePanel.xml"
+_("Monition states:");
+#line 888 "resources/gui/PreferencesModulePanel.xml"
+_("Monition price:");
+#line 905 "resources/gui/PreferencesModulePanel.xml"
+_("Use reports:");
+#line 910 "resources/gui/PreferencesModulePanel.xml"
+_("yes");
+#line 923 "resources/gui/PreferencesModulePanel.xml"
+_("JRE windows path:");
+#line 934 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 944 "resources/gui/PreferencesModulePanel.xml"
+_("Report windows path:");
+#line 955 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 965 "resources/gui/PreferencesModulePanel.xml"
+_("JRE unix path:");
+#line 976 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 986 "resources/gui/PreferencesModulePanel.xml"
+_("Report unix path:");
+#line 997 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 1007 "resources/gui/PreferencesModulePanel.xml"
+_("JRE macOS path:");
+#line 1018 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 1028 "resources/gui/PreferencesModulePanel.xml"
+_("Report macOS path:");
+#line 1039 "resources/gui/PreferencesModulePanel.xml"
+_("browse...");
+#line 1058 "resources/gui/PreferencesModulePanel.xml"
+_("Save changes");
+#line 1071 "resources/gui/PreferencesModulePanel.xml"
+_("Advanced preferences");
+#line 1086 "resources/gui/PreferencesModulePanel.xml"
+_("Advanced Preferences");
+#line 1116 "resources/gui/PreferencesModulePanel.xml"
+_("User management");
+#line 1131 "resources/gui/PreferencesModulePanel.xml"
+_("Users");
+#line 1158 "resources/gui/PreferencesModulePanel.xml"
+_("Export user list");
+#line 1170 "resources/gui/PreferencesModulePanel.xml"
+_("Remove selected user");
+#line 1182 "resources/gui/PreferencesModulePanel.xml"
+_("Add user");
+#line 1202 "resources/gui/PreferencesModulePanel.xml"
+_("Fill in data");
+#line 1218 "resources/gui/PreferencesModulePanel.xml"
+_("Lists");
+#line 1255 "resources/gui/PreferencesModulePanel.xml"
+_("Data:");
+#line 1274 "resources/gui/PreferencesModulePanel.xml"
+_("Save entry");
+#line 1303 "resources/gui/PreferencesModulePanel.xml"
+_("Remove selected entry");
+#line 1328 "resources/gui/PreferencesModulePanel.xml"
+_("Banks");
+#line 1344 "resources/gui/PreferencesModulePanel.xml"
+_("Banks");
+#line 1369 "resources/gui/PreferencesModulePanel.xml"
+_("Bank code:");
+#line 1394 "resources/gui/PreferencesModulePanel.xml"
+_("BIC:");
+#line 1420 "resources/gui/PreferencesModulePanel.xml"
+_("Bank:");
+#line 1446 "resources/gui/PreferencesModulePanel.xml"
+_("Save");
+#line 1458 "resources/gui/PreferencesModulePanel.xml"
+_("Find");
+#line 1495 "resources/gui/PreferencesModulePanel.xml"
+_("Import from file");
+#line 1509 "resources/gui/PreferencesModulePanel.xml"
+_("Export");
+#line 1523 "resources/gui/PreferencesModulePanel.xml"
+_("Remove bank");
+#line 1547 "resources/gui/PreferencesModulePanel.xml"
+_("Texts");
+#line 1563 "resources/gui/PreferencesModulePanel.xml"
+_("Text templates");
+#line 1628 "resources/gui/PreferencesModulePanel.xml"
+_("Refresh");
+#line 1642 "resources/gui/PreferencesModulePanel.xml"
+_("Remove template");
+#line 1656 "resources/gui/PreferencesModulePanel.xml"
+_("Edit template");
+#line 1670 "resources/gui/PreferencesModulePanel.xml"
+_("Add template");
+#line 1696 "resources/gui/PreferencesModulePanel.xml"
+_("Stock management");
+#line 1711 "resources/gui/PreferencesModulePanel.xml"
+_("Stocks");
+#line 1738 "resources/gui/PreferencesModulePanel.xml"
+_("Remove selected stock");
+#line 1750 "resources/gui/PreferencesModulePanel.xml"
+_("Add stock");
+#line 1770 "resources/gui/PreferencesModulePanel.xml"
+_("Reports");
+#line 1785 "resources/gui/PreferencesModulePanel.xml"
+_("Reports");
+#line 1801 "resources/gui/PreferencesModulePanel.xml"
+_("Report Generator");
+#line 1828 "resources/gui/PreferencesModulePanel.xml"
+_("Dear user, please use the report generator very careful. You are able\nto destroy the report you are editing. You should first try it out on\na test mandator. Please refer the handbook.\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t");
+#line 1855 "resources/gui/PreferencesModulePanel.xml"
+_("Start new Report Generator Instance");
+#line 5 "resources/gui/PrintPreviewDialog.xml"
+_("Print preview");
+#line 18 "resources/gui/PrintPreviewDialog.xml"
+_("Cancel");
+#line 26 "resources/gui/PrintPreviewDialog.xml"
+_("First");
+#line 32 "resources/gui/PrintPreviewDialog.xml"
+_("Previous");
+#line 38 "resources/gui/PrintPreviewDialog.xml"
+_("Next");
+#line 44 "resources/gui/PrintPreviewDialog.xml"
+_("Last");
+#line 52 "resources/gui/PrintPreviewDialog.xml"
+_("Zoom in");
+#line 58 "resources/gui/PrintPreviewDialog.xml"
+_("1:1");
+#line 64 "resources/gui/PrintPreviewDialog.xml"
+_("Zoom out");
+#line 72 "resources/gui/PrintPreviewDialog.xml"
+_("Print");
+#line 5 "resources/gui/ProductEditFrame.xml"
+_("Edit product");
+#line 17 "resources/gui/ProductEditFrame.xml"
+_("Save");
+#line 25 "resources/gui/ProductEditFrame.xml"
+_("Print");
+#line 31 "resources/gui/ProductEditFrame.xml"
+_("Preview");
+#line 39 "resources/gui/ProductEditFrame.xml"
+_("Reminders");
+#line 47 "resources/gui/ProductEditFrame.xml"
+_("Informations");
+#line 55 "resources/gui/ProductEditFrame.xml"
+_("Close");
+#line 71 "resources/gui/ProductEditFrame.xml"
+_("Product");
+#line 94 "resources/gui/ProductEditFrame.xml"
+_("Product id:");
+#line 111 "resources/gui/ProductEditFrame.xml"
+_("Article number:");
+#line 128 "resources/gui/ProductEditFrame.xml"
+_("Group:");
+#line 145 "resources/gui/ProductEditFrame.xml"
+_("Package:");
+#line 162 "resources/gui/ProductEditFrame.xml"
+_("Available:");
+#line 178 "resources/gui/ProductEditFrame.xml"
+_("Distributor:");
+#line 201 "resources/gui/ProductEditFrame.xml"
+_("find");
+#line 211 "resources/gui/ProductEditFrame.xml"
+_("open");
+#line 223 "resources/gui/ProductEditFrame.xml"
+_("Manufacturer:");
+#line 240 "resources/gui/ProductEditFrame.xml"
+_("Publisher:");
+#line 257 "resources/gui/ProductEditFrame.xml"
+_("EAN:");
+#line 274 "resources/gui/ProductEditFrame.xml"
+_("Short name:");
+#line 291 "resources/gui/ProductEditFrame.xml"
+_("Name 1:");
+#line 309 "resources/gui/ProductEditFrame.xml"
+_("Name 2:");
+#line 326 "resources/gui/ProductEditFrame.xml"
+_("Name 3:");
+#line 343 "resources/gui/ProductEditFrame.xml"
+_("Name 4:");
+#line 360 "resources/gui/ProductEditFrame.xml"
+_("Description:");
+#line 380 "resources/gui/ProductEditFrame.xml"
+_("Note:");
+#line 400 "resources/gui/ProductEditFrame.xml"
+_("ISBN 10:");
+#line 417 "resources/gui/ProductEditFrame.xml"
+_("ISBN 13:");
+#line 434 "resources/gui/ProductEditFrame.xml"
+_("Weight (Kilogram):");
+#line 450 "resources/gui/ProductEditFrame.xml"
+_("Tax:");
+#line 484 "resources/gui/ProductEditFrame.xml"
+_("Prices without tax");
+#line 500 "resources/gui/ProductEditFrame.xml"
+_("Prices with tax");
+#line 513 "resources/gui/ProductEditFrame.xml"
+_("Price:");
+#line 538 "resources/gui/ProductEditFrame.xml"
+_("Caculate");
+#line 550 "resources/gui/ProductEditFrame.xml"
+_("Price:");
+#line 575 "resources/gui/ProductEditFrame.xml"
+_("Caculate");
+#line 587 "resources/gui/ProductEditFrame.xml"
+_("Purchase:");
+#line 612 "resources/gui/ProductEditFrame.xml"
+_("Caculate");
+#line 624 "resources/gui/ProductEditFrame.xml"
+_("Purchase:");
+#line 649 "resources/gui/ProductEditFrame.xml"
+_("Caculate");
+#line 661 "resources/gui/ProductEditFrame.xml"
+_("Margin:");
+#line 678 "resources/gui/ProductEditFrame.xml"
+_("Margin:");
+#line 698 "resources/gui/ProductEditFrame.xml"
+_("More data");
+#line 710 "resources/gui/ProductEditFrame.xml"
+_("Media");
+#line 5 "resources/gui/ProductsFindDialog.xml"
+_("Find product(s)");
+#line 17 "resources/gui/ProductsFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/ProductsFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/ProductsFindDialog.xml"
+_("Product id:");
+#line 64 "resources/gui/ProductsFindDialog.xml"
+_("Article number:");
+#line 79 "resources/gui/ProductsFindDialog.xml"
+_("Group:");
+#line 96 "resources/gui/ProductsFindDialog.xml"
+_("Distributor:");
+#line 113 "resources/gui/ProductsFindDialog.xml"
+_("Manufacturer:");
+#line 130 "resources/gui/ProductsFindDialog.xml"
+_("Publisher:");
+#line 147 "resources/gui/ProductsFindDialog.xml"
+_("EAN:");
+#line 162 "resources/gui/ProductsFindDialog.xml"
+_("Short name:");
+#line 179 "resources/gui/ProductsFindDialog.xml"
+_("Name:");
+#line 196 "resources/gui/ProductsFindDialog.xml"
+_("Description:");
+#line 212 "resources/gui/ProductsFindDialog.xml"
+_("Note:");
+#line 228 "resources/gui/ProductsFindDialog.xml"
+_("ISBN 10:");
+#line 245 "resources/gui/ProductsFindDialog.xml"
+_("ISBN 13:");
+#line 5 "resources/gui/ProductsFullFindDialog.xml"
+_("Find product(s)");
+#line 17 "resources/gui/ProductsFullFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/ProductsFullFindDialog.xml"
+_("Use");
+#line 33 "resources/gui/ProductsFullFindDialog.xml"
+_("Cancel");
+#line 61 "resources/gui/ProductsFullFindDialog.xml"
+_("Product id:");
+#line 77 "resources/gui/ProductsFullFindDialog.xml"
+_("Article number:");
+#line 94 "resources/gui/ProductsFullFindDialog.xml"
+_("Group:");
+#line 111 "resources/gui/ProductsFullFindDialog.xml"
+_("Distributor:");
+#line 128 "resources/gui/ProductsFullFindDialog.xml"
+_("Manufacturer:");
+#line 145 "resources/gui/ProductsFullFindDialog.xml"
+_("Publisher:");
+#line 162 "resources/gui/ProductsFullFindDialog.xml"
+_("EAN:");
+#line 179 "resources/gui/ProductsFullFindDialog.xml"
+_("Short name:");
+#line 196 "resources/gui/ProductsFullFindDialog.xml"
+_("Name:");
+#line 213 "resources/gui/ProductsFullFindDialog.xml"
+_("Description:");
+#line 229 "resources/gui/ProductsFullFindDialog.xml"
+_("Note:");
+#line 245 "resources/gui/ProductsFullFindDialog.xml"
+_("ISBN 10:");
+#line 262 "resources/gui/ProductsFullFindDialog.xml"
+_("ISBN 13:");
+#line 16 "resources/gui/ProductsModulePanel.xml"
+_("New");
+#line 22 "resources/gui/ProductsModulePanel.xml"
+_("Edit");
+#line 28 "resources/gui/ProductsModulePanel.xml"
+_("Remove");
+#line 36 "resources/gui/ProductsModulePanel.xml"
+_("Find");
+#line 44 "resources/gui/ProductsModulePanel.xml"
+_("Stocks");
+#line 52 "resources/gui/ProductsModulePanel.xml"
+_("Export");
+#line 5 "resources/gui/ProgressDialog.xml"
+_("Progress");
+#line 17 "resources/gui/ProgressDialog.xml"
+_("Cancel");
+#line 35 "resources/gui/ProgressDialog.xml"
+_("Status:");
+#line 50 "resources/gui/ProgressDialog.xml"
+_("Please wait...");
+#line 62 "resources/gui/ProgressDialog.xml"
+_("Progress:");
+#line 5 "resources/gui/PurchaseEditFrame.xml"
+_("Edit purchase");
+#line 17 "resources/gui/PurchaseEditFrame.xml"
+_("Save");
+#line 25 "resources/gui/PurchaseEditFrame.xml"
+_("Print");
+#line 31 "resources/gui/PurchaseEditFrame.xml"
+_("Preview");
+#line 39 "resources/gui/PurchaseEditFrame.xml"
+_("Set done");
+#line 47 "resources/gui/PurchaseEditFrame.xml"
+_("Reminders");
+#line 55 "resources/gui/PurchaseEditFrame.xml"
+_("Informations");
+#line 63 "resources/gui/PurchaseEditFrame.xml"
+_("Close");
+#line 79 "resources/gui/PurchaseEditFrame.xml"
+_("Details");
+#line 108 "resources/gui/PurchaseEditFrame.xml"
+_("Purchase id:");
+#line 123 "resources/gui/PurchaseEditFrame.xml"
+_("Distributor id:");
+#line 136 "resources/gui/PurchaseEditFrame.xml"
+_("Distributor address:");
+#line 152 "resources/gui/PurchaseEditFrame.xml"
+_("Find distributor");
+#line 168 "resources/gui/PurchaseEditFrame.xml"
+_("Client id:");
+#line 182 "resources/gui/PurchaseEditFrame.xml"
+_("Order id:");
+#line 196 "resources/gui/PurchaseEditFrame.xml"
+_("Order date:");
+#line 210 "resources/gui/PurchaseEditFrame.xml"
+_("Informations:");
+#line 226 "resources/gui/PurchaseEditFrame.xml"
+_("Purchaser:");
+#line 277 "resources/gui/PurchaseEditFrame.xml"
+_("Billing address:");
+#line 284 "resources/gui/PurchaseEditFrame.xml"
+_("Delivery address:");
+#line 312 "resources/gui/PurchaseEditFrame.xml"
+_("Paste own address");
+#line 320 "resources/gui/PurchaseEditFrame.xml"
+_("Paste own address");
+#line 335 "resources/gui/PurchaseEditFrame.xml"
+_("Text head:");
+#line 352 "resources/gui/PurchaseEditFrame.xml"
+_("Text foot:");
+#line 378 "resources/gui/PurchaseEditFrame.xml"
+_("Positions");
+#line 414 "resources/gui/PurchaseEditFrame.xml"
+_("Remove position");
+#line 426 "resources/gui/PurchaseEditFrame.xml"
+_("Edit position");
+#line 438 "resources/gui/PurchaseEditFrame.xml"
+_("Add position");
+#line 454 "resources/gui/PurchaseEditFrame.xml"
+_("More data");
+#line 466 "resources/gui/PurchaseEditFrame.xml"
+_("Media");
+#line 5 "resources/gui/PurchasePositionEditDialog.xml"
+_("Edit position");
+#line 17 "resources/gui/PurchasePositionEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/PurchasePositionEditDialog.xml"
+_("Find article");
+#line 33 "resources/gui/PurchasePositionEditDialog.xml"
+_("Close");
+#line 59 "resources/gui/PurchasePositionEditDialog.xml"
+_("Amount:");
+#line 74 "resources/gui/PurchasePositionEditDialog.xml"
+_("Product id:");
+#line 88 "resources/gui/PurchasePositionEditDialog.xml"
+_("Product informations:");
+#line 107 "resources/gui/PurchasePositionEditDialog.xml"
+_("Text:");
+#line 127 "resources/gui/PurchasePositionEditDialog.xml"
+_("Price:");
+#line 141 "resources/gui/PurchasePositionEditDialog.xml"
+_("Sum:");
+#line 146 "resources/gui/PurchasePositionEditDialog.xml"
+_("0,00");
+#line 5 "resources/gui/PurchasesFindDialog.xml"
+_("Find purchase(s)");
+#line 17 "resources/gui/PurchasesFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/PurchasesFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/PurchasesFindDialog.xml"
+_("Purchase id:");
+#line 63 "resources/gui/PurchasesFindDialog.xml"
+_("Distributor id:");
+#line 77 "resources/gui/PurchasesFindDialog.xml"
+_("Distributor address contains:");
+#line 91 "resources/gui/PurchasesFindDialog.xml"
+_("Billing address contains:");
+#line 105 "resources/gui/PurchasesFindDialog.xml"
+_("Delivery address contains:");
+#line 119 "resources/gui/PurchasesFindDialog.xml"
+_("Order id:");
+#line 133 "resources/gui/PurchasesFindDialog.xml"
+_("Purchaser:");
+#line 147 "resources/gui/PurchasesFindDialog.xml"
+_("Informations contains:");
+#line 161 "resources/gui/PurchasesFindDialog.xml"
+_("Year:");
+#line 16 "resources/gui/PurchasesModulePanel.xml"
+_("New");
+#line 22 "resources/gui/PurchasesModulePanel.xml"
+_("Copy");
+#line 28 "resources/gui/PurchasesModulePanel.xml"
+_("Edit");
+#line 34 "resources/gui/PurchasesModulePanel.xml"
+_("Remove");
+#line 42 "resources/gui/PurchasesModulePanel.xml"
+_("Find");
+#line 50 "resources/gui/PurchasesModulePanel.xml"
+_("Export");
+#line 5 "resources/gui/ReminderDialog.xml"
+_("Reminders");
+#line 17 "resources/gui/ReminderDialog.xml"
+_("Update");
+#line 25 "resources/gui/ReminderDialog.xml"
+_("Open");
+#line 33 "resources/gui/ReminderDialog.xml"
+_("Close");
+#line 105 "resources/gui/ReminderDialog.xml"
+_("Change remind:");
+#line 136 "resources/gui/ReminderDialog.xml"
+_(":");
+#line 157 "resources/gui/ReminderDialog.xml"
+_("save");
+#line 167 "resources/gui/ReminderDialog.xml"
+_("done");
+#line 197 "resources/gui/ReminderDialog.xml"
+_("Open this dialog to remind me");
+#line 218 "resources/gui/ReminderDialog.xml"
+_("Notes:");
+#line 5 "resources/gui/RemindersDialog.xml"
+_("Reminders");
+#line 18 "resources/gui/RemindersDialog.xml"
+_("Add");
+#line 24 "resources/gui/RemindersDialog.xml"
+_("Remove");
+#line 32 "resources/gui/RemindersDialog.xml"
+_("Close");
+#line 5 "resources/gui/RemindersEditDialog.xml"
+_("Edit reminder");
+#line 18 "resources/gui/RemindersEditDialog.xml"
+_("Save");
+#line 26 "resources/gui/RemindersEditDialog.xml"
+_("Cancel");
+#line 51 "resources/gui/RemindersEditDialog.xml"
+_("Remind:");
+#line 85 "resources/gui/RemindersEditDialog.xml"
+_(":");
+#line 108 "resources/gui/RemindersEditDialog.xml"
+_("Notes:");
+#line 5 "resources/gui/RemoveDialog.xml"
+_("Remove");
+#line 17 "resources/gui/RemoveDialog.xml"
+_("Open");
+#line 25 "resources/gui/RemoveDialog.xml"
+_("Cancel");
+#line 42 "resources/gui/RemoveDialog.xml"
+_("The item you want to remove is referenced by other data. It could not been removed.");
+#line 5 "resources/gui/ReportGeneratorFrame.xml"
+_("Report Generator");
+#line 17 "resources/gui/ReportGeneratorFrame.xml"
+_("Save");
+#line 25 "resources/gui/ReportGeneratorFrame.xml"
+_("Close");
+#line 54 "resources/gui/ReportGeneratorFrame.xml"
+_("Areas");
+#line 62 "resources/gui/ReportGeneratorFrame.xml"
+_("Elements");
+#line 70 "resources/gui/ReportGeneratorFrame.xml"
+_("Placeholders");
+#line 16 "resources/gui/ShopModulePanel.xml"
+_("Temp");
+#line 16 "resources/gui/StatisticsModulePanel.xml"
+_("Run");
+#line 24 "resources/gui/StatisticsModulePanel.xml"
+_("Find product");
+#line 30 "resources/gui/StatisticsModulePanel.xml"
+_("Find client");
+#line 38 "resources/gui/StatisticsModulePanel.xml"
+_("Print");
+#line 44 "resources/gui/StatisticsModulePanel.xml"
+_("Preview");
+#line 52 "resources/gui/StatisticsModulePanel.xml"
+_("Export");
+#line 78 "resources/gui/StatisticsModulePanel.xml"
+_("Product id:");
+#line 99 "resources/gui/StatisticsModulePanel.xml"
+_("Customer id:");
+#line 119 "resources/gui/StatisticsModulePanel.xml"
+_("Own customer id:");
+#line 137 "resources/gui/StatisticsModulePanel.xml"
+_("Date from:");
+#line 156 "resources/gui/StatisticsModulePanel.xml"
+_("Date to:");
+#line 175 "resources/gui/StatisticsModulePanel.xml"
+_("Selection:");
+#line 186 "resources/gui/StatisticsModulePanel.xml"
+_("Bills and vouchers");
+#line 187 "resources/gui/StatisticsModulePanel.xml"
+_("Only Bills");
+#line 188 "resources/gui/StatisticsModulePanel.xml"
+_("Only vouchers");
+#line 5 "resources/gui/StockDialog.xml"
+_("Edit stock");
+#line 17 "resources/gui/StockDialog.xml"
+_("Save");
+#line 25 "resources/gui/StockDialog.xml"
+_("Cancel");
+#line 49 "resources/gui/StockDialog.xml"
+_("Name:");
+#line 67 "resources/gui/StockDialog.xml"
+_("Address / Number:");
+#line 106 "resources/gui/StockDialog.xml"
+_("Zipcode / City:");
+#line 145 "resources/gui/StockDialog.xml"
+_("Comment:");
+#line 167 "resources/gui/StockDialog.xml"
+_("active");
+#line 5 "resources/gui/StocksFrame.xml"
+_("Stock booking");
+#line 17 "resources/gui/StocksFrame.xml"
+_("Find product");
+#line 25 "resources/gui/StocksFrame.xml"
+_("Book");
+#line 33 "resources/gui/StocksFrame.xml"
+_("List");
+#line 41 "resources/gui/StocksFrame.xml"
+_("Close");
+#line 70 "resources/gui/StocksFrame.xml"
+_("Stock:");
+#line 86 "resources/gui/StocksFrame.xml"
+_("Product:");
+#line 133 "resources/gui/StocksFrame.xml"
+_("Quantity:");
+#line 150 "resources/gui/StocksFrame.xml"
+_("(+/- values)");
+#line 175 "resources/gui/StocksFrame.xml"
+_("Comment:");
+#line 217 "resources/gui/StocksFrame.xml"
+_("Full quantity:");
+#line 234 "resources/gui/StocksFrame.xml"
+_("Reserved:");
+#line 251 "resources/gui/StocksFrame.xml"
+_("Sum:");
+#line 5 "resources/gui/StocksListDialog.xml"
+_("Stock list");
+#line 17 "resources/gui/StocksListDialog.xml"
+_("Print");
+#line 23 "resources/gui/StocksListDialog.xml"
+_("Preview");
+#line 31 "resources/gui/StocksListDialog.xml"
+_("Export");
+#line 39 "resources/gui/StocksListDialog.xml"
+_("Close");
+#line 5 "resources/gui/TemplateEditDialog.xml"
+_("Edit template");
+#line 17 "resources/gui/TemplateEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/TemplateEditDialog.xml"
+_("Cancel");
+#line 43 "resources/gui/TemplateEditDialog.xml"
+_("Name:");
+#line 64 "resources/gui/TemplateEditDialog.xml"
+_("Content:");
+#line 5 "resources/gui/TemplateSelectDialog.xml"
+_("Select template");
+#line 17 "resources/gui/TemplateSelectDialog.xml"
+_("Use");
+#line 25 "resources/gui/TemplateSelectDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/TextEditDialog.xml"
+_("Text Editor");
+#line 18 "resources/gui/TextEditDialog.xml"
+_("Use");
+#line 26 "resources/gui/TextEditDialog.xml"
+_("Print");
+#line 32 "resources/gui/TextEditDialog.xml"
+_("Print preview");
+#line 40 "resources/gui/TextEditDialog.xml"
+_("Copy");
+#line 46 "resources/gui/TextEditDialog.xml"
+_("Cut");
+#line 52 "resources/gui/TextEditDialog.xml"
+_("Paste");
+#line 60 "resources/gui/TextEditDialog.xml"
+_("Import");
+#line 66 "resources/gui/TextEditDialog.xml"
+_("Export");
+#line 74 "resources/gui/TextEditDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/TextInputDialog.xml"
+_("Text input");
+#line 17 "resources/gui/TextInputDialog.xml"
+_("Save");
+#line 25 "resources/gui/TextInputDialog.xml"
+_("Cancel");
+#line 42 "resources/gui/TextInputDialog.xml"
+_("Text:");
+#line 5 "resources/gui/TranslatedAddressEditDialog.xml"
+_("Progress");
+#line 17 "resources/gui/TranslatedAddressEditDialog.xml"
+_("Use");
+#line 25 "resources/gui/TranslatedAddressEditDialog.xml"
+_("Find");
+#line 33 "resources/gui/TranslatedAddressEditDialog.xml"
+_("Cancel");
+#line 5 "resources/gui/UpdateDialog.xml"
+_("Updates");
+#line 17 "resources/gui/UpdateDialog.xml"
+_("Customer center");
+#line 25 "resources/gui/UpdateDialog.xml"
+_("Close");
+#line 43 "resources/gui/UpdateDialog.xml"
+_("0.0.0");
+#line 5 "resources/gui/UserDialog.xml"
+_("Edit User");
+#line 17 "resources/gui/UserDialog.xml"
+_("Save");
+#line 25 "resources/gui/UserDialog.xml"
+_("Cancel");
+#line 49 "resources/gui/UserDialog.xml"
+_("Username:");
+#line 66 "resources/gui/UserDialog.xml"
+_("Password:");
+#line 83 "resources/gui/UserDialog.xml"
+_("Real name:");
+#line 99 "resources/gui/UserDialog.xml"
+_("Email:");
+#line 115 "resources/gui/UserDialog.xml"
+_("Description:");
+#line 134 "resources/gui/UserDialog.xml"
+_("Status:");
+#line 145 "resources/gui/UserDialog.xml"
+_("Inactive");
+#line 146 "resources/gui/UserDialog.xml"
+_("Reader");
+#line 147 "resources/gui/UserDialog.xml"
+_("Reader and Writer");
+#line 148 "resources/gui/UserDialog.xml"
+_("Reader, Writer and Remover");
+#line 149 "resources/gui/UserDialog.xml"
+_("Administrator");
+#line 163 "resources/gui/UserDialog.xml"
+_("Open reminders");
+#line 5 "resources/gui/VoucherEditFrame.xml"
+_("Edit voucher");
+#line 17 "resources/gui/VoucherEditFrame.xml"
+_("Save");
+#line 25 "resources/gui/VoucherEditFrame.xml"
+_("Find company");
+#line 33 "resources/gui/VoucherEditFrame.xml"
+_("Print");
+#line 39 "resources/gui/VoucherEditFrame.xml"
+_("Preview");
+#line 47 "resources/gui/VoucherEditFrame.xml"
+_("Calculate prices");
+#line 55 "resources/gui/VoucherEditFrame.xml"
+_("Reminders");
+#line 63 "resources/gui/VoucherEditFrame.xml"
+_("Informations");
+#line 71 "resources/gui/VoucherEditFrame.xml"
+_("Close");
+#line 87 "resources/gui/VoucherEditFrame.xml"
+_("Product");
+#line 108 "resources/gui/VoucherEditFrame.xml"
+_("Voucher id:");
+#line 125 "resources/gui/VoucherEditFrame.xml"
+_("Description:");
+#line 141 "resources/gui/VoucherEditFrame.xml"
+_("Company:");
+#line 160 "resources/gui/VoucherEditFrame.xml"
+_("Notes:");
+#line 179 "resources/gui/VoucherEditFrame.xml"
+_("Invoice id:");
+#line 196 "resources/gui/VoucherEditFrame.xml"
+_("Invoice date:");
+#line 231 "resources/gui/VoucherEditFrame.xml"
+_("Remove position");
+#line 243 "resources/gui/VoucherEditFrame.xml"
+_("Edit position");
+#line 255 "resources/gui/VoucherEditFrame.xml"
+_("Add position");
+#line 283 "resources/gui/VoucherEditFrame.xml"
+_("Price:");
+#line 307 "resources/gui/VoucherEditFrame.xml"
+_("Reduced tax:");
+#line 331 "resources/gui/VoucherEditFrame.xml"
+_("Full tax:");
+#line 355 "resources/gui/VoucherEditFrame.xml"
+_("Full price:");
+#line 379 "resources/gui/VoucherEditFrame.xml"
+_("More data");
+#line 391 "resources/gui/VoucherEditFrame.xml"
+_("Media");
+#line 5 "resources/gui/VoucherPositionEditDialog.xml"
+_("Edit voucher position");
+#line 17 "resources/gui/VoucherPositionEditDialog.xml"
+_("Save");
+#line 25 "resources/gui/VoucherPositionEditDialog.xml"
+_("Close");
+#line 50 "resources/gui/VoucherPositionEditDialog.xml"
+_("Quantity:");
+#line 67 "resources/gui/VoucherPositionEditDialog.xml"
+_("Description:");
+#line 85 "resources/gui/VoucherPositionEditDialog.xml"
+_("Article number:");
+#line 102 "resources/gui/VoucherPositionEditDialog.xml"
+_("Article:");
+#line 119 "resources/gui/VoucherPositionEditDialog.xml"
+_("Kind of tax:");
+#line 136 "resources/gui/VoucherPositionEditDialog.xml"
+_("Tax:");
+#line 160 "resources/gui/VoucherPositionEditDialog.xml"
+_("Price:");
+#line 5 "resources/gui/VouchersFindDialog.xml"
+_("Find voucher(s)");
+#line 17 "resources/gui/VouchersFindDialog.xml"
+_("Find");
+#line 25 "resources/gui/VouchersFindDialog.xml"
+_("Cancel");
+#line 48 "resources/gui/VouchersFindDialog.xml"
+_("Voucher id:");
+#line 64 "resources/gui/VouchersFindDialog.xml"
+_("Description id:");
+#line 78 "resources/gui/VouchersFindDialog.xml"
+_("Invoice id:");
+#line 93 "resources/gui/VouchersFindDialog.xml"
+_("Company:");
+#line 109 "resources/gui/VouchersFindDialog.xml"
+_("Notes:");
+#line 125 "resources/gui/VouchersFindDialog.xml"
+_("Year:");
+#line 16 "resources/gui/VouchersModulePanel.xml"
+_("New");
+#line 22 "resources/gui/VouchersModulePanel.xml"
+_("Edit");
+#line 28 "resources/gui/VouchersModulePanel.xml"
+_("Remove");
+#line 36 "resources/gui/VouchersModulePanel.xml"
+_("Find");
+#line 52 "resources/gui/VouchersModulePanel.xml"
+_("Export");
+#line 17 "resources/gui/YesNoDialog.xml"
+_("Yes");
+#line 25 "resources/gui/YesNoDialog.xml"
+_("No");

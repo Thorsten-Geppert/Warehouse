@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Company-Line" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4a383ac9-4928-479b-ad36-ec35bfb61aef">
+	<property name="ireport.zoom" value="1.6105100000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM enterprise]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="company" class="java.lang.String"/>
+	<field name="executive" class="java.lang.String"/>
+	<field name="address1" class="java.lang.String"/>
+	<field name="address2" class="java.lang.String"/>
+	<field name="zipcode" class="java.lang.String"/>
+	<field name="city" class="java.lang.String"/>
+	<field name="salesTaxIdentificationNumber" class="java.lang.String"/>
+	<field name="taxNumber" class="java.lang.String"/>
+	<field name="salesTaxIndicator" class="java.lang.String"/>
+	<field name="telephone" class="java.lang.String"/>
+	<field name="fax" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	<field name="web" class="java.lang.String"/>
+	<field name="bank" class="java.lang.String"/>
+	<field name="bankCode" class="java.lang.String"/>
+	<field name="holder" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="bic" class="java.lang.String"/>
+	<field name="iban" class="java.lang.String"/>
+	<field name="mandatoryProductsArticleNumber" class="java.lang.Boolean"/>
+	<field name="mandatoryClientsOwnClientId" class="java.lang.Boolean"/>
+	<variable name="WH_COMPANY" class="java.lang.String">
+		<initialValueExpression><![CDATA[$F{company} + " " +
+$F{address1} +
+($F{address2} != null ? $F{address2} : "") +
+", " +
+$F{zipcode} + " " + $F{city}]]></initialValueExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="9" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="272" height="8" uuid="c0c69349-cce3-4a35-ba45-dc6988414c2d"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{WH_COMPANY}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="8" width="272" height="1" uuid="14419beb-3e27-4815-a2c1-b8726e54f8ef"/>
+			</line>
+		</band>
+	</title>
+</jasperReport>

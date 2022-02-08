@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="PurchasesFindDialog">
+		<title>Find purchase(s)</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="findToolbarButton">
+								<label>Find</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxFlexGridSizer">
+						<hgap>5</hgap>
+						<vgap>5</vgap>
+						<cols>2</cols>
+						<growablecols>1</growablecols>
+
+						<!-- Purchase id -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Purchase id:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchaseIdTextCtrl">
+								<focused>1</focused>
+							</object>
+						</object>
+						<!-- /Purchase id -->
+
+						<!-- Distributor id -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Distributor id:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="distributorIdTextCtrl">
+							</object>
+						</object>
+						<!-- /Distributor id -->
+
+						<!-- Distributor address contains -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Distributor address contains:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="distributorAddressContainsTextCtrl">
+							</object>
+						</object>
+						<!-- /Distributor address contains -->
+
+						<!-- Billing address contains -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Billing address contains:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="billingAddressContainsTextCtrl">
+							</object>
+						</object>
+						<!-- /Billing address contains -->
+
+						<!-- Delivery address contains -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Delivery address contains:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="deliveryAddressContainsTextCtrl">
+							</object>
+						</object>
+						<!-- /Delivery address contains -->
+
+						<!-- Order id -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Order id:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderIdTextCtrl">
+							</object>
+						</object>
+						<!-- /Order id -->
+
+						<!-- Purchaser -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Purchaser:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="purchaserTextCtrl">
+							</object>
+						</object>
+						<!-- /Purchaser -->
+
+						<!-- Informations contains -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Informations contains:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="informationsTextCtrl">
+							</object>
+						</object>
+						<!-- /Informations contains -->
+
+						<!-- Year -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Year:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="yearTextCtrl">
+								<size>60, -1</size>
+							</object>
+						</object>
+						<!-- /Year -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

@@ -1,0 +1,31 @@
+OBJ       = Admin.o \
+			AdminFrame.o \
+			UserDialog.o \
+			DatabaseRecoverDialog.o \
+			NetworkAccessDialog.o \
+			NetworkAccessEditDialog.o \
+			UpdateDialog.o \
+			UpdateSpecialDialog.o \
+			UpdateAskDialog.o \
+			InformationDialog.o \
+			\
+			../lib/UserConfigurationFileEntity.o \
+			../lib/UserConfigurationFileController.o \
+			../lib/WindowPreferencesType.o \
+			../lib/DatabaseType.o \
+			../lib/EnterpriseEntity.o \
+			../lib/EnterpriseController.o \
+			../lib/UserEntity.o \
+			../lib/UserController.o \
+			../lib/DatabaseLibrary.o \
+			../lib/PgHbaLibrary.o \
+			../lib/PgHbaHostsType.o \
+			../lib/PgHbaHostType.o \
+			../lib/UpdateLibrary.o \
+			../lib/UpdateType.o \
+			../lib/SqlUpdateType.o \
+			../lib/RuntimeInformationType.o \
+			../lib/BlockLibrary.o \
+			../lib/BlockType.o \
+			../lib/Access.o \
+			../lib/ObjectType.o

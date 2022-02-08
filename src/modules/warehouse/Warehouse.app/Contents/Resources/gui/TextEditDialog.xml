@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="TextEditDialog">
+		<title>Text Editor</title>
+		<style>wxCAPTION | wxRESIZE_BORDER | wxSYSTEM_MENU | wxCLOSE_BOX | wxMAXIMIZE_BOX | wxMINIMIZE_BOX</style>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Use</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="printPreviewToolbarButton">
+								<label>Print preview</label>
+								<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="copyToolbarButton">
+								<label>Copy</label>
+								<bitmap platform="win|unix">resources/images/Copy.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Copy.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="cutToolbarButton">
+								<label>Cut</label>
+								<bitmap platform="win|unix">resources/images/Cut.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cut.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="pasteToolbarButton">
+								<label>Paste</label>
+								<bitmap platform="win|unix">resources/images/Paste.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Paste.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="importToolbarButton">
+								<label>Import</label>
+								<bitmap platform="win|unix">resources/images/Import.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Import.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="exportToolbarButton">
+								<label>Export</label>
+								<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="informationTextCtrl">
+						<style>wxTE_MULTILINE | wxTE_PROCESS_TAB</style>
+					</object>
+				</object>
+
+				<!--<object class="sizeritem">
+					<object class="wxStatusBar" name="mainStatusBar">
+						<fields>3</fields>
+						<widths>200, 200, -1</widths>
+					</object>
+				</object>-->
+			</object>
+		</object>
+		
+	</object>
+
+</resource>

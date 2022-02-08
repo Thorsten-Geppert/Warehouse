@@ -1,0 +1,97 @@
+ADOBE INDESIGN - DRUCKANLEITUNGEN FÜR BELICHTUNGSBÜROBERICHT
+
+SATZDATEINAME: Flyer Bolso_6.indd
+
+PACKDATUM: 18.10.2011 9:40 Uhr
+Erstellungsdatum 14.10.2011
+Änderungsdatum: 18.10.2011
+
+AUFTRAGGEBER
+
+Firma: 
+Ansprechpartner: 
+Adresse: 
+
+
+
+
+
+Telefon: 
+Fax: 
+E-Mail: 
+
+BESONDERE ANWEISUNGEN UND ANDERE ANMERKUNGEN
+
+
+
+
+
+
+Externe Zusatzmodule 0
+Nicht deckende Objekte:Auf Seite1, 2
+
+SCHRIFTARTEN
+3 Schriftart(en) verwendet; 0 fehlend, 0 Eingebettet, 0 unvollst., 0 geschützt
+
+Schriftarten verpackt
+- Name: LinBiolinumO; Typ: OpenType Type 1, Status: OK
+- Name: LinBiolinumOB; Typ: OpenType Type 1, Status: OK
+- Name: ZapfDingbatsITC; Typ: TrueType, Status: OK
+
+
+FARBEN UND DRUCKFARBEN
+4 Prozessfarbe(n); 0 Volltonfarbe(n)
+
+- Name und Typ: Prozessfarbe Cyan; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Magenta; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Gelb; Winkel: 0,000; Linien/Zoll: 0,000
+- Name und Typ: Prozessfarbe Schwarz; Winkel: 0,000; Linien/Zoll: 0,000
+
+
+VERKNÜPFUNGEN & BILDER
+(Nur fehlende & eingebettete Verknüpfungen)
+Verknüpfungen & Bilder: 12 Verknüpfung(en) gefunden; 0 geändert, 0 fehlend
+Bilder: 0 Eingebettet, 0 verwenden RGB-Farbraum
+
+
+DRUCKEINSTELLUNGEN
+PPD: n. zutr., (Canon iP4300)
+Drucken auf: Drucker
+Anzahl der Exemplare: 1
+Druckbögen: Nein
+Gerade/Ungerade Seiten: Beides
+Seiten: Alle
+Probedruck: Nein
+Druckseite aufteilen: Ohne
+Skalieren: 100%, 100%
+Seitenposition: Oben links
+Ebenen drucken: Sichtbare und druckbare Ebenen
+Druckermarken: Ohne
+Anschnitt: 0 mm, 0 mm, 0 mm, 0 mm
+Farbe: Composite-RGB
+Überfüllungsmodus: Ohne
+Bilddaten senden: Optimierte Abtastauflösung
+OPI/DCS-Bildersetzung: Nein
+Seitenformat: A4
+Papierabmessungen: 210 mm x 297 mm
+Format: Querformat
+Negativ: Nein
+Spiegelmodus: Aus
+
+
+DATEIPAKETLISTE
+
+1. Flyer Bolso_6.indd; Typ: Adobe InDesign-Satzdatei; Größe: 3793K
+2. LinBiolinum_R.otf; Typ: Schriftartendatei; Größe: 403K
+3. LinBiolinum_RB.otf; Typ: Schriftartendatei; Größe: 387K
+4. ZapfDingbats.dfont; Typ: Schriftartendatei; Größe: 150K
+5. Anmeldung.jpg; Typ: Verknüpfte Datei; Größe: 2326K
+6. Auftra<0308>ge.jpg; Typ: Verknüpfte Datei; Größe: 2581K
+7. Einstellungen.jpg; Typ: Verknüpfte Datei; Größe: 2373K
+8. Kunden.jpg; Typ: Verknüpfte Datei; Größe: 2283K
+9. Logo.eps; Typ: Verknüpfte Datei; Größe: 1795K
+10. Mehrbenutzerfa<0308>hig.jpg; Typ: Verknüpfte Datei; Größe: 2419K
+11. Mehrmandantenfa<0308>hig.jpg; Typ: Verknüpfte Datei; Größe: 2221K
+12. Notizen.jpg; Typ: Verknüpfte Datei; Größe: 2192K
+13. Produkte.jpg; Typ: Verknüpfte Datei; Größe: 2174K
+14. Statistiken.jpg; Typ: Verknüpfte Datei; Größe: 2478K

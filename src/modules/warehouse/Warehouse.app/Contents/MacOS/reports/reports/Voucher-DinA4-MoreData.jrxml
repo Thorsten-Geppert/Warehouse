@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Voucher-DinA4-MoreData" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="13dbecfa-778a-4ede-9052-d74854053f6f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["Styles.jrtx"]]></template>
+	<parameter name="voucherId" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT * FROM keys_values_vouchers WHERE id = $P{voucherId} ORDER BY key, value]]>
+	</queryString>
+	<field name="keyValueId" class="java.lang.Integer"/>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="key" class="java.lang.String"/>
+	<field name="value" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="21">
+			<staticText>
+				<reportElement style="Headline" x="0" y="0" width="555" height="20" uuid="67e61b00-19dd-4116-bc52-1f52471a52dc"/>
+				<text><![CDATA[Weitere Daten]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="27">
+			<staticText>
+				<reportElement style="Description" x="0" y="2" width="177" height="20" uuid="60153295-2a65-47ee-8b06-9bf221c6dda9"/>
+				<text><![CDATA[Beschreibung]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="190" y="2" width="365" height="20" uuid="ccc49988-a362-4c66-b2f0-9a54724d7094"/>
+				<text><![CDATA[Wert]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="22" width="555" height="1" uuid="6e509f24-d2bb-4978-a1e4-8fe815630c7c"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24">
+			<textField>
+				<reportElement x="0" y="0" width="177" height="20" uuid="c0ccd088-163f-4d61-a578-8c8a66e6e57a"/>
+				<textFieldExpression><![CDATA[$F{key}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="365" height="20" uuid="10a09639-e3d1-4548-996d-32ef8492ec7e"/>
+				<textFieldExpression><![CDATA[$F{value}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

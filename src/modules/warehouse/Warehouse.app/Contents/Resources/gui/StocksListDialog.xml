@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="StocksListDialog">
+		<title>Stock list</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="previewToolbarButton">
+								<label>Preview</label>
+								<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="exportToolbarButton">
+								<label>Export</label>
+								<bitmap platform="win|unix">resources/images/Export.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Export.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Close.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Close.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="resultsListCtrl">
+								<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

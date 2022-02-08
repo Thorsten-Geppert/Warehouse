@@ -1,0 +1,623 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="EnterpriseCreateDatabaseDialog">
+		<title>Create enterprise database</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="runToolbarButton">
+								<label>Run</label>
+								<bitmap platform="win|unix">resources/images/Run.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Run.png</bitmap>
+							</ToolbarButton>
+							
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxNotebook">
+								
+								<!-- Master data -->
+								<object class="notebookpage">
+									<label>Master data</label>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+											
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxFlexGridSizer">
+													<vgap>5</vgap>
+													<hgap>5</hgap>
+													<cols>2</cols>
+													<growablecols>1</growablecols>
+
+													<!-- Company -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Company:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="companyTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Company -->
+
+													<!-- Executive -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Executive:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="executiveTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Executive -->
+
+													<!-- Address 1 -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Address 1:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="address1TextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Address 1 -->
+
+													<!-- Address 2 -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Address 2:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="address2TextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Address 2 -->
+
+													<!-- Zipcode / City -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Zipcode/city:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxBoxSizer">
+															<orient>wxHORIZONTAL</orient>
+
+															<object class="sizeritem">
+																<object class="wxTextCtrl" name="zipcodeTextCtrl">
+																	<maxlength>255</maxlength>
+																</object>
+															</object>
+
+															<object class="spacer">
+																<size>5</size>
+															</object>
+
+															<object class="sizeritem">
+																<option>1</option>
+
+																<object class="wxTextCtrl" name="cityTextCtrl">
+																	<maxlength>255</maxlength>
+																</object>
+															</object>
+
+														</object>
+													</object>
+													<!-- /Zipcode / City -->
+
+													<!-- Telephone -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Telephone:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="telephoneTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Telephone -->
+
+													<!-- Fax -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Fax:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="faxTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Fax -->
+
+													<!-- Email -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Email:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="emailTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Email -->
+
+													<!-- Web -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Web:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="webTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Web -->
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Master data -->
+
+								<!-- Financial -->
+								<object class="notebookpage">
+									<label>Financial</label>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+											
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxFlexGridSizer">
+													<vgap>5</vgap>
+													<hgap>5</hgap>
+													<cols>2</cols>
+													<growablecols>1</growablecols>
+
+													<!-- Sales tax identification number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Sales tax identification number:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="salesTaxIdentificationNumberTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Sales tax identification number -->
+
+													<!-- Tax number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Tax number:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="taxNumberTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Tax number -->
+
+													<!-- Sales tax indicator -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Sales tax indicator:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+
+														<object class="wxTextCtrl" name="salesTaxIndicatorTextCtrl">
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Sales tax indicator -->
+
+													<!-- Bank -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Bank:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" name="bankTextCtrl">
+															<size>300, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Bank -->
+
+													<!-- Bank code -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Bank code:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankCodeTextCtrl">
+															<size>120, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Bank code -->
+
+													<!-- Account number -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Account number:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="accountNumberTextCtrl">
+															<size>120, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Account number -->
+
+													<!-- BIC -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>BIC:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bicTextCtrl">
+															<size>120, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /BIC -->
+
+													<!-- IBAN -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>IBAN:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ibanTextCtrl">
+															<size>120, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /IBAN -->
+
+													<!-- Holder -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Holder:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" name="holderTextCtrl">
+															<size>250, -1</size>
+															<maxlength>255</maxlength>
+														</object>
+													</object>
+													<!-- /Holder -->
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Financial -->
+
+								<!-- Tax -->
+								<object class="notebookpage">
+									<label>Tax</label>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxFlexGridSizer">
+													<cols>3</cols>
+													<hgap>5</hgap>
+													<vgap>5</vgap>
+
+													<!-- Minor value added tax -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Minor value added tax:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="minorValueAddedTaxTextCtrl">
+															<value>7,00</value>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label translate="0">%</label>
+														</object>
+													</object>
+													<!-- /Minor value added tax -->
+
+													<!-- Major value added tax -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Major value added tax:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="majorValueAddedTaxTextCtrl">
+															<value>19,00</value>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>%</label>
+														</object>
+													</object>
+													<!-- /Major value added tax -->
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Tax -->
+
+								<!-- Numbers -->
+								<object class="notebookpage">
+									<label>Numbers</label>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND | wxALL</flag>
+												<option>1</option>
+												<border>5</border>
+
+												<object class="wxFlexGridSizer">
+													<cols>2</cols>
+													<hgap>5</hgap>
+													<vgap>5</vgap>
+
+													<!-- Client id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Client id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="clientIdBeginTextCtrl">
+															<value>10000</value>
+														</object>
+													</object>
+													<!-- /Client id begin -->
+
+													<!-- Product id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Product id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="productIdBeginTextCtrl">
+															<value>30000</value>
+														</object>
+													</object>
+													<!-- /Product id begin -->
+
+													<!-- Order id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Order id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="orderIdBeginTextCtrl">
+															<value>50000</value>
+														</object>
+													</object>
+													<!-- /Order id begin -->
+
+													<!-- Invoice id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Invoice id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="invoiceIdBeginTextCtrl">
+															<value>70000</value>
+														</object>
+													</object>
+													<!-- /Invoice id begin -->
+
+													<!-- Credit id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Credit id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="creditIdBeginTextCtrl">
+															<value>90000</value>
+														</object>
+													</object>
+													<!-- /Credit id begin -->
+
+													<!-- Purchase id begin -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText">
+															<label>Purchase id begin:</label>
+															<fg>#c65d00</fg>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchaseIdBeginTextCtrl">
+															<value>80000</value>
+														</object>
+													</object>
+													<!-- /Purchase id begin -->
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Numbers -->
+
+							</object>
+
+						</object>
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

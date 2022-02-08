@@ -1,0 +1,9 @@
+<tr>
+	<td>{s:description}</td>
+	<td>{s:bank}</td>
+	<td>{s:bankCode}</td>
+	<td>{s:bic}</td>
+	<td>{s:accountNumber}</td>
+	<td>{s:iban}</td>
+	<td>{s:bankOwner}</td>
+</tr>

@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxFrame" name="ProductEditFrame">
+		<title>Edit product</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="printToolbarButton">
+								<label>Print</label>
+								<bitmap platform="win|unix">resources/images/Print.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Print.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButton name="printPreviewToolbarButton">
+								<label>Preview</label>
+								<bitmap platform="win|unix">resources/images/PrintPreview.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/PrintPreview.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="remindersToolbarButton">
+								<label>Reminders</label>
+								<bitmap platform="win|unix">resources/images/Reminder.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Reminder.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="editedInformationsToolbarButton">
+								<label>Informations</label>
+								<bitmap platform="win|unix">resources/images/Information.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Information.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<object class="wxNotebook">
+						<!-- Product -->
+						<object class="notebookpage">
+							<label>Product</label>
+
+							<object class="wxPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+									
+									<object class="sizeritem">
+										<flag>wxALL | wxEXPAND</flag>
+										<option>1</option>
+										<border>5</border>
+
+										<object class="wxFlexGridSizer">
+											<vgap>5</vgap>
+											<hgap>5</hgap>
+											<cols>4</cols>
+											<growablecols>1, 3</growablecols>
+											<growablerows>7</growablerows>
+
+											<!-- Product id -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Product id:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="productIdTextCtrl">
+													<style>wxTE_READONLY</style>
+												</object>
+											</object>
+											<!-- /Product id -->
+
+											<!-- Article number -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText" name="articleNumberStaticText">
+													<label>Article number:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="articleNumberTextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Article number -->
+
+											<!-- Group -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Group:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="groupComboBox">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Group -->
+
+											<!-- Package -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Package:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="packageComboBox">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Package -->
+
+											<!-- Available -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Available:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxCheckBox" subclass="DynSoft::DSCheckBox" name="availableCheckBox">
+												</object>
+											</object>
+											<!-- /Available -->
+
+											<!-- Distributor -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Distributor:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxBoxSizer">
+													<orient>wxHORIZONTAL</orient>
+
+													<object class="sizeritem">
+														<option>1</option>
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="distributorTextCtrl">
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<object class="wxButton" name="distributorFindButton">
+															<label>find</label>
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<object class="wxButton" name="distributorOpenButton">
+															<label>open</label>
+														</object>
+													</object>
+												</object>
+											</object>
+											<!-- /Distributor -->
+
+											<!-- Manufacturer -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Manufacturer:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="manufacturerComboBox">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Manufacturer -->
+
+											<!-- Publisher -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Publisher:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="publisherComboBox">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Publisher -->
+
+											<!-- EAN -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>EAN:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="eanTextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /EAN -->
+
+											<!-- Short name -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Short name:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="shortNameTextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Short name -->
+
+											<!-- Name 1 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Name 1:</label>
+													<fg>#c65d00</fg>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="name1TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Name 1 -->
+
+											<!-- Name 2 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Name 2:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="name2TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Name 2 -->
+
+											<!-- Name 3 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Name 3:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="name3TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Name 3 -->
+
+											<!-- Name 4 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Name 4:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="name4TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /Name 4 -->
+
+											<!-- Description -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT</flag>
+
+												<object class="wxStaticText" name="descriptionStaticText">
+													<label>Description:</label>
+													<fg>#0000ff</fg>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="descriptionTextCtrl">
+													<style>wxTE_MULTILINE</style>
+													<size>-1, 100</size>
+												</object>
+											</object>
+											<!-- /Description -->
+
+											<!-- Note -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT</flag>
+
+												<object class="wxStaticText" name="noteStaticText">
+													<label>Note:</label>
+													<fg>#0000ff</fg>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="noteTextCtrl">
+													<style>wxTE_MULTILINE</style>
+													<size>-1, 100</size>
+												</object>
+											</object>
+											<!-- /Note -->
+
+											<!-- ISBN 10 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>ISBN 10:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="isbn10TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /ISBN 10 -->
+
+											<!-- ISBN 13 -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>ISBN 13:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="isbn13TextCtrl">
+													<maxlength>255</maxlength>
+												</object>
+											</object>
+											<!-- /ISBN 13 -->
+
+											<!-- Weight -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Weight (Kilogram):</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="weightTextCtrl">
+													<size>80, -1</size>
+													<maxlength>11</maxlength>
+												</object>
+											</object>
+											<!-- /Weight -->
+
+											<!-- Tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Tax:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="taxComboBox">
+													<size>100, -1</size>
+													<style>wxCB_READONLY</style>
+												</object>
+											</object>
+											<!-- /Tax -->
+
+											<!-- Empty -->
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<!-- /Empty -->
+
+											<!-- Prices without tax -->
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Prices without tax</label>
+													<font>
+														<weight>bold</weight>
+													</font>
+												</object>
+											</object>
+											<!-- /Prices without tax -->
+
+											<!-- Prices with tax -->
+											<object class="sizeritem">
+												<object class="wxStaticText" />
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Prices with tax</label>
+													<font>
+														<weight>bold</weight>
+													</font>
+												</object>
+											</object>
+											<!-- /Prices with tax -->
+
+											<!-- Price without tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Price:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxBoxSizer">
+													<orient>wxHORIZONTAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="priceWithoutTaxTextCtrl">
+															<size>100, -1</size>
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxButton" name="calculateWithoutTaxButton">
+															<label>Caculate</label>
+														</object>
+													</object>
+												</object>
+											</object>
+											<!-- /Price without tax -->
+
+											<!-- Price with tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Price:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxBoxSizer">
+													<orient>wxHORIZONTAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="priceWithTaxTextCtrl">
+															<size>100, -1</size>
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxButton" name="calculateWithTaxButton">
+															<label>Caculate</label>
+														</object>
+													</object>
+												</object>
+											</object>
+											<!-- /Price with tax -->
+
+											<!-- Purchase price without tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Purchase:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxBoxSizer">
+													<orient>wxHORIZONTAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchasePriceWithoutTaxTextCtrl">
+															<size>100, -1</size>
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxButton" name="calculatePurchasePriceWithoutTaxButton">
+															<label>Caculate</label>
+														</object>
+													</object>
+												</object>
+											</object>
+											<!-- /Purchase price without tax -->
+
+											<!-- Purchase price with tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Purchase:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxBoxSizer">
+													<orient>wxHORIZONTAL</orient>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="purchasePriceWithTaxTextCtrl">
+															<size>100, -1</size>
+														</object>
+													</object>
+
+													<object class="spacer">
+														<size>5</size>
+													</object>
+
+													<object class="sizeritem">
+														<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxButton" name="calculatePurchasePriceWithTaxButton">
+															<label>Caculate</label>
+														</object>
+													</object>
+												</object>
+											</object>
+											<!-- /Purchase price with tax -->
+
+											<!-- Margin without tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Margin:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<object class="wxTextCtrl" name="marginWithoutTaxTextCtrl">
+													<flag>wxTE_READONLY</flag>
+													<style>wxTE_RIGHT</style>
+													<size>100, -1</size>
+												</object>
+											</object>
+											<!-- /Margin without tax -->
+
+											<!-- Margin with tax -->
+											<object class="sizeritem">
+												<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+												<object class="wxStaticText">
+													<label>Margin:</label>
+												</object>
+											</object>
+											<object class="sizeritem">
+												<object class="wxTextCtrl" name="marginWithTaxTextCtrl">
+													<flag>wxTE_READONLY</flag>
+													<style>wxTE_RIGHT</style>
+													<size>100, -1</size>
+												</object>
+											</object>
+											<!-- /Margin with tax -->
+										</object>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Product -->
+
+						<!-- More data -->
+						<object class="notebookpage">
+							<label>More data</label>
+
+							<object class="wxPanel" name="moreDataPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+								</object>
+							</object>
+						</object>
+						<!-- /More data -->
+
+						<!-- Media -->
+						<object class="notebookpage">
+							<label>Media</label>
+
+							<object class="wxPanel" name="mediaPanel">
+								<object class="wxBoxSizer">
+									<orient>wxVERTICAL</orient>
+								</object>
+							</object>
+						</object>
+						<!-- /Media -->
+
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

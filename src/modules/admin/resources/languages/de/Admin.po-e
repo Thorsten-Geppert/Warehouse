@@ -1,0 +1,1519 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-07-22 21:46+0200\n"
+"PO-Revision-Date: 2015-11-15 13:40+0100\n"
+"Last-Translator: Thorsten Geppert <thorsten@dynsoft.com>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.4\n"
+
+#: ../lib/UpdateLibrary.cpp:173 ../lib/UpdateLibrary.cpp:176
+#: ../lib/UpdateLibrary.cpp:246 ../lib/UpdateLibrary.cpp:264
+#: ../lib/UpdateLibrary.cpp:312 ../lib/UpdateLibrary.cpp:513
+msgid " - "
+msgstr " - "
+
+#: AdminFrame.cpp:54 AdminFrame.cpp:56
+msgid " Version: "
+msgstr " Version: "
+
+#: UpdateAskDialog.cpp:33
+msgid " to "
+msgstr " auf "
+
+#: ../lib/OrderEntity.cpp:87 ../lib/OrderEntity.cpp:93
+#: ../lib/OrderEntity.cpp:99 ../lib/OrderEntity.cpp:90
+#: ../lib/OrderEntity.cpp:96 ../lib/OrderEntity.cpp:102
+#: ../lib/OrderEntity.cpp:108 ../lib/OrderEntity.cpp:114
+#: ../lib/OrderEntity.cpp:120 ../lib/OrderEntity.cpp:110
+#: ../lib/OrderEntity.cpp:116 ../lib/OrderEntity.cpp:122
+#: ../lib/OrderEntity.cpp:112 ../lib/OrderEntity.cpp:118
+#: ../lib/OrderEntity.cpp:124 ../lib/OrderEntity.cpp:128
+#: ../lib/OrderEntity.cpp:134 ../lib/OrderEntity.cpp:140
+#: ../lib/OrderEntity.cpp:117 ../lib/OrderEntity.cpp:123
+#: ../lib/OrderEntity.cpp:129 ../lib/OrderEntity.cpp:135
+#: ../lib/OrderEntity.cpp:141
+msgid ", "
+msgstr ", "
+
+#: UpdateSpecialDialog.cpp:67
+msgid "- Update - Please create a backup before -"
+msgstr "- Aktualisieren - Bitte machen Sie zuvor ein Backup -"
+
+#: UserDialog.cpp:60 DatabaseRecoverDialog.cpp:84 OutputDialog.cpp:50
+#: DatabaseRecoverDialog.cpp:91 DatabaseRecoverDialog.cpp:93
+#: NetworkAccessEditDialog.cpp:91 NetworkAccessEditDialog.cpp:92
+msgid "Abort"
+msgstr "Abbrechen"
+
+#: AdminFrame.cpp:60 AdminFrame.cpp:61 AdminFrame.cpp:41 AdminFrame.cpp:43
+#: AdminFrame.cpp:44 AdminFrame.cpp:45 AdminFrame.cpp:46 AdminFrame.cpp:48
+msgid "About"
+msgstr "Über"
+
+#: ../lib/RuntimeInformationType.cpp:168
+msgid "Access denied"
+msgstr "Zugriff verweigert"
+
+#: ../lib/OrderEntity.cpp:94 ../lib/OrderEntity.cpp:97
+#: ../lib/OrderEntity.cpp:103 ../lib/OrderEntity.cpp:115
+#: ../lib/OrderEntity.cpp:117 ../lib/OrderEntity.cpp:119
+#: ../lib/OrderEntity.cpp:123 ../lib/OrderEntity.cpp:124
+msgid "Account number: "
+msgstr "Kontonummer: "
+
+#: AdminFrame.cpp:55 AdminFrame.cpp:57 AdminFrame.cpp:56 AdminFrame.cpp:58
+#: AdminFrame.cpp:62 AdminFrame.cpp:63 AdminFrame.cpp:64 AdminFrame.cpp:66
+#: AdminFrame.cpp:67 AdminFrame.cpp:68 AdminFrame.cpp:69 AdminFrame.cpp:70
+#: AdminFrame.cpp:73 AdminFrame.cpp:75
+msgid "Action:"
+msgstr "Aktion:"
+
+#: UpdateDialog.cpp:47
+msgid "Actual version: "
+msgstr "Aktuelle Version: "
+
+#: UpdateDialog.cpp:41 UpdateDialog.cpp:45
+msgid "Actual version: 1.0.0"
+msgstr "Aktuelle Version: 1.0.0"
+
+#: UserDialog.cpp:61 UserDialog.cpp:97 UserDialog.cpp:109 UserDialog.cpp:121
+#: NetworkAccessDialog.cpp:65
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: AdminFrame.cpp:46 AdminFrame.cpp:133 AdminFrame.cpp:52 AdminFrame.cpp:157
+#: AdminFrame.cpp:167 AdminFrame.cpp:173 AdminFrame.cpp:172 AdminFrame.cpp:174
+#: AdminFrame.cpp:190 AdminFrame.cpp:191 AdminFrame.cpp:189 AdminFrame.cpp:218
+#: AdminFrame.cpp:234 AdminFrame.cpp:249 AdminFrame.cpp:256 AdminFrame.cpp:257
+#: AdminFrame.cpp:261 AdminFrame.cpp:263 AdminFrame.cpp:266 AdminFrame.cpp:268
+#: AdminFrame.cpp:267 AdminFrame.cpp:272
+msgid "Add user"
+msgstr "Benutzer hinzufügen"
+
+#: AdminFrame.cpp:29 AdminFrame.cpp:30 AdminFrame.cpp:31 AdminFrame.cpp:32
+#: AdminFrame.cpp:33 AdminFrame.cpp:34 AdminFrame.cpp:36 AdminFrame.cpp:37
+#: AdminFrame.cpp:39
+msgid "Add/edit user to/of selected enterprise"
+msgstr "Benutzer in der ausgewählten Datenbank hinzufügen/bearbeiten"
+
+#: NetworkAccessDialog.cpp:51
+msgid "Address"
+msgstr "Adresse"
+
+#: NetworkAccessEditDialog.cpp:69
+msgid "Address:"
+msgstr "Adresse:"
+
+#: ../lib/PermissionLibrary.cpp:7
+msgid "Administrator"
+msgstr "Administrator"
+
+#: ../lib/ConstantsLibrary.cpp:61
+msgid "After tax"
+msgstr "Netto"
+
+#: OutputDialog.cpp:83
+msgid "An unknown error has occured."
+msgstr "Es ist ein unbekannter Fehler aufgetreten."
+
+#: ../lib/OnlineContactController.cpp:16
+msgid "Anrede: "
+msgstr "Anrede: "
+
+#: ../lib/ConstantsLibrary.cpp:94
+msgid "B2B"
+msgstr "B2B"
+
+#: ../lib/ConstantsLibrary.cpp:95
+msgid "B2C"
+msgstr "B2C"
+
+#: ../lib/OrderEntity.cpp:129 ../lib/OrderEntity.cpp:130
+msgid "BIC: "
+msgstr "BIC: "
+
+#: AdminFrame.cpp:51 AdminFrame.cpp:259 AdminFrame.cpp:267 AdminFrame.cpp:269
+msgid "Backup"
+msgstr "Sichern"
+
+#: AdminFrame.cpp:265 AdminFrame.cpp:263 AdminFrame.cpp:279 AdminFrame.cpp:280
+#: AdminFrame.cpp:278 AdminFrame.cpp:307 AdminFrame.cpp:323 AdminFrame.cpp:338
+#: AdminFrame.cpp:345 AdminFrame.cpp:346 AdminFrame.cpp:350 AdminFrame.cpp:359
+#: AdminFrame.cpp:362 AdminFrame.cpp:364 AdminFrame.cpp:363 AdminFrame.cpp:368
+msgid "Backup is done."
+msgstr "Sicherung ist abgeschlossen."
+
+#: AdminFrame.cpp:260 AdminFrame.cpp:268 AdminFrame.cpp:270
+msgid "Backup selected database."
+msgstr "Ausgewählte Datenbank sichern."
+
+#: AdminFrame.cpp:30 AdminFrame.cpp:31 AdminFrame.cpp:32 AdminFrame.cpp:33
+#: AdminFrame.cpp:34 AdminFrame.cpp:35 AdminFrame.cpp:37 AdminFrame.cpp:38
+#: AdminFrame.cpp:40
+msgid "Backup selected enterprise database"
+msgstr "Ausgewählte Mandantendatenbank sichern"
+
+#: ../lib/OrderEntity.cpp:88 ../lib/OrderEntity.cpp:91
+#: ../lib/OrderEntity.cpp:97 ../lib/OrderEntity.cpp:109
+#: ../lib/OrderEntity.cpp:111 ../lib/OrderEntity.cpp:113
+#: ../lib/OrderEntity.cpp:117 ../lib/OrderEntity.cpp:118
+msgid "Bank code: "
+msgstr "Bankleitzahl: "
+
+#: ../lib/OrderEntity.cpp:100 ../lib/OrderEntity.cpp:103
+#: ../lib/OrderEntity.cpp:109 ../lib/OrderEntity.cpp:121
+#: ../lib/OrderEntity.cpp:123 ../lib/OrderEntity.cpp:125
+#: ../lib/OrderEntity.cpp:141 ../lib/OrderEntity.cpp:142
+msgid "Bank owner: "
+msgstr "Inhaber: "
+
+#: ../lib/OrderEntity.cpp:83 ../lib/OrderEntity.cpp:86
+#: ../lib/OrderEntity.cpp:92 ../lib/OrderEntity.cpp:104
+#: ../lib/OrderEntity.cpp:106 ../lib/OrderEntity.cpp:108
+#: ../lib/OrderEntity.cpp:112 ../lib/OrderEntity.cpp:113
+msgid "Bank: "
+msgstr "Bank: "
+
+#: ../lib/OnlineContactController.cpp:28
+msgid "Betreff: "
+msgstr "Betreff: "
+
+#: ../lib/ConstantsLibrary.cpp:9
+msgid "Bid"
+msgstr "Angebot"
+
+#: ../lib/ConstantsLibrary.cpp:34 ../lib/OrderController.cpp:642
+#: ../lib/OrderController.cpp:648 ../lib/OrderController.cpp:635
+#: ../lib/OrderController.cpp:730
+msgid "Bill"
+msgstr "Rechnung"
+
+#: AdminFrame.cpp:399 AdminFrame.cpp:397 AdminFrame.cpp:426 AdminFrame.cpp:442
+#: AdminFrame.cpp:457
+msgid "Bolso Warehouse Admin is a software to administrator Bolso Warehouse and the accessed databases. Use it on your on risk."
+msgstr "Bolso Warehouse Admin ist ein Programm, um Bolso Warehouse sowie die benutzten Datenbanken zu administrieren. Die Benutzung ist auf eigenes Risiko!"
+
+#: NetworkAccessDialog.cpp:41
+msgid "Browse..."
+msgstr "Durchsuchen..."
+
+#: UpdateAskDialog.cpp:46
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: ../lib/ConstantsLibrary.cpp:36
+msgid "Cash"
+msgstr "Bar"
+
+#: ../lib/ConstantsLibrary.cpp:37
+msgid "Cash on delivery"
+msgstr "Nachnahme"
+
+#: NetworkAccessDialog.cpp:153 NetworkAccessDialog.cpp:154
+msgid "Choose the pg_hba.conf file"
+msgstr "Wählen Sie die pg_hba.conf-Datei"
+
+#: UpdateSpecialDialog.cpp:94
+msgid "Choose the update file"
+msgstr "Wählen Sie die Aktualisierungsdatei aus"
+
+#: UpdateSpecialDialog.cpp:46
+msgid "Choose update file"
+msgstr "Wählen Sie die Aktualisierungsdatei aus"
+
+#: ../lib/ClientController.cpp:57 ../lib/ConstantsLibrary.cpp:22
+#: ../lib/ClientController.cpp:66 ../lib/ClientController.cpp:67
+msgid "Client"
+msgstr "Kunde"
+
+#: ../lib/ReminderType.cpp:100
+msgid "Clients"
+msgstr "Kunden"
+
+#: AdminFrame.cpp:33 AdminFrame.cpp:36 AdminFrame.cpp:42 AdminFrame.cpp:44
+#: AdminFrame.cpp:43 AdminFrame.cpp:45 AdminFrame.cpp:48 AdminFrame.cpp:49
+#: AdminFrame.cpp:51 AdminFrame.cpp:53 AdminFrame.cpp:54 AdminFrame.cpp:55
+#: AdminFrame.cpp:56 AdminFrame.cpp:59 AdminFrame.cpp:61
+msgid "Company"
+msgstr "Firma"
+
+#: DatabaseRecoverDialog.cpp:57 DatabaseRecoverDialog.cpp:55
+msgid "Company:"
+msgstr "Mandant:"
+
+#: Admin.cpp:39 Admin.cpp:58 Admin.cpp:43 Admin.cpp:62
+msgid "Configuration file error"
+msgstr "Konfigurationsdateifehler"
+
+#: UpdateDialog.cpp:92 UpdateDialog.cpp:107 UpdateDialog.cpp:109
+msgid "Connecting to database..."
+msgstr "Verbinde zur Datenbank..."
+
+#: ../lib/UpdateLibrary.cpp:36 ../lib/UpdateLibrary.cpp:41
+#: ../lib/UpdateLibrary.cpp:42 ../lib/UpdateLibrary.cpp:39
+#: ../lib/UpdateLibrary.cpp:44 ../lib/UpdateLibrary.cpp:46
+#: ../lib/UpdateLibrary.cpp:49 ../lib/UpdateLibrary.cpp:50
+msgid "Connection error."
+msgstr "Verbindungsfehler."
+
+#: UpdateDialog.cpp:102 UpdateDialog.cpp:113 UpdateDialog.cpp:115
+msgid "Connection established."
+msgstr "Verbindung hergestellt."
+
+#: DatabaseRecoverDialog.cpp:220 DatabaseRecoverDialog.cpp:231
+#: DatabaseRecoverDialog.cpp:237
+msgid "Could not add the company database to the Bolso Warehouse database. Please do this yourself in the Enterprise Configuration Dialog of Bolso Warehouse."
+msgstr "Die Mandantendatenbank konnte nicht der Bolso Warehouse Datenbank hinzugefügt werden. Bitte fügen Sie die Datenbank händisch im Mandantendialog von Bolso Warehouse ein."
+
+#: DatabaseRecoverDialog.cpp:237
+msgid "Could not add the company database to the DynSoft.com Warehouse database. Please do this yourself in the Enterprise Configuration Dialog of DynSoft.com Warehouse."
+msgstr "Die Unternehmensdatenbank konnte nicht zur DynSoft.com Warehouse-Datenbank hinzugefügt werden. Bitte fügen Sie selbst im Unternehmensdialog von DynSoft.com Warehouse die Datenbank hinzu."
+
+#: DatabaseRecoverDialog.cpp:237
+msgid "Could not add the company database to the GuG-IT Warehouse database. Please do this yourself in the Enterprise Configuration Dialog of GuG-IT Warehouse."
+msgstr "Konnte die Firmendatenbank nicht zur GuG-IT Warehouse Datenbank hinzufügen. Bitte erledigen Sie dies selbst im Firmenkonfigurationsdialog von GuG-IT Warehouse."
+
+#: DatabaseRecoverDialog.cpp:145 DatabaseRecoverDialog.cpp:152
+#: DatabaseRecoverDialog.cpp:163 DatabaseRecoverDialog.cpp:164
+msgid "Could not close file: "
+msgstr "Konnte die Datei nicht schließen: "
+
+#: Admin.cpp:57 Admin.cpp:61
+msgid "Could not connect do database. Aborting startup."
+msgstr "Konnte keine Verbindung zur Datenbank aufbauen. Abbruch."
+
+#: DatabaseRecoverDialog.cpp:167 DatabaseRecoverDialog.cpp:177
+#: AdminFrame.cpp:333 DatabaseRecoverDialog.cpp:188 AdminFrame.cpp:349
+#: AdminFrame.cpp:350 AdminFrame.cpp:348 DatabaseRecoverDialog.cpp:192
+#: AdminFrame.cpp:377 AdminFrame.cpp:393 AdminFrame.cpp:408
+msgid "Could not connect to database postgres or template1. Could not create database."
+msgstr "Konnte keine Verbindung zur Datenbank postgres oder template1 herstellen. Die Datenbank konnte nicht erstellt werden."
+
+#: AdminFrame.cpp:415 AdminFrame.cpp:416 AdminFrame.cpp:420 AdminFrame.cpp:429
+#: AdminFrame.cpp:432 AdminFrame.cpp:434 AdminFrame.cpp:433 AdminFrame.cpp:438
+msgid "Could not connect to database postgres or template1. Could not drop database."
+msgstr "Konnte keine Verbindung zur Datenbank postgres bzw. template1 aufbauen. Die Datenbank konnte nicht entfernt werden."
+
+#: AdminFrame.cpp:532 AdminFrame.cpp:540 AdminFrame.cpp:544 AdminFrame.cpp:553
+#: AdminFrame.cpp:556 AdminFrame.cpp:558 AdminFrame.cpp:557 AdminFrame.cpp:562
+msgid "Could not connect to database postgres or template1. Could not reorganize database."
+msgstr "Konnte keine Verbindung zur Datenbank postgres oder template1 aufbauen. Die Datenbank konnte nicht reorganisiert werden."
+
+#: UpdateDialog.cpp:106 UpdateDialog.cpp:118 UpdateDialog.cpp:120
+#: UpdateDialog.cpp:137
+msgid "Could not connect to database."
+msgstr "Konnte keine Verbindung zur Datenbank aufbauen."
+
+#: AdminFrame.cpp:142 AdminFrame.cpp:166 AdminFrame.cpp:176 AdminFrame.cpp:182
+#: AdminFrame.cpp:181 AdminFrame.cpp:183 AdminFrame.cpp:199 AdminFrame.cpp:200
+#: AdminFrame.cpp:198 AdminFrame.cpp:227 AdminFrame.cpp:243 AdminFrame.cpp:258
+#: AdminFrame.cpp:265 AdminFrame.cpp:266 AdminFrame.cpp:270 AdminFrame.cpp:272
+#: AdminFrame.cpp:275 AdminFrame.cpp:277 AdminFrame.cpp:276 AdminFrame.cpp:281
+msgid "Could not connect to database. The changes were not saved."
+msgstr "Konnte keine Verbindung zur Datenbank herstellten. Die Änderungen wurden nicht gespeichert."
+
+#: AdminFrame.cpp:277 AdminFrame.cpp:278 AdminFrame.cpp:276 AdminFrame.cpp:292
+#: AdminFrame.cpp:293 AdminFrame.cpp:291 AdminFrame.cpp:320 AdminFrame.cpp:336
+#: AdminFrame.cpp:351
+msgid "Could not create backup. An error occured. Maybe you have a to old version of Bolso Warehouse Admin with a to old pg_dump version. Please contact us."
+msgstr "Die Sicherung konnte nicht durchgeführt werden. Unter Umständen ist Bolso Warehouse oder pg_dump veraltet. Bitte kontaktieren Sie uns."
+
+#: AdminFrame.cpp:351 AdminFrame.cpp:358 AdminFrame.cpp:359 AdminFrame.cpp:363
+#: AdminFrame.cpp:372 AdminFrame.cpp:375 AdminFrame.cpp:377 AdminFrame.cpp:376
+#: AdminFrame.cpp:381
+msgid "Could not create backup. An error occured. Maybe you have a to old version of DynSoft.com Warehouse Admin with a to old pg_dump version. Please contact us."
+msgstr "Die Datensicherung konnte nicht durchgeführt werden. Ein Fehler ist aufgetreten. Vielleicht nutzen Sie eine zu alte Version von DynSoft.com Warehouse Admin mit einer zu alten Version von pg_dump. Bitte kontaktieren Sie uns."
+
+#: AdminFrame.cpp:381
+msgid "Could not create backup. An error occured. Maybe you have a to old version of GuG-IT Warehouse Admin with a to old pg_dump version. Please contact us."
+msgstr "Es konnte keine Datensicherung durchgeführt werden. Ein Fehler trat auf. Vielleicht haben Sie eine zu alte Version von GuG-IT Warehouse Admin mit einer zu alten pg_dump-Version. Bitte wenden Sie sich an uns."
+
+#: DatabaseRecoverDialog.cpp:170 DatabaseRecoverDialog.cpp:180
+#: DatabaseRecoverDialog.cpp:191 DatabaseRecoverDialog.cpp:195
+msgid "Could not create database. Unknown error."
+msgstr "Die Datenbank konnte nicht erstellt werden. Unbekannter Fehler."
+
+#: AdminFrame.cpp:162 AdminFrame.cpp:169 AdminFrame.cpp:170 AdminFrame.cpp:171
+#: AdminFrame.cpp:174 AdminFrame.cpp:179 AdminFrame.cpp:644
+msgid "Could not determine version. Aborting."
+msgstr "Die Versionsnummer konnte nicht ermittelt werden. Abbruch."
+
+#: AdminFrame.cpp:336 AdminFrame.cpp:352 AdminFrame.cpp:353 AdminFrame.cpp:351
+#: AdminFrame.cpp:380 AdminFrame.cpp:396 AdminFrame.cpp:411 AdminFrame.cpp:418
+#: AdminFrame.cpp:419 AdminFrame.cpp:423 AdminFrame.cpp:432 AdminFrame.cpp:435
+#: AdminFrame.cpp:437 AdminFrame.cpp:436 AdminFrame.cpp:441
+msgid "Could not drop database. Unknown error."
+msgstr "Die Datenbank konnte nicht entfernt werden. Unbekannter Fehler."
+
+#: OutputDialog.cpp:78
+msgid "Could not execute command: "
+msgstr "Der Befehl konnte nicht ausgeführt werden: "
+
+#: ../lib/UpdateLibrary.cpp:51 ../lib/UpdateLibrary.cpp:56
+#: ../lib/UpdateLibrary.cpp:57 ../lib/UpdateLibrary.cpp:54
+#: ../lib/UpdateLibrary.cpp:59 ../lib/UpdateLibrary.cpp:61
+#: ../lib/UpdateLibrary.cpp:64 ../lib/UpdateLibrary.cpp:65
+msgid "Could not open Update URL."
+msgstr "URL konnte nicht geöffnet werden."
+
+#: Admin.cpp:34 Admin.cpp:38
+msgid "Could not open configuration file. Please use Bolso Warehouse to create the configuration file or copy the .BolsoWarehouse.ini to this computer or use this software on a computer with installed Bolso Warehouse."
+msgstr "Konnte die Konfigurationsdatei nicht öffnen. Bitte benutzen Sie Bolso Warehouse, um eine Konfigurationsdatei zu erstellen oder kopieren Sie die .BolsoWarehouse.ini auf diesen Computer oder benutzen Sie diese Software auf einem Computer, auf dem BolsoWarehouse bereits installiert ist."
+
+#: Admin.cpp:38
+msgid "Could not open configuration file. Please use DynSoft.com Warehouse to create the configuration file or copy the .DynSoftWarehouse.ini to this computer or use this software on a computer with installed DynSoft.com Warehouse."
+msgstr "Die Konfigurationsdatei konnte nicht geöffnet werden. Bitte benutzen Sie DynSoft.com Warehouse um eine Konfigurationsdatei zu erstellen oder kopieren Sie .DynSoftWarehouse.ini auf diesen Computer oder benutzen Sie diese Software auf einem Computer, auf dem DynSoft.com Warehouse installiert ist."
+
+#: Admin.cpp:38
+msgid "Could not open configuration file. Please use GuG-IT Warehouse to create the configuration file or copy the .DynSoftWarehouse.ini to this computer or use this software on a computer with installed GuG-IT Warehouse."
+msgstr "Die Konfigurationsdatei konnte nicht geöffnet werden. Bitte benutzen Sie GuG-IT Warehouse, um eine Konfigurationsdatei zu erstellen oder kopieren Sie die .DynSoftWarehouse.ini auf diesen Computer oder benutzen Sie diese Software auf einem Computer mit installiertem GuG-IT Warehouse."
+
+#: DatabaseRecoverDialog.cpp:127 DatabaseRecoverDialog.cpp:134
+#: DatabaseRecoverDialog.cpp:145 DatabaseRecoverDialog.cpp:146
+msgid "Could not open file: "
+msgstr "Die Datei konnte nicht geöffnet werden: "
+
+#: DatabaseRecoverDialog.cpp:136 DatabaseRecoverDialog.cpp:143
+#: DatabaseRecoverDialog.cpp:154 DatabaseRecoverDialog.cpp:155
+msgid "Could not read file: "
+msgstr "Die Datei konnte nicht gelesen werden: "
+
+#: UpdateSpecialDialog.cpp:148
+msgid "Could not read the file or the file is corrupted or invalid."
+msgstr "Die Datei konnte nicht gelesen werden oder die Datei ist beschädigt oder nicht valide."
+
+#: AdminFrame.cpp:359 AdminFrame.cpp:375 AdminFrame.cpp:376 AdminFrame.cpp:374
+#: AdminFrame.cpp:403 AdminFrame.cpp:419 AdminFrame.cpp:434
+msgid "Could not remove the company entry from Bolso Warehouse. Please do it by yourself in the Bolso Warehouse enterprise configuration dialog."
+msgstr "Der Mandant konnte nicht aus Bolso Warehouse entfernt werden. Bitte entfernen Sie ihn selbst aus dem Bolso Warehouse Mandantendialog."
+
+#: AdminFrame.cpp:434 AdminFrame.cpp:441 AdminFrame.cpp:442 AdminFrame.cpp:446
+#: AdminFrame.cpp:455 AdminFrame.cpp:458 AdminFrame.cpp:460 AdminFrame.cpp:459
+#: AdminFrame.cpp:464
+msgid "Could not remove the company entry from DynSoft.com Warehouse. Please do it by yourself in the DynSoft.com Warehouse enterprise configuration dialog."
+msgstr "Der Unternehmenseintrag konnte nicht aus DynSoft.com Warehouse entfernt werden. Bitte führen Sie den Schritt selbst im DynSoft.com Unternehmensdialog aus."
+
+#: AdminFrame.cpp:464
+msgid "Could not remove the company entry from GuG-IT Warehouse. Please do it by yourself in the GuG-IT Warehouse enterprise configuration dialog."
+msgstr "Der Firmeneintrag konnte nicht aus GuG-IT Warehouse entfernt werden. Bitte entfernen Sie ihn selbst im GuG-IT Warehouse Firmenkonfigurationsdialog."
+
+#: AdminFrame.cpp:535 AdminFrame.cpp:543 AdminFrame.cpp:547 AdminFrame.cpp:556
+#: AdminFrame.cpp:559 AdminFrame.cpp:561 AdminFrame.cpp:560 AdminFrame.cpp:565
+msgid "Could not reorganize database. Unknown error."
+msgstr "Die Datenbank konnte nicht reorganisiert werden. Unbekannter Fehler."
+
+#: AdminFrame.cpp:570 AdminFrame.cpp:568 AdminFrame.cpp:585 AdminFrame.cpp:589
+#: AdminFrame.cpp:598 AdminFrame.cpp:601 AdminFrame.cpp:603 AdminFrame.cpp:602
+#: AdminFrame.cpp:607
+msgid "Could not reorganize the database. Unknown error."
+msgstr "Die Datenbank konnte nicht reorganisiert werden. Unbekannter Fehler."
+
+#: ../lib/ExportLibrary.cpp:74 ../lib/ExportLibrary.cpp:73
+msgid "Could not save file."
+msgstr "Datei konnte nicht gespeichert werden."
+
+#: AdminFrame.cpp:422 AdminFrame.cpp:451 AdminFrame.cpp:467 AdminFrame.cpp:482
+msgid "Could not set password. An error occured. Maybe you have a to old version of Bolso Warehouse Admin with a to old psql version. Please contact us."
+msgstr "Das Kennwort konnte nicht gesetzt werden. Es trat ein Fehler auf. Vielleicht haben Sie eine zu alte Version von Bolso Warehouse Admin mit einer zu alten psql-Version. Bitte kontaktieren Sie uns."
+
+#: AdminFrame.cpp:482 AdminFrame.cpp:476 AdminFrame.cpp:477 AdminFrame.cpp:481
+#: AdminFrame.cpp:490 AdminFrame.cpp:493 AdminFrame.cpp:495 AdminFrame.cpp:494
+#: AdminFrame.cpp:499
+msgid "Could not set password. An error occured. Maybe you have a to old version of DynSoft.com Warehouse Admin with a to old psql version. Please contact us."
+msgstr "Das Kennwort konnte nicht gesetzt werden. Ein Fehler trat auf. Vielleicht nutzen Sie eine zu alte Version von DynSoft.com Warehouse Admin oder eine zu alte psql-Version. Bitte kontaktieren Sie uns."
+
+#: AdminFrame.cpp:499
+msgid "Could not set password. An error occured. Maybe you have a to old version of GuG-IT Warehouse Admin with a to old psql version. Please contact us."
+msgstr "Kennwort konnte nicht gesetzt werden. Ein Fehler trat auf. Vielleicht nutzen Sie eine zu alte Version von GuG-IT Warehouse Admin mit zu alter psql-Version. Bitte wenden Sie sich an uns."
+
+#: DatabaseRecoverDialog.cpp:189 DatabaseRecoverDialog.cpp:199
+#: DatabaseRecoverDialog.cpp:210 DatabaseRecoverDialog.cpp:216
+msgid "Create database"
+msgstr "Datenbank erstellen"
+
+#: AdminFrame.cpp:31 AdminFrame.cpp:32 AdminFrame.cpp:33 AdminFrame.cpp:34
+#: AdminFrame.cpp:35 AdminFrame.cpp:36 AdminFrame.cpp:38 AdminFrame.cpp:39
+#: AdminFrame.cpp:41
+msgid "Create new database and recover enterprise"
+msgstr "Neue Datenbank erstellen und Mandanten importieren"
+
+#: ../lib/ConstantsLibrary.cpp:11 ../lib/OrderController.cpp:645
+#: ../lib/OrderController.cpp:651 ../lib/OrderController.cpp:638
+#: ../lib/OrderController.cpp:733
+msgid "Credit"
+msgstr "Gutschrift"
+
+#: AdminFrame.cpp:35 AdminFrame.cpp:38 AdminFrame.cpp:44 AdminFrame.cpp:46
+#: AdminFrame.cpp:45 AdminFrame.cpp:47 AdminFrame.cpp:50 AdminFrame.cpp:51
+#: AdminFrame.cpp:53 NetworkAccessDialog.cpp:49 AdminFrame.cpp:55
+#: AdminFrame.cpp:56 AdminFrame.cpp:57 AdminFrame.cpp:58 AdminFrame.cpp:61
+#: AdminFrame.cpp:63
+msgid "Database"
+msgstr "Datenbank"
+
+#: AdminFrame.cpp:339 AdminFrame.cpp:355 AdminFrame.cpp:356 AdminFrame.cpp:354
+#: AdminFrame.cpp:383 AdminFrame.cpp:399 AdminFrame.cpp:414 AdminFrame.cpp:421
+#: AdminFrame.cpp:538 AdminFrame.cpp:422 AdminFrame.cpp:546 AdminFrame.cpp:426
+#: AdminFrame.cpp:550 AdminFrame.cpp:435 AdminFrame.cpp:559 AdminFrame.cpp:438
+#: AdminFrame.cpp:562 AdminFrame.cpp:440 AdminFrame.cpp:564 AdminFrame.cpp:439
+#: AdminFrame.cpp:563 AdminFrame.cpp:444 AdminFrame.cpp:568
+msgid "Database does no exist."
+msgstr "Die Datenbank existiert nicht."
+
+#: DatabaseRecoverDialog.cpp:179 DatabaseRecoverDialog.cpp:189
+#: DatabaseRecoverDialog.cpp:200 DatabaseRecoverDialog.cpp:204
+msgid "Database exists."
+msgstr "Die Datenbank existiert."
+
+#: DatabaseRecoverDialog.cpp:22 DatabaseRecoverDialog.cpp:24
+msgid "Database recover"
+msgstr "Datenbankwiederherstellung"
+
+#: DatabaseRecoverDialog.cpp:173 DatabaseRecoverDialog.cpp:184
+#: DatabaseRecoverDialog.cpp:188
+msgid "Database was created and the data was imported."
+msgstr "Die Datenbank wurde erstellt und die Daten importiert."
+
+#: DatabaseRecoverDialog.cpp:173 DatabaseRecoverDialog.cpp:183
+#: DatabaseRecoverDialog.cpp:194 DatabaseRecoverDialog.cpp:198
+msgid "Database was created, but there was an error on importing structure because the connection to the new database could not be established. You cannot use this database."
+msgstr "Die Datenbank wurde erstellt, aber es trat ein Fehler beim Importieren der Struktur auf, da die Verbindung zur erstellten Datenbank nicht hergestellt werden konnte. Sie können die Datenbank nicht benutzen."
+
+#: DatabaseRecoverDialog.cpp:176 DatabaseRecoverDialog.cpp:186
+#: DatabaseRecoverDialog.cpp:197 DatabaseRecoverDialog.cpp:201
+msgid "Database was created, but there was an error on importing structure. You cannot use this database."
+msgstr "Die Datenbank wurde erstellt, aber es trat ein Fehler beim Importieren der Struktur auf. Sie können die Datenbank nicht benutzen."
+
+#: DatabaseRecoverDialog.cpp:164
+msgid "Database was created. Please press save or test connection."
+msgstr "Die Datenbank wurde erstellt. Bitte klicken Sie auf Speichern oder testen Sie die Verbindung."
+
+#: AdminFrame.cpp:329 AdminFrame.cpp:345 AdminFrame.cpp:346 AdminFrame.cpp:344
+#: AdminFrame.cpp:373 AdminFrame.cpp:389 AdminFrame.cpp:404 AdminFrame.cpp:411
+#: AdminFrame.cpp:412 AdminFrame.cpp:416 AdminFrame.cpp:425 AdminFrame.cpp:428
+#: AdminFrame.cpp:430 AdminFrame.cpp:429 AdminFrame.cpp:434
+msgid "Database was removed."
+msgstr "Die Datenbank wurde entfernt."
+
+#: AdminFrame.cpp:529 AdminFrame.cpp:537 AdminFrame.cpp:541 AdminFrame.cpp:550
+#: AdminFrame.cpp:553 AdminFrame.cpp:555 AdminFrame.cpp:554 AdminFrame.cpp:559
+msgid "Database was reorganized."
+msgstr "Die Datenbank wurde reorganisiert."
+
+#: DatabaseRecoverDialog.cpp:58 DatabaseRecoverDialog.cpp:65
+#: DatabaseRecoverDialog.cpp:67 NetworkAccessEditDialog.cpp:59
+msgid "Database:"
+msgstr "Datenbank:"
+
+#: ../lib/ConstantsLibrary.cpp:38
+msgid "Debit"
+msgstr "Lastschrift"
+
+#: AdminFrame.cpp:32 AdminFrame.cpp:33 AdminFrame.cpp:34 AdminFrame.cpp:35
+#: AdminFrame.cpp:36 AdminFrame.cpp:37 AdminFrame.cpp:39 AdminFrame.cpp:40
+#: AdminFrame.cpp:42
+msgid "Delete selected enterprise inclusive database and data"
+msgstr "Ausgewählten Mandanten inklusive Datenbank und Daten löschen"
+
+#: ../lib/ConstantsLibrary.cpp:12 ../lib/OrderController.cpp:518
+#: ../lib/OrderController.cpp:524 ../lib/OrderController.cpp:538
+#: ../lib/OrderController.cpp:637 ../lib/OrderController.cpp:643
+#: ../lib/OrderController.cpp:630 ../lib/OrderController.cpp:725
+msgid "Delivery"
+msgstr "Lieferschein"
+
+#: UpdateSpecialDialog.cpp:141
+msgid "Description:"
+msgstr "Beschreibung:"
+
+#: UpdateDialog.cpp:134
+msgid "Disconnected from database."
+msgstr "Datenbankverbindung beendet."
+
+#: UpdateAskDialog.cpp:33
+msgid "Do the update from "
+msgstr "Aktualisieren Sie von "
+
+#: UpdateSpecialDialog.cpp:117
+msgid "Do you really want to perform the update? Did you do a backup before?"
+msgstr "Möchten Sie die Aktualisierung wirklich durchführen? Haben Sie ein Backup vorher durchgeführt?"
+
+#: AdminFrame.cpp:306 AdminFrame.cpp:322 AdminFrame.cpp:323 AdminFrame.cpp:321
+#: AdminFrame.cpp:350 AdminFrame.cpp:366 AdminFrame.cpp:381 AdminFrame.cpp:388
+#: AdminFrame.cpp:389 AdminFrame.cpp:393 AdminFrame.cpp:402 AdminFrame.cpp:405
+#: AdminFrame.cpp:407 AdminFrame.cpp:406 AdminFrame.cpp:411
+msgid "Do you want to delete the database with all of its data? This move is unrecoverable!"
+msgstr "Möchten Sie die Datenbank inklusive all ihrer Daten entfernen? Dieser Schritt ist nicht rückgängig zu machen!"
+
+#: AdminFrame.cpp:507 AdminFrame.cpp:508 AdminFrame.cpp:512 AdminFrame.cpp:521
+#: AdminFrame.cpp:524 AdminFrame.cpp:526 AdminFrame.cpp:525 AdminFrame.cpp:530
+msgid "Do you want to reorganize the database? If you select yes, please stay tuned, this may take a long time. The Warehouse Admin will not resonse in this time. Do not kill this application!"
+msgstr "Möchten Sie die Datenbank reorganisieren? Wenn Sie mit ja bestätigen, haben Sie Geduld, es kann lange dauern. Der Warehouse Admin wird in dieser Zeit nicht reagieren. Töten Sie diese Anwendung nicht!"
+
+#: AdminFrame.cpp:558 AdminFrame.cpp:568 AdminFrame.cpp:572 AdminFrame.cpp:581
+#: AdminFrame.cpp:584 AdminFrame.cpp:586 AdminFrame.cpp:585 AdminFrame.cpp:590
+msgid "Do you want to reorganize the main database? If you select yes, please stay tuned, this may take a long time. The Warehouse Admin will not resonse in this time. Do not kill this application!"
+msgstr "Möchten Sie die Hauptdatenbank reorganisieren? Wenn Sie mit ja bestätigen, haben Sie Geduld, es kann lange dauern. Der Warehouse Admin wird in dieser Zeit nicht reagieren. Töten Sie diese Anwendung nicht!"
+
+#: AdminFrame.cpp:307 AdminFrame.cpp:349 AdminFrame.cpp:360 AdminFrame.cpp:323
+#: AdminFrame.cpp:365 AdminFrame.cpp:376 AdminFrame.cpp:324 AdminFrame.cpp:366
+#: AdminFrame.cpp:377 AdminFrame.cpp:322 AdminFrame.cpp:364 AdminFrame.cpp:375
+#: AdminFrame.cpp:351 AdminFrame.cpp:393 AdminFrame.cpp:404 AdminFrame.cpp:367
+#: AdminFrame.cpp:409 AdminFrame.cpp:420 AdminFrame.cpp:382 AdminFrame.cpp:424
+#: AdminFrame.cpp:435 AdminFrame.cpp:389 AdminFrame.cpp:431 AdminFrame.cpp:442
+#: AdminFrame.cpp:390 AdminFrame.cpp:432 AdminFrame.cpp:443 AdminFrame.cpp:394
+#: AdminFrame.cpp:436 AdminFrame.cpp:447 AdminFrame.cpp:403 AdminFrame.cpp:445
+#: AdminFrame.cpp:456 AdminFrame.cpp:406 AdminFrame.cpp:448 AdminFrame.cpp:459
+#: AdminFrame.cpp:408 AdminFrame.cpp:450 AdminFrame.cpp:461 AdminFrame.cpp:407
+#: AdminFrame.cpp:449 AdminFrame.cpp:460 AdminFrame.cpp:412 AdminFrame.cpp:454
+#: AdminFrame.cpp:465
+msgid "Drop database"
+msgstr "Datenbank entfernen"
+
+#: AdminFrame.cpp:457
+msgid "DynSoft.com Warehouse Admin is a software to administrator DynSoft.com Warehouse and the accessed databases. Use it on your on risk."
+msgstr "DynSoft.com Warehouse Admin ist eine Software, um DynSoft.com Warehouse sowie dessen Datenbanken zu administratieren. Sie benutzen die Software auf eigenes Risiko."
+
+#: ../lib/OnlineContactController.cpp:26
+msgid "E-Mail: "
+msgstr "E-Mail: "
+
+#: ../lib/UpdateLibrary.cpp:173 ../lib/UpdateLibrary.cpp:176
+#: ../lib/UpdateLibrary.cpp:246 ../lib/UpdateLibrary.cpp:264
+#: UpdateSpecialDialog.cpp:127 ../lib/UpdateLibrary.cpp:312
+#: ../lib/UpdateLibrary.cpp:513
+msgid "ERROR"
+msgstr "FEHLER"
+
+#: NetworkAccessDialog.cpp:63
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: AdminFrame.cpp:37 AdminFrame.cpp:38 AdminFrame.cpp:39 AdminFrame.cpp:41
+#: AdminFrame.cpp:42 AdminFrame.cpp:44
+msgid "Edit network access (pg_hba.conf)"
+msgstr "Netzwerkzugänge bearbeiten (pg_hba.conf)"
+
+#: AdminFrame.cpp:113 AdminFrame.cpp:137 AdminFrame.cpp:147 AdminFrame.cpp:153
+#: AdminFrame.cpp:152 AdminFrame.cpp:154 AdminFrame.cpp:170 AdminFrame.cpp:171
+#: AdminFrame.cpp:169 AdminFrame.cpp:198 AdminFrame.cpp:214 AdminFrame.cpp:229
+#: AdminFrame.cpp:236 AdminFrame.cpp:237 AdminFrame.cpp:241 AdminFrame.cpp:243
+#: AdminFrame.cpp:246 AdminFrame.cpp:248 AdminFrame.cpp:247 AdminFrame.cpp:252
+msgid "Emergency admin"
+msgstr "Rettungsadmin"
+
+#: AdminFrame.cpp:115 AdminFrame.cpp:139 AdminFrame.cpp:149 AdminFrame.cpp:155
+#: AdminFrame.cpp:154 AdminFrame.cpp:156 AdminFrame.cpp:172 AdminFrame.cpp:173
+#: AdminFrame.cpp:171 AdminFrame.cpp:200 AdminFrame.cpp:216 AdminFrame.cpp:231
+#: AdminFrame.cpp:238 AdminFrame.cpp:239 AdminFrame.cpp:243 AdminFrame.cpp:245
+#: AdminFrame.cpp:248 AdminFrame.cpp:250 AdminFrame.cpp:249 AdminFrame.cpp:254
+msgid "Emergency user"
+msgstr "Rettungsbenutzer"
+
+#: DatabaseRecoverDialog.cpp:55
+msgid "Enterprise:"
+msgstr "Mandant:"
+
+#: AdminFrame.cpp:87 AdminFrame.cpp:143 AdminFrame.cpp:111 AdminFrame.cpp:167
+#: AdminFrame.cpp:121 AdminFrame.cpp:177 AdminFrame.cpp:232 AdminFrame.cpp:127
+#: AdminFrame.cpp:183 AdminFrame.cpp:240 AdminFrame.cpp:242
+#: DatabaseRecoverDialog.cpp:221 AdminFrame.cpp:126 AdminFrame.cpp:182
+#: AdminFrame.cpp:241 AdminFrame.cpp:128 AdminFrame.cpp:184 AdminFrame.cpp:239
+#: AdminFrame.cpp:296 DatabaseRecoverDialog.cpp:232 AdminFrame.cpp:144
+#: AdminFrame.cpp:200 AdminFrame.cpp:255 AdminFrame.cpp:312 AdminFrame.cpp:145
+#: AdminFrame.cpp:201 AdminFrame.cpp:256 AdminFrame.cpp:313 AdminFrame.cpp:199
+#: AdminFrame.cpp:254 AdminFrame.cpp:311 DatabaseRecoverDialog.cpp:238
+#: NetworkAccessDialog.cpp:171 NetworkAccessDialog.cpp:190 AdminFrame.cpp:148
+#: AdminFrame.cpp:172 AdminFrame.cpp:228 AdminFrame.cpp:283 AdminFrame.cpp:340
+#: NetworkAccessDialog.cpp:172 NetworkAccessDialog.cpp:191 AdminFrame.cpp:149
+#: AdminFrame.cpp:188 AdminFrame.cpp:244 AdminFrame.cpp:299 AdminFrame.cpp:356
+#: AdminFrame.cpp:203 AdminFrame.cpp:259 AdminFrame.cpp:314 AdminFrame.cpp:371
+#: AdminFrame.cpp:156 AdminFrame.cpp:210 AdminFrame.cpp:266 AdminFrame.cpp:321
+#: AdminFrame.cpp:378 AdminFrame.cpp:497 AdminFrame.cpp:157 AdminFrame.cpp:211
+#: AdminFrame.cpp:267 AdminFrame.cpp:322 AdminFrame.cpp:379 AdminFrame.cpp:498
+#: AdminFrame.cpp:215 AdminFrame.cpp:271 AdminFrame.cpp:326 AdminFrame.cpp:383
+#: AdminFrame.cpp:502 AdminFrame.cpp:158 AdminFrame.cpp:217 AdminFrame.cpp:273
+#: AdminFrame.cpp:335 AdminFrame.cpp:392 AdminFrame.cpp:511 AdminFrame.cpp:161
+#: AdminFrame.cpp:220 AdminFrame.cpp:276 AdminFrame.cpp:338 AdminFrame.cpp:395
+#: AdminFrame.cpp:514 AdminFrame.cpp:222 AdminFrame.cpp:278 AdminFrame.cpp:397
+#: AdminFrame.cpp:516 AdminFrame.cpp:221 AdminFrame.cpp:277 AdminFrame.cpp:339
+#: AdminFrame.cpp:396 AdminFrame.cpp:515 AdminFrame.cpp:166 AdminFrame.cpp:226
+#: AdminFrame.cpp:282 AdminFrame.cpp:344 AdminFrame.cpp:401 AdminFrame.cpp:520
+#: AdminFrame.cpp:631
+msgid "Error"
+msgstr "Fehler"
+
+#: OutputDialog.cpp:36
+msgid "Errors:"
+msgstr "Fehler:"
+
+#: OutputDialog.cpp:74 AdminFrame.cpp:264
+msgid "Everything's ok"
+msgstr "Alles ist gut."
+
+#: AdminFrame.cpp:57 AdminFrame.cpp:59 AdminFrame.cpp:58 AdminFrame.cpp:60
+#: AdminFrame.cpp:64 AdminFrame.cpp:65 AdminFrame.cpp:66 AdminFrame.cpp:68
+#: AdminFrame.cpp:69 AdminFrame.cpp:70 AdminFrame.cpp:71 AdminFrame.cpp:72
+#: AdminFrame.cpp:75 AdminFrame.cpp:77
+msgid "Execute"
+msgstr "Ausführen"
+
+#: ../lib/ExportLibrary.cpp:75 ../lib/ExportLibrary.cpp:74
+msgid "Export"
+msgstr "Export"
+
+#: ../lib/OrderController.cpp:500 ../lib/OrderController.cpp:789
+#: ../lib/OrderController.cpp:795 ../lib/OrderController.cpp:782
+#: ../lib/OrderController.cpp:879
+msgid "F"
+msgstr "V"
+
+#: ../lib/OnlineContactController.cpp:25
+msgid "Fax: "
+msgstr "Fax: "
+
+#: DatabaseRecoverDialog.cpp:43 DatabaseRecoverDialog.cpp:45
+#: DatabaseRecoverDialog.cpp:47
+msgid "File name:"
+msgstr "Dateiname:"
+
+#: NetworkAccessDialog.cpp:35
+msgid "File:"
+msgstr "Datei:"
+
+#: UpdateSpecialDialog.cpp:44
+msgid "Filename:"
+msgstr "Dateiname:"
+
+#: ../lib/LinkedFileController.cpp:96
+msgid "Files"
+msgstr "Dateien"
+
+#: UpdateSpecialDialog.cpp:128
+msgid "Finished."
+msgstr "Fertig."
+
+#: ../lib/OnlineContactController.cpp:20
+msgid "Firma: "
+msgstr "Firma: "
+
+#: ../lib/ConstantsLibrary.cpp:48
+msgid "Full tax"
+msgstr "Volle Umsatzsteuer"
+
+#: NetworkAccessDialog.cpp:48
+msgid "Host"
+msgstr "Server"
+
+#: AdminFrame.cpp:34 AdminFrame.cpp:37 AdminFrame.cpp:43 AdminFrame.cpp:45
+#: AdminFrame.cpp:44 AdminFrame.cpp:46 AdminFrame.cpp:49 AdminFrame.cpp:50
+#: AdminFrame.cpp:52 AdminFrame.cpp:54 AdminFrame.cpp:55 AdminFrame.cpp:56
+#: AdminFrame.cpp:57 AdminFrame.cpp:60 AdminFrame.cpp:62
+msgid "Hostname"
+msgstr "Server"
+
+#: DatabaseRecoverDialog.cpp:53 DatabaseRecoverDialog.cpp:60
+#: DatabaseRecoverDialog.cpp:62
+msgid "Hostname:"
+msgstr "Server:"
+
+#: UpdateAskDialog.cpp:47
+msgid "I understand. Do the update."
+msgstr "Ich verstehe. Aktualisierung durchführen."
+
+#: ../lib/OrderEntity.cpp:135 ../lib/OrderEntity.cpp:136
+msgid "IBAN: "
+msgstr "IBAN: "
+
+#: ../lib/PermissionLibrary.cpp:19
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: Admin.cpp:70 Admin.cpp:74
+msgid "Information"
+msgstr "Information"
+
+#: UpdateDialog.cpp:69 UpdateDialog.cpp:74 UpdateDialog.cpp:76
+msgid "Informations:"
+msgstr "Informationen:"
+
+#: ../lib/OnlineContactController.cpp:27
+msgid "Internet: "
+msgstr "Internet: "
+
+#: ../lib/ConstantsLibrary.cpp:49
+msgid "Invoice after tax"
+msgstr "Netto fakturieren"
+
+#: ../lib/ConstantsLibrary.cpp:48
+msgid "Invoice pre tax"
+msgstr "Brutto fakturieren"
+
+#: NetworkAccessDialog.cpp:129 NetworkAccessDialog.cpp:274
+#: NetworkAccessDialog.cpp:130 NetworkAccessDialog.cpp:257
+msgid "Loading Hosts"
+msgstr "Server laden"
+
+#: OutputDialog.cpp:35
+msgid "Messages:"
+msgstr "Nachrichten:"
+
+#: NetworkAccessDialog.cpp:53
+msgid "Method"
+msgstr "Methode"
+
+#: NetworkAccessEditDialog.cpp:79
+msgid "Method:"
+msgstr "Methode:"
+
+#: ../lib/OrderController.cpp:496 ../lib/OrderController.cpp:785
+#: ../lib/OrderController.cpp:791 ../lib/OrderController.cpp:778
+#: ../lib/OrderController.cpp:875
+msgid "N"
+msgstr "O"
+
+#: ../lib/OnlineContactController.cpp:19
+msgid "Nachname: "
+msgstr "Nachname: "
+
+#: ../lib/OnlineContactController.cpp:29
+msgid ""
+"Nachricht:\n"
+"\n"
+msgstr ""
+"Nachricht:\n"
+"\n"
+
+#: NetworkAccessDialog.cpp:27
+msgid "Network Access"
+msgstr "Netzwerkzugriff"
+
+#: NetworkAccessEditDialog.cpp:15
+msgid "Network Access Edit"
+msgstr "Netzwerkzugriff bearbeiten"
+
+#: DatabaseRecoverDialog.cpp:58 DatabaseRecoverDialog.cpp:56
+msgid "New company"
+msgstr "Neuer Mandant"
+
+#: ../lib/UpdateLibrary.cpp:27 ../lib/UpdateLibrary.cpp:32
+#: ../lib/UpdateLibrary.cpp:33 ../lib/UpdateLibrary.cpp:30
+#: ../lib/UpdateLibrary.cpp:35 ../lib/UpdateLibrary.cpp:37
+#: ../lib/UpdateLibrary.cpp:40 ../lib/UpdateLibrary.cpp:41
+msgid "No Protocol specified. The given Update URL is wrong."
+msgstr "Es wurde kein Protokoll spezifiziert. Die angegebene URL ist falsch."
+
+#: ../lib/ClientController.cpp:154 ../lib/ClientController.cpp:157
+msgid "No addresses exist"
+msgstr "Es existieren keine Adressen."
+
+#: ../lib/ClientController.cpp:183 ../lib/ClientController.cpp:214
+#: ../lib/ClientController.cpp:217 ../lib/ClientController.cpp:219
+msgid "No bank connections exist"
+msgstr "Es existieren keine Bankverbindungen."
+
+#: ../lib/ClientController.cpp:163 ../lib/ClientController.cpp:194
+#: ../lib/ClientController.cpp:197
+msgid "No contact persons exist"
+msgstr "Es existieren keine Ansprechpartner"
+
+#: ../lib/UpdateLibrary.cpp:30 ../lib/UpdateLibrary.cpp:35
+#: ../lib/UpdateLibrary.cpp:36 ../lib/UpdateLibrary.cpp:33
+#: ../lib/UpdateLibrary.cpp:38 ../lib/UpdateLibrary.cpp:40
+#: ../lib/UpdateLibrary.cpp:43 ../lib/UpdateLibrary.cpp:44
+msgid "No hostname given. The given Update URL is wrong."
+msgstr "Es wurde kein Server angegeben. Die angegebene URL ist falsch."
+
+#: ../lib/ClientController.cpp:187 ../lib/ProductController.cpp:90
+#: ../lib/ClientController.cpp:218 ../lib/VoucherController.cpp:59
+#: ../lib/ClientController.cpp:221 ../lib/VoucherController.cpp:63
+#: ../lib/ClientController.cpp:223
+msgid "No linked files exist"
+msgstr "Es existieren keine verknüpften Dateien"
+
+#: NetworkAccessDialog.cpp:254 NetworkAccessDialog.cpp:237
+msgid "No message defined"
+msgstr "Keine Nachricht definiert"
+
+#: ../lib/ClientController.cpp:190 ../lib/ProductController.cpp:93
+#: ../lib/ClientController.cpp:221 ../lib/VoucherController.cpp:62
+#: ../lib/ClientController.cpp:224 ../lib/VoucherController.cpp:66
+#: ../lib/ClientController.cpp:226
+msgid "No more data exist"
+msgstr "Es existieren keine weiteren Daten"
+
+#: AdminFrame.cpp:162 AdminFrame.cpp:176 AdminFrame.cpp:183 AdminFrame.cpp:184
+#: AdminFrame.cpp:188 AdminFrame.cpp:190 AdminFrame.cpp:193 AdminFrame.cpp:192
+#: AdminFrame.cpp:197
+msgid "No new versions found. No updates available."
+msgstr "Keine neuen Versionen gefunden. Keine Aktualisierungen verfügbar."
+
+#: ../lib/UpdateLibrary.cpp:33 ../lib/UpdateLibrary.cpp:38
+#: ../lib/UpdateLibrary.cpp:39 ../lib/UpdateLibrary.cpp:36
+#: ../lib/UpdateLibrary.cpp:41 ../lib/UpdateLibrary.cpp:43
+#: ../lib/UpdateLibrary.cpp:46 ../lib/UpdateLibrary.cpp:47
+msgid "No path given. The given Update URL is wrong."
+msgstr "Es wurde kein Pfad angegeben. Die angegebene URL ist falsch."
+
+#: ../lib/ConstantsLibrary.cpp:50 ../lib/ConstantsLibrary.cpp:62
+msgid "No tax"
+msgstr "Keine Steuer"
+
+#: ../lib/NoteController.cpp:15
+msgid "Note"
+msgstr "Notiz"
+
+#: ../lib/ConstantsLibrary.cpp:10 ../lib/ConstantsLibrary.cpp:24
+#: ../lib/OrderController.cpp:415 ../lib/OrderController.cpp:421
+#: ../lib/OrderController.cpp:553 ../lib/OrderController.cpp:559
+#: ../lib/OrderController.cpp:546 ../lib/OrderController.cpp:634
+msgid "Order"
+msgstr "Auftrag"
+
+#: ../lib/ReminderType.cpp:102
+msgid "Orders"
+msgstr "Aufträge"
+
+#: ../lib/OnlineContactController.cpp:23
+msgid "Ort: "
+msgstr "Ort: "
+
+#: AdminFrame.cpp:37 AdminFrame.cpp:40 AdminFrame.cpp:46 AdminFrame.cpp:48
+#: AdminFrame.cpp:47 AdminFrame.cpp:49 AdminFrame.cpp:52 AdminFrame.cpp:53
+#: AdminFrame.cpp:55 AdminFrame.cpp:57 AdminFrame.cpp:58 AdminFrame.cpp:59
+#: AdminFrame.cpp:60 AdminFrame.cpp:63 AdminFrame.cpp:65
+msgid "Password"
+msgstr "Kennwort"
+
+#: UserDialog.cpp:42 DatabaseRecoverDialog.cpp:68 DatabaseRecoverDialog.cpp:75
+#: DatabaseRecoverDialog.cpp:77
+msgid "Password:"
+msgstr "Kennwort:"
+
+#: UpdateDialog.cpp:27 UpdateDialog.cpp:31 UpdateDialog.cpp:33
+msgid "Please make a backup before updating!"
+msgstr "Bitte führen Sie eine Datensicherung durch, bevor Sie aktualisieren!"
+
+#: DatabaseRecoverDialog.cpp:27 DatabaseRecoverDialog.cpp:29
+#: DatabaseRecoverDialog.cpp:31
+msgid "Please notice: The database must not exist. It will be created automatically."
+msgstr "Vorsicht: Die Datenbank darf nicht existieren. Sie wird automatisch erstellt."
+
+#: UserDialog.cpp:19
+msgid "Please notice: if the user exists, his password will be changed, otherwise the user will be created."
+msgstr "Vorsicht: Falls der Benutzer bereits existiert, wird sein Kennwort geändert. Ansonsten wird der Benutzer erstellt."
+
+#: Admin.cpp:69 Admin.cpp:73
+msgid "Please notice: you use this software on your own risk! Do you agree?"
+msgstr "Achtung: Sie benutzen die Software auf eigenes Risiko! Möchten Sie fortfahren?"
+
+#: AdminFrame.cpp:147 AdminFrame.cpp:148 AdminFrame.cpp:155 AdminFrame.cpp:156
+#: AdminFrame.cpp:157 AdminFrame.cpp:160 AdminFrame.cpp:165 AdminFrame.cpp:630
+msgid "Please select the database you want to update."
+msgstr "Bitte wählen Sie die Datenbank aus, die Sie aktualisieren möchten."
+
+#: AdminFrame.cpp:86 AdminFrame.cpp:110 AdminFrame.cpp:120 AdminFrame.cpp:126
+#: AdminFrame.cpp:125 AdminFrame.cpp:127 AdminFrame.cpp:143 AdminFrame.cpp:144
+#: AdminFrame.cpp:142 AdminFrame.cpp:171 AdminFrame.cpp:187 AdminFrame.cpp:202
+#: AdminFrame.cpp:209 AdminFrame.cpp:210 AdminFrame.cpp:214 AdminFrame.cpp:216
+#: AdminFrame.cpp:219 AdminFrame.cpp:221 AdminFrame.cpp:220 AdminFrame.cpp:225
+msgid "Please select the entry you want to add a user."
+msgstr "Bitte wählen Sie den Eintrag, zu dem Sie einen Benutzer hinzufügen möchten."
+
+#: AdminFrame.cpp:231 AdminFrame.cpp:239 AdminFrame.cpp:241 AdminFrame.cpp:240
+#: AdminFrame.cpp:238 AdminFrame.cpp:295 AdminFrame.cpp:254 AdminFrame.cpp:311
+#: AdminFrame.cpp:255 AdminFrame.cpp:312 AdminFrame.cpp:253 AdminFrame.cpp:310
+#: AdminFrame.cpp:282 AdminFrame.cpp:339 AdminFrame.cpp:298 AdminFrame.cpp:355
+#: AdminFrame.cpp:313 AdminFrame.cpp:370 AdminFrame.cpp:320 AdminFrame.cpp:377
+#: AdminFrame.cpp:321 AdminFrame.cpp:378 AdminFrame.cpp:325 AdminFrame.cpp:382
+#: AdminFrame.cpp:334 AdminFrame.cpp:391 AdminFrame.cpp:337 AdminFrame.cpp:394
+#: AdminFrame.cpp:396 AdminFrame.cpp:338 AdminFrame.cpp:395 AdminFrame.cpp:343
+#: AdminFrame.cpp:400
+msgid "Please select the entry you want to backup."
+msgstr "Bitte wählen Sie den Eintrag aus, den Sie sichern möchten."
+
+#: NetworkAccessDialog.cpp:189 NetworkAccessDialog.cpp:190
+msgid "Please select the entry you want to edit."
+msgstr "Bitte wählen Sie den Eintrag aus, den Sie bearbeiten wollen."
+
+#: NetworkAccessDialog.cpp:170 NetworkAccessDialog.cpp:171
+msgid "Please select the entry you want to remove."
+msgstr "Bitte wählen Sie den Eintrag aus, den Sie entfernen möchten."
+
+#: AdminFrame.cpp:496 AdminFrame.cpp:497 AdminFrame.cpp:501 AdminFrame.cpp:510
+#: AdminFrame.cpp:513 AdminFrame.cpp:515 AdminFrame.cpp:514 AdminFrame.cpp:519
+msgid "Please select the entry you want to reorganize."
+msgstr "Bitte wählen Sie den Eintrag, den Sie reorganisieren möchten."
+
+#: DatabaseRecoverDialog.cpp:118 DatabaseRecoverDialog.cpp:125
+#: DatabaseRecoverDialog.cpp:136 DatabaseRecoverDialog.cpp:137
+msgid "Please select the file you want to recover."
+msgstr "Bitte wählen Sie die Datei aus, aus der Sie die Wiederherstellung vornehmen möchten."
+
+#: AdminFrame.cpp:518 AdminFrame.cpp:576 AdminFrame.cpp:522 AdminFrame.cpp:580
+#: AdminFrame.cpp:531 AdminFrame.cpp:589 AdminFrame.cpp:534 AdminFrame.cpp:592
+#: AdminFrame.cpp:536 AdminFrame.cpp:594 AdminFrame.cpp:535 AdminFrame.cpp:593
+#: AdminFrame.cpp:540 AdminFrame.cpp:598
+msgid "Please wait..."
+msgstr "Bitte warten..."
+
+#: ../lib/OnlineContactController.cpp:22
+msgid "Plz: "
+msgstr "Plz: "
+
+#: AdminFrame.cpp:38 AdminFrame.cpp:41 AdminFrame.cpp:47 AdminFrame.cpp:49
+#: AdminFrame.cpp:48 AdminFrame.cpp:50 AdminFrame.cpp:53 AdminFrame.cpp:54
+#: AdminFrame.cpp:56 AdminFrame.cpp:58 AdminFrame.cpp:59 AdminFrame.cpp:60
+#: AdminFrame.cpp:61 AdminFrame.cpp:64 AdminFrame.cpp:66
+msgid "Port"
+msgstr "Port"
+
+#: DatabaseRecoverDialog.cpp:73 DatabaseRecoverDialog.cpp:80
+#: DatabaseRecoverDialog.cpp:82
+msgid "Port:"
+msgstr "Port:"
+
+#: ../lib/ConstantsLibrary.cpp:60
+msgid "Pre tax"
+msgstr "Netto"
+
+#: ../lib/ConstantsLibrary.cpp:35
+msgid "Prepayment"
+msgstr "Vorkasse"
+
+#: ../lib/ConstantsLibrary.cpp:23 ../lib/ProductController.cpp:49
+#: ../lib/ProductController.cpp:75
+msgid "Product"
+msgstr "Produkt"
+
+#: ../lib/ReminderType.cpp:101
+msgid "Products"
+msgstr "Produkte"
+
+#: UpdateDialog.cpp:61 UpdateDialog.cpp:66 UpdateDialog.cpp:68
+msgid "Progress:"
+msgstr "Fortschritt:"
+
+#: ../lib/PurchaseController.cpp:257
+msgid "Purchase"
+msgstr "Einkauf"
+
+#: ../lib/ReminderType.cpp:104
+msgid "Purchases"
+msgstr "Einkäufe"
+
+#: AdminFrame.cpp:48
+msgid "Quit"
+msgstr "Beenden"
+
+#: ../lib/OrderController.cpp:493 ../lib/OrderController.cpp:782
+#: ../lib/OrderController.cpp:788 ../lib/OrderController.cpp:775
+#: ../lib/OrderController.cpp:872
+msgid "R"
+msgstr "E"
+
+#: NetworkAccessDialog.cpp:266 NetworkAccessDialog.cpp:249
+msgid "Read: Could not close file"
+msgstr "Lesen: Konnte die Datei nicht schließen"
+
+#: NetworkAccessDialog.cpp:263 NetworkAccessDialog.cpp:246
+msgid "Read: Could not open file"
+msgstr "Lesen: Konnte die Datei nicht öffnen"
+
+#: NetworkAccessDialog.cpp:260 NetworkAccessDialog.cpp:243
+msgid "Read: Everythings ok"
+msgstr "Lesen: Alles in Ordnung"
+
+#: ../lib/PermissionLibrary.cpp:16
+msgid "Reader"
+msgstr "Leser"
+
+#: ../lib/PermissionLibrary.cpp:13
+msgid "Reader and Writer"
+msgstr "Leser und Schreiber"
+
+#: ../lib/PermissionLibrary.cpp:10
+msgid "Reader, Writer and Remover"
+msgstr "Leser, Schreiber und Entferner"
+
+#: AdminFrame.cpp:50
+msgid "Recover"
+msgstr "Wiederherstellen"
+
+#: DatabaseRecoverDialog.cpp:199 DatabaseRecoverDialog.cpp:234
+#: DatabaseRecoverDialog.cpp:245 DatabaseRecoverDialog.cpp:251
+msgid "Recover from"
+msgstr "Wiederherstellen aus"
+
+#: ../lib/ConstantsLibrary.cpp:49
+msgid "Reduced tax"
+msgstr "Reduzierte Umsatzsteuer"
+
+#: AdminFrame.cpp:45 AdminFrame.cpp:49 AdminFrame.cpp:54 AdminFrame.cpp:56
+#: AdminFrame.cpp:55 AdminFrame.cpp:57 AdminFrame.cpp:61 AdminFrame.cpp:62
+#: AdminFrame.cpp:63 AdminFrame.cpp:65 AdminFrame.cpp:66 AdminFrame.cpp:67
+#: AdminFrame.cpp:68 AdminFrame.cpp:69 AdminFrame.cpp:72 AdminFrame.cpp:74
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+#: NetworkAccessDialog.cpp:60
+msgid "Remove"
+msgstr "Entfernen"
+
+#: AdminFrame.cpp:508 AdminFrame.cpp:548 AdminFrame.cpp:559 AdminFrame.cpp:571
+#: AdminFrame.cpp:575 AdminFrame.cpp:509 AdminFrame.cpp:558 AdminFrame.cpp:569
+#: AdminFrame.cpp:595 AdminFrame.cpp:513 AdminFrame.cpp:562 AdminFrame.cpp:573
+#: AdminFrame.cpp:599 AdminFrame.cpp:522 AdminFrame.cpp:582 AdminFrame.cpp:608
+#: AdminFrame.cpp:525 AdminFrame.cpp:574 AdminFrame.cpp:585 AdminFrame.cpp:611
+#: AdminFrame.cpp:527 AdminFrame.cpp:576 AdminFrame.cpp:587 AdminFrame.cpp:613
+#: AdminFrame.cpp:526 AdminFrame.cpp:586 AdminFrame.cpp:612 AdminFrame.cpp:531
+#: AdminFrame.cpp:580 AdminFrame.cpp:591 AdminFrame.cpp:617
+msgid "Reorganize database"
+msgstr "Datenbank reorganisieren"
+
+#: AdminFrame.cpp:43 AdminFrame.cpp:44 AdminFrame.cpp:46
+msgid "Reorganize enterprise database"
+msgstr "Unternehmensdatenbank reorganisieren"
+
+#: AdminFrame.cpp:44 AdminFrame.cpp:45 AdminFrame.cpp:47
+msgid "Reorganize main database"
+msgstr "Hauptdatenbank reorganisieren"
+
+#: UserDialog.cpp:48
+msgid "Repeat password:"
+msgstr "Kennwort wiederholen:"
+
+#: AdminFrame.cpp:430 AdminFrame.cpp:459 AdminFrame.cpp:475 AdminFrame.cpp:490
+#: AdminFrame.cpp:484 AdminFrame.cpp:485 AdminFrame.cpp:489 AdminFrame.cpp:498
+#: AdminFrame.cpp:501 AdminFrame.cpp:503 AdminFrame.cpp:502 AdminFrame.cpp:507
+msgid "Reset Password"
+msgstr "Kennwort zurücksetzen"
+
+#: AdminFrame.cpp:38 AdminFrame.cpp:39 AdminFrame.cpp:40 AdminFrame.cpp:42
+#: AdminFrame.cpp:43 AdminFrame.cpp:45
+msgid "Reset database password"
+msgstr "Datenbankkennwort zurücksetzen"
+
+#: UpdateSpecialDialog.cpp:127
+msgid "Result: "
+msgstr "Ergebnis: "
+
+#: ../lib/UpdateLibrary.cpp:173 ../lib/UpdateLibrary.cpp:176
+#: ../lib/UpdateLibrary.cpp:246 ../lib/UpdateLibrary.cpp:264
+#: UpdateSpecialDialog.cpp:127 ../lib/UpdateLibrary.cpp:312
+#: ../lib/UpdateLibrary.cpp:513
+msgid "SUCCESS"
+msgstr "ERFOLG"
+
+#: DatabaseRecoverDialog.cpp:85 DatabaseRecoverDialog.cpp:92
+#: DatabaseRecoverDialog.cpp:94 NetworkAccessDialog.cpp:71
+#: NetworkAccessEditDialog.cpp:94 NetworkAccessDialog.cpp:73
+msgid "Save"
+msgstr "Speichern"
+
+#: AdminFrame.cpp:242 AdminFrame.cpp:250 AdminFrame.cpp:252 AdminFrame.cpp:251
+#: AdminFrame.cpp:249 AdminFrame.cpp:265 AdminFrame.cpp:266 AdminFrame.cpp:264
+#: AdminFrame.cpp:293 AdminFrame.cpp:309 AdminFrame.cpp:324 AdminFrame.cpp:331
+#: AdminFrame.cpp:332 AdminFrame.cpp:336 AdminFrame.cpp:345 AdminFrame.cpp:348
+#: AdminFrame.cpp:350 AdminFrame.cpp:349 AdminFrame.cpp:354
+msgid "Save file to"
+msgstr "Datei speichern unter"
+
+#: AdminFrame.cpp:34 AdminFrame.cpp:33 AdminFrame.cpp:35 AdminFrame.cpp:36
+#: AdminFrame.cpp:37 AdminFrame.cpp:38 AdminFrame.cpp:40 AdminFrame.cpp:41
+#: AdminFrame.cpp:43
+msgid "Show passwords (on/off)"
+msgstr "Kennwörter anzeigen (an/aus)"
+
+#: AdminFrame.cpp:261 AdminFrame.cpp:269 AdminFrame.cpp:271
+msgid "Start backup"
+msgstr "Sicherung starten"
+
+#: ../lib/UpdateLibrary.cpp:165 ../lib/UpdateLibrary.cpp:166
+#: ../lib/UpdateLibrary.cpp:168 ../lib/UpdateLibrary.cpp:170
+#: ../lib/UpdateLibrary.cpp:214 ../lib/UpdateLibrary.cpp:215
+msgid "Start update to version: "
+msgstr "Starte Aktualisierung auf Version: "
+
+#: UpdateSpecialDialog.cpp:126
+msgid "Starting ...\n"
+msgstr "Start ...\n"
+
+#: ../lib/OrderController.cpp:385 ../lib/OrderController.cpp:391
+#: ../lib/OrderController.cpp:523 ../lib/OrderController.cpp:529
+#: ../lib/OrderController.cpp:516 ../lib/OrderController.cpp:600
+msgid "Statistic"
+msgstr "Statistik"
+
+#: ../lib/StockBookController.cpp:98
+msgid "Stock bookings"
+msgstr "Lagerbuchungen"
+
+#: ../lib/OnlineContactController.cpp:21
+msgid "Strasse: "
+msgstr "Straße: "
+
+#: NetworkAccessDialog.cpp:52
+msgid "Subnet"
+msgstr "Subnetz"
+
+#: NetworkAccessEditDialog.cpp:74
+msgid "Subnet:"
+msgstr "Subnetz:"
+
+#: ../lib/OrderController.cpp:348
+msgid "System book out, order: "
+msgstr "Systemausbuchung, Auftrage: "
+
+#: ../lib/OnlineContactController.cpp:24
+msgid "Telefon: "
+msgstr "Telefon: "
+
+#: ../lib/UpdateLibrary.cpp:24 ../lib/UpdateLibrary.cpp:29
+#: ../lib/UpdateLibrary.cpp:30 ../lib/UpdateLibrary.cpp:27
+#: ../lib/UpdateLibrary.cpp:32 ../lib/UpdateLibrary.cpp:34
+#: ../lib/UpdateLibrary.cpp:37 ../lib/UpdateLibrary.cpp:38
+msgid "The given Update URL is wrong."
+msgstr "Die angegebene URL ist falsch."
+
+#: AdminFrame.cpp:570 AdminFrame.cpp:587 AdminFrame.cpp:591 AdminFrame.cpp:600
+#: AdminFrame.cpp:603 AdminFrame.cpp:605 AdminFrame.cpp:604 AdminFrame.cpp:609
+msgid "The main database was reorganized."
+msgstr "Die Hauptdatenbank wurde reorganisiert."
+
+#: UserDialog.cpp:120
+msgid "The password cannot be empty."
+msgstr "Das Kennwort darf nicht leer sein."
+
+#: AdminFrame.cpp:424 AdminFrame.cpp:453 AdminFrame.cpp:469 AdminFrame.cpp:484
+#: AdminFrame.cpp:478 AdminFrame.cpp:479 AdminFrame.cpp:483 AdminFrame.cpp:492
+#: AdminFrame.cpp:495 AdminFrame.cpp:497 AdminFrame.cpp:496 AdminFrame.cpp:501
+msgid "The password of user \"postgres\" was set to \"postgres\""
+msgstr "Das Kennwort vom Benutzer \"postgres\" wurde auf \"postgres\" gesetzt"
+
+#: UserDialog.cpp:108
+msgid "The passwords don't match."
+msgstr "Die Kennwörter sind nicht identisch."
+
+#: UpdateSpecialDialog.cpp:145
+msgid "The update is not for your database version"
+msgstr "Diese Aktualisierung ist nicht für Ihre Datenbankversion"
+
+#: AdminFrame.cpp:131 AdminFrame.cpp:155 AdminFrame.cpp:165 AdminFrame.cpp:171
+#: AdminFrame.cpp:170 AdminFrame.cpp:172 AdminFrame.cpp:188 AdminFrame.cpp:189
+#: AdminFrame.cpp:187 AdminFrame.cpp:216 AdminFrame.cpp:232 AdminFrame.cpp:247
+#: AdminFrame.cpp:254 AdminFrame.cpp:255 AdminFrame.cpp:259 AdminFrame.cpp:261
+#: AdminFrame.cpp:264 AdminFrame.cpp:266 AdminFrame.cpp:265 AdminFrame.cpp:270
+msgid "The user could not been created/changed. An error has occured."
+msgstr "Der Benutzer konnte nicht erstellt/geändert werden. Ein Fehler ist aufgetreten."
+
+#: AdminFrame.cpp:129 AdminFrame.cpp:153 AdminFrame.cpp:163 AdminFrame.cpp:169
+#: AdminFrame.cpp:168 AdminFrame.cpp:170 AdminFrame.cpp:186 AdminFrame.cpp:187
+#: AdminFrame.cpp:185 AdminFrame.cpp:214 AdminFrame.cpp:230 AdminFrame.cpp:245
+#: AdminFrame.cpp:252 AdminFrame.cpp:253 AdminFrame.cpp:257 AdminFrame.cpp:259
+#: AdminFrame.cpp:262 AdminFrame.cpp:264 AdminFrame.cpp:263 AdminFrame.cpp:268
+msgid "The user was created/changed. You can use the account to login."
+msgstr "Der Benutzer wurde erstellt/geändert. Sie können sich mit diesem jetzt anmelden."
+
+#: UserDialog.cpp:96
+msgid "The username cannot be empty."
+msgstr "Der Benutzername darf nicht leer sein."
+
+#: ../lib/OnlineContactController.cpp:17
+msgid "Titel: "
+msgstr "Titel: "
+
+#: NetworkAccessEditDialog.cpp:54
+msgid "Type:"
+msgstr "Typ:"
+
+#: ../lib/PermissionLibrary.cpp:22
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: DatabaseRecoverDialog.cpp:182 DatabaseRecoverDialog.cpp:192
+#: AdminFrame.cpp:342 DatabaseRecoverDialog.cpp:203 AdminFrame.cpp:358
+#: AdminFrame.cpp:359 AdminFrame.cpp:357 DatabaseRecoverDialog.cpp:207
+#: AdminFrame.cpp:386 AdminFrame.cpp:402 AdminFrame.cpp:417 AdminFrame.cpp:424
+#: AdminFrame.cpp:541 AdminFrame.cpp:425 AdminFrame.cpp:549 AdminFrame.cpp:429
+#: AdminFrame.cpp:553 AdminFrame.cpp:438 AdminFrame.cpp:562 AdminFrame.cpp:441
+#: AdminFrame.cpp:565 AdminFrame.cpp:443 AdminFrame.cpp:567 AdminFrame.cpp:442
+#: AdminFrame.cpp:566 AdminFrame.cpp:447 AdminFrame.cpp:571
+msgid "Unknown error. Could not create database."
+msgstr "Unbekannter Fehler. Die Datenbank konnte nicht erstellt werden."
+
+#: ../lib/UpdateLibrary.cpp:39 ../lib/UpdateLibrary.cpp:44
+#: ../lib/UpdateLibrary.cpp:45 ../lib/UpdateLibrary.cpp:42
+#: ../lib/UpdateLibrary.cpp:47 ../lib/UpdateLibrary.cpp:49
+#: ../lib/UpdateLibrary.cpp:52 ../lib/UpdateLibrary.cpp:53
+msgid "Unknown protocol error."
+msgstr "Unbekannter Protokollfehler."
+
+#: ../lib/UpdateLibrary.cpp:63 ../lib/UpdateLibrary.cpp:68
+#: ../lib/UpdateLibrary.cpp:69 ../lib/UpdateLibrary.cpp:66
+#: ../lib/UpdateLibrary.cpp:71 ../lib/UpdateLibrary.cpp:73
+#: ../lib/UpdateLibrary.cpp:76 ../lib/UpdateLibrary.cpp:77
+msgid "Unknown update string"
+msgstr "Unbekannter Aktualisierungsstring."
+
+#: AdminFrame.cpp:163 UpdateAskDialog.cpp:16 AdminFrame.cpp:177
+#: AdminFrame.cpp:170 AdminFrame.cpp:184 AdminFrame.cpp:171 AdminFrame.cpp:185
+#: AdminFrame.cpp:189 AdminFrame.cpp:172 AdminFrame.cpp:191 AdminFrame.cpp:175
+#: AdminFrame.cpp:194 AdminFrame.cpp:193 AdminFrame.cpp:180 AdminFrame.cpp:198
+#: AdminFrame.cpp:645 UpdateSpecialDialog.cpp:118
+msgid "Update"
+msgstr "Aktualisierung"
+
+#: AdminFrame.cpp:38 UpdateSpecialDialog.cpp:19 UpdateSpecialDialog.cpp:33
+msgid "Update Special"
+msgstr "Spezialaktualisierung"
+
+#: UpdateDialog.cpp:15 UpdateDialog.cpp:18 UpdateDialog.cpp:19
+msgid "Update enterprise"
+msgstr "Unternehmen aktualisieren"
+
+#: AdminFrame.cpp:35 UpdateDialog.cpp:26 AdminFrame.cpp:36 UpdateDialog.cpp:30
+#: UpdateDialog.cpp:32 AdminFrame.cpp:37
+msgid "Update enterprise database"
+msgstr "Unternehmensdatenbank aktualisieren"
+
+#: UpdateDialog.cpp:47 UpdateDialog.cpp:51 UpdateDialog.cpp:53
+msgid "Update to version"
+msgstr "Aktualisieren auf Version"
+
+#: UpdateDialog.cpp:131
+msgid "Updates done."
+msgstr "Aktualisierungen abgeschlossen."
+
+#: UserDialog.cpp:14 NetworkAccessDialog.cpp:50
+msgid "User"
+msgstr "Benutzer"
+
+#: UserDialog.cpp:14
+msgid "User dialog"
+msgstr "Benutzerdialog"
+
+#: NetworkAccessEditDialog.cpp:64
+msgid "User:"
+msgstr "Benutzer:"
+
+#: AdminFrame.cpp:36 AdminFrame.cpp:39 AdminFrame.cpp:45 AdminFrame.cpp:47
+#: AdminFrame.cpp:46 AdminFrame.cpp:48 AdminFrame.cpp:51 AdminFrame.cpp:52
+#: AdminFrame.cpp:54 AdminFrame.cpp:56 AdminFrame.cpp:57 AdminFrame.cpp:58
+#: AdminFrame.cpp:59 AdminFrame.cpp:62 AdminFrame.cpp:64
+msgid "Username"
+msgstr "Benutzername"
+
+#: UserDialog.cpp:36 DatabaseRecoverDialog.cpp:63 DatabaseRecoverDialog.cpp:70
+#: DatabaseRecoverDialog.cpp:72
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: AdminFrame.cpp:62 AdminFrame.cpp:65 AdminFrame.cpp:67
+msgid "Version"
+msgstr "Version"
+
+#: UpdateSpecialDialog.cpp:140
+msgid "Version(s):"
+msgstr "Version(en):"
+
+#: ../lib/OnlineContactController.cpp:18
+msgid "Vorname: "
+msgstr "Vorname: "
+
+#: ../lib/VoucherController.cpp:41
+msgid "Voucher"
+msgstr "Beleg"
+
+#: ../lib/ReminderType.cpp:103
+msgid "Vouchers"
+msgstr "Belege"
+
+#: NetworkAccessDialog.cpp:121 NetworkAccessDialog.cpp:122
+msgid "Write: Could not close file"
+msgstr "Schreiben: Konnte die Datei nicht schließen"
+
+#: NetworkAccessDialog.cpp:115 NetworkAccessDialog.cpp:116
+msgid "Write: Could not open file"
+msgstr "Schreiben: Konnte die Datei nicht öffnen"
+
+#: NetworkAccessDialog.cpp:118 NetworkAccessDialog.cpp:119
+msgid "Write: Could not write file"
+msgstr "Schreiben: Konnte die Datei nicht schreiben"
+
+#: NetworkAccessDialog.cpp:112 NetworkAccessDialog.cpp:113
+msgid "Write: Everythings ok"
+msgstr "Schreiben: Alles in Ordnung"
+
+#: UpdateAskDialog.cpp:21
+msgid ""
+"You want to update the enterprise database. You will not be able to undo this action.\n"
+"\n"
+"First of all you should backup your database with Bolso Warehouse Admin.\n"
+"\n"
+"Then start the update process.\n"
+"\n"
+"Do not cancel the process or kill this application. Maybe this application will not react. This is normal. Stay tuned.\n"
+"\n"
+"The update process can take a time."
+msgstr ""
+"Sie möchten die Aktualisierung der Unternehmensdatenbank durchführen. Sie können diesen Vorgang nicht rückgängig machen.\n"
+"\n"
+"Als erstes sollten Sie eine Datensicherung Ihrer Datenbank mit Bolso Warehouse Admin durchführen.\n"
+"\n"
+"Beginnen Sie dann mit dem Aktualisierungsprozess.\n"
+"\n"
+"Brechen Sie den Prozess nicht ab und beenden Sie diese Anwendung nicht gewaltsam. Vielleicht reagiert diese Anwendung nicht mehr. Das ist normal. Bleiben Sie gelassen.\n"
+"\n"
+"Der Aktualisierungsprozess kann eine Weile in Anspruch nehmen."
+
+#: UpdateAskDialog.cpp:21
+msgid ""
+"You want to update the enterprise database. You will not be able to undo this action.\n"
+"\n"
+"First of all you should backup your database with DynSoft.com Warehouse Admin.\n"
+"\n"
+"Then start the update process.\n"
+"\n"
+"Do not cancel the process or kill this application. Maybe this application will not react. This is normal. Stay tuned.\n"
+"\n"
+"The update process can take a time."
+msgstr ""
+"Sie möchten die Unternehmensdatenbank aktualisieren. Dieser Schritt kann nicht rückgängig gemacht werden.\n"
+"\n"
+"Bitte führen Sie zuerst eine Datensicherung der Datenbank mit DynSoft.com Warehouse Admin durch.\n"
+"\n"
+"Dann starten Sie den Aktualisierungsprozess.\n"
+"\n"
+"Brechen Sie den Prozess auf keinen Fall ab oder beenden Sie die Anwendung. Vielleicht reagiert diese Anwendung nicht. Das ist normal. Warten Sie ab.\n"
+"\n"
+"Die Aktualisierung kann einige Zeit in Anspruch nehmen."
+
+#: UpdateAskDialog.cpp:21
+msgid ""
+"You want to update the enterprise database. You will not be able to undo this action.\n"
+"\n"
+"First of all you should backup your database with GuG-IT Warehouse Admin.\n"
+"\n"
+"Then start the update process.\n"
+"\n"
+"Do not cancel the process or kill this application. Maybe this application will not react. This is normal. Stay tuned.\n"
+"\n"
+"The update process can take a time."
+msgstr ""
+"Sie möchten die Firmendatenbank aktualisieren. Dieser Schritt kann nicht rückgängig gemacht werden.\n"
+"\n"
+"Als erstes sollten Sie die Datenbank mit dem GuG-IT Warehouse Admin sichern.\n"
+"\n"
+"Dann starten Sie den Aktualisierungsprozess.\n"
+"Brechen Sie den Prozess keinesfalls ab und beenden Sie die Anwendung auf keinen Fall.\n"
+"\n"
+"Der Aktualisierungsprozess kann einige Zeit dauern."
+
+#: DatabaseRecoverDialog.cpp:46 DatabaseRecoverDialog.cpp:48
+#: DatabaseRecoverDialog.cpp:50
+msgid "browse"
+msgstr "durchsuchen"
+
+#: ../lib/ConstantsLibrary.cpp:105
+msgid "full tax"
+msgstr "Volle Steuer"
+
+#: AdminFrame.cpp:114 AdminFrame.cpp:138 AdminFrame.cpp:148 AdminFrame.cpp:154
+#: AdminFrame.cpp:153 AdminFrame.cpp:155 AdminFrame.cpp:171 AdminFrame.cpp:172
+#: AdminFrame.cpp:170 AdminFrame.cpp:199 AdminFrame.cpp:215 AdminFrame.cpp:230
+msgid "info@bolso.de"
+msgstr "info@bolso.de"
+
+#: AdminFrame.cpp:230 AdminFrame.cpp:237 AdminFrame.cpp:238 AdminFrame.cpp:242
+#: AdminFrame.cpp:244 AdminFrame.cpp:247 AdminFrame.cpp:249 AdminFrame.cpp:248
+#: AdminFrame.cpp:253
+msgid "info@dynsoft.com"
+msgstr "info@dynsoft.com"
+
+#: AdminFrame.cpp:253
+msgid "info@gug-it.de"
+msgstr "info@gug-it.de"
+
+#: ../lib/ConstantsLibrary.cpp:60 ../lib/ConstantsLibrary.cpp:61
+#: ../lib/ConstantsLibrary.cpp:73
+msgid "legal"
+msgstr "juristisch"
+
+#: ../lib/ConstantsLibrary.cpp:84
+msgid "multiple"
+msgstr "mehrmalig"
+
+#: ../lib/FileEntity.cpp:59 ../lib/OrderController.cpp:623
+#: ../lib/OrderController.cpp:624 ../lib/OrderController.cpp:626
+#: ../lib/OrderController.cpp:627 ../lib/OrderController.cpp:628
+#: ../lib/OrderController.cpp:629 ../lib/OrderController.cpp:630
+#: ../lib/OrderController.cpp:633 ../lib/MonitionController.cpp:142
+#: ../lib/MonitionController.cpp:143 ../lib/MonitionController.cpp:144
+#: ../lib/MonitionController.cpp:145 ../lib/MonitionController.cpp:146
+#: ../lib/OrderController.cpp:632 ../lib/OrderController.cpp:634
+#: ../lib/OrderController.cpp:635 ../lib/OrderController.cpp:636
+#: ../lib/OrderController.cpp:639 ../lib/ReminderType.cpp:104
+#: ../lib/VoucherController.cpp:254 ../lib/VoucherController.cpp:255
+#: ../lib/OrderController.cpp:616 ../lib/OrderController.cpp:617
+#: ../lib/OrderController.cpp:619 ../lib/OrderController.cpp:620
+#: ../lib/OrderController.cpp:621 ../lib/OrderController.cpp:622
+#: AdminFrame.cpp:309 ../lib/MonitionController.cpp:147
+#: ../lib/MonitionController.cpp:148 ../lib/OrderController.cpp:707
+#: ../lib/OrderController.cpp:708 ../lib/OrderController.cpp:710
+#: ../lib/OrderController.cpp:711 ../lib/OrderController.cpp:712
+#: ../lib/OrderController.cpp:716 ../lib/OrderController.cpp:717
+#: ../lib/OrderController.cpp:718 ../lib/OrderController.cpp:721
+#: ../lib/VoucherController.cpp:258 ../lib/VoucherController.cpp:259
+#: AdminFrame.cpp:312 AdminFrame.cpp:314 AdminFrame.cpp:313 AdminFrame.cpp:318
+#: ../lib/ReminderType.cpp:105
+msgid "n/a"
+msgstr "n/v"
+
+#: ../lib/ConstantsLibrary.cpp:59 ../lib/ConstantsLibrary.cpp:60
+#: ../lib/ConstantsLibrary.cpp:72
+msgid "natural"
+msgstr "natürlich"
+
+#: DatabaseRecoverDialog.cpp:68 DatabaseRecoverDialog.cpp:66
+msgid "new_company"
+msgstr "neuer_mandant"
+
+#: ../lib/ClientController.cpp:135 ../lib/ClientController.cpp:144
+#: ../lib/ProductController.cpp:80 ../lib/ClientController.cpp:72
+#: ../lib/ClientController.cpp:147
+msgid "no"
+msgstr "nein"
+
+#: ../lib/ConstantsLibrary.cpp:83
+msgid "once"
+msgstr "einmalig"
+
+#: ../lib/ConstantsLibrary.cpp:106
+msgid "reduced tax"
+msgstr "Reduzierte Steuer"
+
+#: ../lib/BankConnectionEntity.cpp:49 ../lib/BankConnectionEntity.cpp:57
+msgid "unknown"
+msgstr "unbekannt"
+
+#: ../lib/ConstantsLibrary.cpp:107
+msgid "without tax"
+msgstr "ohne Steuer"
+
+#: ../lib/ClientController.cpp:135 ../lib/ClientController.cpp:144
+#: ../lib/ProductController.cpp:80 ../lib/ClientController.cpp:72
+#: ../lib/ClientController.cpp:147
+msgid "yes"
+msgstr "ja"

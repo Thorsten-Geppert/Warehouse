@@ -1,0 +1,2 @@
+aaaa ICON "WarehouseIcon.ico"
+#include "wx/msw/wx.rc"

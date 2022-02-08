@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ConfigurationDialog">
+		<title>Database Wizard</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="runToolbarButton">
+								<label>Run</label>
+								<bitmap platform="win|unix">resources/images/Run.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Run.png</bitmap>
+							</ToolbarButton>
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="manualToolbarButton">
+								<label>Manual</label>
+								<bitmap platform="win|unix">resources/images/Manual.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Manual.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxStaticBitmap">
+								<bitmap platform="win|unix">resources/images/ConfigurationLogo.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/ConfigurationLogo.png</bitmap>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxALL</flag>
+							<option>1</option>
+							<border>15</border>
+
+							<object class="wxBoxSizer">
+								<orient>wxVERTICAL</orient>
+
+								<!-- Enterprise -->
+								<object class="sizeritem">
+									<flag>wxBOTTOM</flag>
+									<border>5</border>
+
+									<object class="wxStaticText">
+										<label>1) Create enterprise:</label>
+									</object>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxALL | wxEXPAND</flag>
+
+									<object class="wxFlexGridSizer">
+										<hgap>5</hgap>
+										<vgap>5</vgap>
+										<cols>2</cols>
+										<growablecols>1</growablecols>
+										
+										<object class="sizeritem">
+											<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+											<object class="wxStaticText">
+												<label>Enterprise:</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<flag>wxEXPAND</flag>
+											<object class="wxTextCtrl" name="enterpriseEnterpriseTextCtrl">
+											</object>
+										</object>
+
+										<object class="sizeritem">
+											<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+											<object class="wxStaticText">
+												<label>Database:</label>
+											</object>
+										</object>
+										<object class="sizeritem">
+											<flag>wxALIGN_CENTER_VERTICAL</flag>
+											<object class="wxStaticText" name="enterpriseDatabaseStaticText">
+											</object>
+										</object>
+
+									</object>
+								</object>
+
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+									<border>5</border>
+									<object class="wxStaticLine" />
+								</object>
+
+
+								<object class="sizeritem">
+									<flag>wxEXPAND | wxALL</flag>
+
+									<object class="wxBoxSizer">
+										<orient>wxHORIZONTAL</orient>
+
+										<!-- Databaseconnection -->
+										<object class="sizeritem">
+											<flag>wxBOTTOM | wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+
+											<object class="wxStaticText">
+												<label>2) Create databases:</label>
+											</object>
+										</object>
+
+										<!-- Auto Databaseconfiguration -->
+										<object class="sizeritem">
+											<flag>wxEXPAND | wxLEFT | wxBOTTOM</flag>
+											<border>5</border>
+											
+											<object class="wxCheckBox" name="configurationCheckBox">
+												<checked>1</checked>
+												<label>automatic</label>
+											</object>
+										</object>
+									</object>
+								</object>
+
+
+								<object class="sizeritem">
+									<flag>wxALL | wxEXPAND</flag>
+									<option>1</option>
+
+									<object class="wxPanel" name="databasePanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxALL | wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxFlexGridSizer">
+													<hgap>5</hgap>
+													<vgap>5</vgap>
+													<cols>2</cols>
+													<growablecols>1</growablecols>
+
+													<!-- hostname -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText" name="hostnameStaticText">
+															<enabled>0</enabled>
+															<label>Hostname:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="hostnameComboBox">
+															<enabled>0</enabled>
+															<size>200, -1</size>
+															<selection>0</selection>
+															<content>
+																<item checked="0">localhost</item>
+															</content>
+														</object>
+													</object>
+													
+													<!-- Database -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText" name="databaseStaticText">
+															<enabled>0</enabled>
+															<label>Database:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="databaseComboBox">
+															<enabled>0</enabled>
+															<size>200, -1</size>
+															<selection>0</selection>
+															<content>
+																<item checked="0">warehouse</item>
+															</content>
+														</object>
+													</object>
+
+													<!-- Username -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText" name="usernameStaticText">
+															<enabled>0</enabled>
+															<label>Username:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="usernameComboBox">
+															<enabled>0</enabled>
+															<size>200, -1</size>
+															<selection>0</selection>
+															<content>
+																<item checked="0">postgres</item>
+															</content>
+														</object>
+													</object>
+
+													<!-- Password -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText" name="passwordStaticText">
+															<enabled>0</enabled>
+															<label>Password:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<flag>wxEXPAND</flag>
+														<size>200, -1</size>
+
+														<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="passwordTextCtrl">
+															<enabled>0</enabled>
+															<style>wxTE_PASSWORD</style>
+															<value>postgres</value>
+														</object>
+													</object>
+
+													<!-- Port -->
+													<object class="sizeritem">
+														<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+														<object class="wxStaticText" name="portStaticText">
+															<enabled>0</enabled>
+															<label>Port:</label>
+														</object>
+													</object>
+													<object class="sizeritem">
+														<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="portComboBox">
+															<enabled>0</enabled>
+															<size>100, -1</size>
+															<selection>0</selection>
+															<content>
+																<item checked="0">5432</item>
+															</content>
+														</object>
+													</object>
+
+												</object>
+											</object>
+
+										</object>
+									</object>
+								</object>
+
+							</object>
+						</object>
+
+						<!--<object class="sizeritem">
+							<object class="wxStatusBar" name="mainStatusBar">
+								<fields>3</fields>
+								<widths>200, 200, -1</widths>
+							</object>
+						</object>-->
+					</object>
+				</object>
+			</object>
+		</object>
+				
+	</object>
+
+</resource>

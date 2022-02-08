@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Purchase-DinA4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f64bb367-64f5-4089-8151-3d5904a6cbc3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<template><![CDATA["/home/thorsten/Development/DSWarehouse/src/modules/reports/reports/Styles.jrtx"]]></template>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[1]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/thorsten/Development/DSWarehouse/src/modules/reports/reports/"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM purchases WHERE "purchaseId" = 1]]>
+	</queryString>
+	<field name="purchaseId" class="java.lang.Integer"/>
+	<field name="distributorId" class="java.lang.Integer"/>
+	<field name="distributorAddress" class="java.lang.String"/>
+	<field name="clientId" class="java.lang.String"/>
+	<field name="orderId" class="java.lang.String"/>
+	<field name="orderDate" class="java.sql.Date"/>
+	<field name="purchaser" class="java.lang.String"/>
+	<field name="informations" class="java.lang.String"/>
+	<field name="billingAddress" class="java.lang.String"/>
+	<field name="deliveryAddress" class="java.lang.String"/>
+	<field name="textHead" class="java.lang.String"/>
+	<field name="textFoot" class="java.lang.String"/>
+	<field name="sum" class="java.lang.Double"/>
+	<field name="done" class="java.sql.Date"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="createdAt" class="java.sql.Timestamp"/>
+	<field name="changedBy" class="java.lang.String"/>
+	<field name="changedAt" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="42" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="20" width="213" height="20" uuid="8d37e179-db58-4021-92ec-d8456b28ff16"/>
+				<textFieldExpression><![CDATA[$F{billingAddress}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="253" y="20" width="213" height="20" uuid="6090e015-51ba-42ba-8b22-7df3942abda0"/>
+				<textFieldExpression><![CDATA[$F{deliveryAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="0" width="213" height="20" uuid="72a21bc4-045c-4773-876f-7b78ffc4dd21"/>
+				<text><![CDATA[Rechnungsadresse]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="253" y="0" width="213" height="20" uuid="ac2ddf55-1447-4469-92fb-a5714ff21210"/>
+				<text><![CDATA[Lieferadresse]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="215" splitType="Stretch">
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="68" width="213" height="20" uuid="b80801a8-9e9f-4f49-836b-705eaadf5a5f"/>
+				<textFieldExpression><![CDATA[$F{distributorAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="181" width="110" height="20" uuid="851b9f34-b90c-48c9-9500-c8f5d24e681f"/>
+				<text><![CDATA[Bestellung:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="181" width="279" height="20" uuid="360f0688-34a2-450d-9f60-bd110a30648e"/>
+				<textFieldExpression><![CDATA[$F{orderId} != null ? $F{orderId} : $F{purchaseId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="161" width="110" height="20" uuid="ec192fe4-0ebe-4145-bc30-c239e701538a"/>
+				<text><![CDATA[Kundennummer:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="161" width="279" height="20" uuid="a5b0c3a4-df87-48d3-a4a1-d4bd32558c57"/>
+				<textFieldExpression><![CDATA[$F{clientId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="144" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="555" height="20" isRemoveLineWhenBlank="true" uuid="ea5f5bca-ed31-4e62-86a7-7e7476ef036c"/>
+				<textFieldExpression><![CDATA[$F{textHead}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="124" width="555" height="20" isRemoveLineWhenBlank="true" uuid="57808585-c705-4c48-aebb-61f2d05ac98f"/>
+				<textFieldExpression><![CDATA[$F{textFoot}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement stretchType="RelativeToTallestObject" x="0" y="31" width="555" height="79" uuid="b6c463c7-58e7-4483-9fc7-949e84ed859b"/>
+				<subreportParameter name="purchaseId">
+					<subreportParameterExpression><![CDATA[$F{purchaseId}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Purchase-DinA4-Positionen.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="34" width="80" height="20" uuid="d864ccfd-a238-4a0b-b1f9-d00598a23ece"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Seite "+$V{PAGE_NUMBER}+" von"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="34" width="40" height="20" uuid="75475566-fbf3-4e67-89db-b0d39b86bb3d"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

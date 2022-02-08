@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="EditedInformationsDialog">
+		<title>Informations</title>
+		<size>250, -1</size>
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<border>5</border>
+					<option>1</option>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<!-- Created by -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Created by:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxTextCtrl" name="createdByTextCtrl">
+								<style>wxTE_READONLY</style>
+								<value>- Unknown -</value>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+							<border>5</border>
+							<object class="wxStaticLine" />
+						</object>
+
+						<!-- Created at -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Created at:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxTextCtrl" name="createdAtTextCtrl">
+								<style>wxTE_READONLY</style>
+								<value>- Unknown -</value>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+							<border>5</border>
+							<object class="wxStaticLine" />
+						</object>
+
+						<!-- Changed by -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Changed by:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxTextCtrl" name="changedByTextCtrl">
+								<style>wxTE_READONLY</style>
+								<value>- Unknown -</value>
+							</object>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+							<border>5</border>
+							<object class="wxStaticLine" />
+						</object>
+
+						<!-- Changed at -->
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Changed at:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxLEFT | wxEXPAND</flag>
+							<border>15</border>
+
+							<object class="wxTextCtrl" name="changedAtTextCtrl">
+								<style>wxTE_READONLY</style>
+								<value>- Unknown -</value>
+							</object>
+						</object>
+
+					</object>
+				</object>
+			</object>
+		</object>
+	</object>
+
+</resource>

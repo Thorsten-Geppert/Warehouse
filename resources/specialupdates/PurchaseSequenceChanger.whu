@@ -1,0 +1,9 @@
+1.8.0
+Mit dieser Spezialaktualisierung ist es möglich, die fortlaufende Einkaufsnummer zu ändern
+Ändern Sie dazu die Zahl in der letzten Zeile ab. Achten Sie darauf, dass sie sich nicht
+mit bereits vorhandenen Einkaufsnummer überschneidet.
+
+Bitte erstellen Sie zuvor eine Datensicherung.
+
+
+SELECT SETVAL('"purchases_purchaseId_seq"', 20000, true);

@@ -1,0 +1,55 @@
+CPP       = g++
+LINK      = g++
+
+include Makefile.Objects
+
+LIBS      = -L"/usr/local/lib" \
+			-L"/usr/local/pgsql/lib" \
+			-L"/usr/local/DSLib/lib" \
+			-L"." \
+			-lpq \
+			-lds2 \
+			`/usr/local/wxMac-3.1.6/bin/wx-config --libs`
+
+INCS      = -I"/usr/include" \
+			-I"include" \
+			-I"/usr/local/include" \
+			-I"/usr/local/DSLib/include" \
+			-I"/usr/local/pgsql/include" \
+
+BIN       = Warehouse
+
+CXXFLAGS  = $(INCS) \
+			-Wall \
+			-O3 \
+			`/usr/local/wxMac-3.1.6/bin/wx-config --cppflags`
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+bundle: all
+	if test -d Warehouse.app; then rm -Rf Warehouse.app; fi
+	mkdir -p Warehouse.app/Contents/MacOS
+	cp Warehouse Warehouse.app/Contents/MacOS
+	cp -R resources Warehouse.app/Contents/Resources
+	cp resources/images/WarehouseIcon.icns Warehouse.app/Contents/Resources
+	cp Info.plist Warehouse.app/Contents/
+	mkdir Warehouse.app/Contents/MacOS/reports
+	cp ../reports/target/reports-0.0.1.jar Warehouse.app/Contents/MacOS/reports/reports.jar
+	cp -R ../reports/target/lib Warehouse.app/Contents/MacOS/reports
+	cp -R ../reports/reports Warehouse.app/Contents/MacOS/reports/
+
+open: bundle
+	open Warehouse.app
+
+start: bundle
+	open Warehouse.app
+
+$(BIN): $(OBJ)
+	$(LINK) $(LIBS) $(OBJ) -stdlib=libc++ -o $(BIN)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -g -c $*.cpp -o $*.o

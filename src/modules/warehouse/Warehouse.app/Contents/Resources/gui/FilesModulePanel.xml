@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="FilesModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="updateToolbarButton">
+							<label>Reload</label>
+							<bitmap platform="win|unix">resources/images/Update.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Update.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="newCategoryToolbarButton">
+							<label>New category</label>
+							<bitmap platform="win|unix">resources/images/New.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="editCategoryToolbarButton">
+							<label>Edit category</label>
+							<bitmap platform="win|unix">resources/images/Edit.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Edit.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="removeCategoryToolbarButton">
+							<label>Remove category</label>
+							<bitmap platform="win|unix">resources/images/Remove.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Remove.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="newFileToolbarButton">
+							<label>New file</label>
+							<bitmap platform="win|unix">resources/images/New.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/New.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="editFileToolbarButton">
+							<label>Edit file</label>
+							<bitmap platform="win|unix">resources/images/Edit.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Edit.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="removeFileToolbarButton">
+							<label>Remove file</label>
+							<bitmap platform="win|unix">resources/images/Remove.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Remove.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="moveFileToolbarButton">
+							<label>Move file</label>
+							<bitmap platform="win|unix">resources/images/MoveFile.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/MoveFile.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+
+						<ToolbarButton name="downloadFileToolbarButton">
+							<label>Download file</label>
+							<bitmap platform="win|unix">resources/images/Download.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Download.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+				<object class="wxPanel" name="mainPanel">
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+					</object>
+				</object>
+			</object>
+	
+		</object>
+
+	</object>
+
+</resource>

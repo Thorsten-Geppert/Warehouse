@@ -1,0 +1,73 @@
+CPP       = g++.exe
+LINK      = g++.exe
+
+include Makefile.Objects
+
+LIBS      = -L"C:/CodeBlocks/MinGW/lib" \
+			-L"C:/wxWidgets-2.8.12/lib/gcc_dll" \
+			-mwindows \
+			-lwxexpat \
+			-lwxjpeg \
+			-lwxmsw28u \
+			-lwxpng \
+			-lwxregexu \
+			-lwxtiff \
+			-lwxzlib \
+			-lkernel32 \
+			-luser32 \
+			-lgdi32 \
+			-lcomdlg32 \
+			-lwinspool \
+			-lwinmm \
+			-lshell32 \
+			-lcomctl32 \
+			-lole32 \
+			-loleaut32 \
+			-luuid \
+			-lrpcrt4 \
+			-ladvapi32 \
+			-lwsock32 \
+			-lodbc32 \
+			-lopengl32
+
+INCS      = -I"C:/wxWidgets-2.8.12/include" \
+			-I"C:/wxWidgets-2.8.12/lib/gcc_dll/mswu" \
+			-I"C:/CodeBlocks/MinGW/include"
+
+BIN       = WarehouseDemoEnabler.exe
+
+RESOURCE  = resource.o
+
+CXXFLAGS  = $(INCS) \
+			-D__WXMSW__ \
+			-D__GNUWIN32__ \
+			-D__WIN95__ \
+			-fno-exceptions \
+			-fno-pcc-struct-return \
+			-fstrict-aliasing \
+			-Wall \
+			-fexpensive-optimizations \
+			-O3
+
+TARGET    = WarehouseDemoEnabler
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN) $(RESOURCE)
+
+open: all
+	$(BIN)
+
+start: all
+	$(BIN)
+
+$(RESOURCE): resource.rc
+	windres -IC:/wxWidgets-2.8.12/include resource.rc -o $(RESOURCE)
+
+$(BIN): $(OBJ) $(RESOURCE)
+	$(LINK) $(OBJ) -DUNICODE=1 -DWXUSINGDLL=1 -o $(BIN) $(LIBS) $(RESOURCE)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -DUNICODE=1 -DWXUSINGDLL=1 -g -c $*.cpp -o $*.o

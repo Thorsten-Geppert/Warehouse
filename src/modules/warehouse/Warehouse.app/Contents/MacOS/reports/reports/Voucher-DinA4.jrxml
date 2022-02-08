@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Voucher-DinA4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="defbe043-f449-4651-8847-754791bf5ab3">
+	<property name="ireport.zoom" value="1.3310000000000004"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="188"/>
+	<template><![CDATA["/home/thorsten/Development/DSWarehouse/src/modules/reports/reports/Styles.jrtx"]]></template>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[7]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["/home/thorsten/Development/DSWarehouse/src/modules/reports/reports/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT * FROM vouchers WHERE "voucherId" = $P{id}]]>
+	</queryString>
+	<field name="voucherId" class="java.lang.Integer"/>
+	<field name="description" class="java.lang.String"/>
+	<field name="invoiceId" class="java.lang.String"/>
+	<field name="invoiceDate" class="java.sql.Date"/>
+	<field name="company" class="java.lang.String"/>
+	<field name="notes" class="java.lang.String"/>
+	<field name="priceWithoutTax" class="java.lang.Double"/>
+	<field name="reducedTax" class="java.lang.Double"/>
+	<field name="fullTax" class="java.lang.Double"/>
+	<field name="priceWithTax" class="java.lang.Double"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="createdAt" class="java.sql.Timestamp"/>
+	<field name="changedBy" class="java.lang.String"/>
+	<field name="changedAt" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="131" splitType="Stretch">
+			<textField>
+				<reportElement style="Title" x="0" y="0" width="555" height="131" uuid="58edf96d-bf3e-4676-a843-feb3e75fc60f"/>
+				<textFieldExpression><![CDATA[$F{company}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="145" splitType="Stretch">
+			<textField isBlankWhenNull="true">
+				<reportElement x="115" y="0" width="440" height="20" uuid="a1c4adbd-2561-4d5d-8988-ec6b5adc26e8"/>
+				<textFieldExpression><![CDATA[$F{voucherId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="115" y="20" width="440" height="20" uuid="992596c9-e98d-4e27-a7c5-25ab7bb5c7a5"/>
+				<textFieldExpression><![CDATA[$F{invoiceId}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement x="115" y="40" width="440" height="20" uuid="01297b50-b8ef-4af2-a324-67fbbfa360cc"/>
+				<textFieldExpression><![CDATA[$F{invoiceDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="115" y="60" width="440" height="20" uuid="7b21f788-2796-457c-9fc1-51e88c01faf0"/>
+				<textFieldExpression><![CDATA[$F{priceWithoutTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="115" y="80" width="440" height="20" uuid="45f48b41-5a93-4fd1-9b66-b9201918c5b6"/>
+				<textFieldExpression><![CDATA[$F{reducedTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="115" y="100" width="440" height="20" uuid="1e765888-7bd6-4cae-8979-14ca2176e2b2"/>
+				<textFieldExpression><![CDATA[$F{fullTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00" isBlankWhenNull="true">
+				<reportElement x="115" y="120" width="440" height="20" uuid="0ffc60a8-2994-4628-9e3d-0fb392a7e947"/>
+				<textFieldExpression><![CDATA[$F{priceWithTax}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="0" y="0" width="115" height="20" uuid="a285003a-7cc0-4a77-adb5-2da12f51ca62"/>
+				<text><![CDATA[Belegnummer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="20" width="115" height="20" uuid="19c35e47-4551-4002-89c8-408a946da1f0"/>
+				<text><![CDATA[Rechnungsnummer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="60" width="115" height="20" uuid="e5db773c-e71a-4beb-b922-962ed3eedcfd"/>
+				<text><![CDATA[Nettopreis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="80" width="115" height="20" uuid="91cb8317-8741-4ccd-a0eb-5d0a04552d12"/>
+				<text><![CDATA[Reduzierte Steuer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="100" width="115" height="20" uuid="5ef073ce-ca64-405f-b2b3-2b56783cb1ec"/>
+				<text><![CDATA[Volle Steuer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="120" width="115" height="20" uuid="a3f44431-5b96-41f4-b714-6821a8925ba0"/>
+				<text><![CDATA[Bruttopreis:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Description" x="0" y="40" width="115" height="20" uuid="7938d7d6-2e48-4ecb-9f6f-971e0e77eeff"/>
+				<text><![CDATA[Rechnungsdatum:]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="325" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="100" uuid="4b8fa4c7-1d19-4701-bb0c-57dadb370b5d"/>
+				<subreportParameter name="voucherId">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Voucher-DinA4-Positions.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement style="Description" x="0" y="113" width="100" height="20" uuid="a4612dd4-510f-43e3-8d76-7efc27541cff"/>
+				<text><![CDATA[Notizen]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="133" width="267" height="93" uuid="3bab0249-e133-4e43-962c-8dc322fff840"/>
+				<textFieldExpression><![CDATA[$F{notes}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement style="Description" x="277" y="113" width="100" height="20" uuid="1d127dda-e699-4216-a5b0-68c01ff2c9fb"/>
+				<text><![CDATA[Beschreibung]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="277" y="133" width="278" height="93" uuid="24332381-096a-46da-9b87-4a3f97b943da"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="235" width="555" height="90" uuid="ddcc9f1b-116c-431a-b67b-9238e35bab60"/>
+				<subreportParameter name="voucherId">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Voucher-DinA4-MoreData.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="23" splitType="Stretch">
+			<textField>
+				<reportElement x="435" y="0" width="80" height="20" uuid="2626b048-c129-46a2-9130-0db0b2fe9431"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Seite "+$V{PAGE_NUMBER}+" von"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="515" y="0" width="40" height="20" uuid="78320024-7172-48fe-a381-87ad1d70a401"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

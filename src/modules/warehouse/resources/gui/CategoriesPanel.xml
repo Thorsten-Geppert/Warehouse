@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="CategoriesPanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+				<option>1</option>
+
+				<object class="wxTreeCtrl" name="categoriesTreeCtrl">
+					<size>50, 50</size>
+				</object>
+			</object>
+	
+		</object>
+
+	</object>
+
+</resource>

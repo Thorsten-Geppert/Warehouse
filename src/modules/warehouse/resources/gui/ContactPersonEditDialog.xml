@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="ContactPersonEditDialog">
+		<title>Edit contact person</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<!-- Main data -->
+					<object class="wxFlexGridSizer">
+						<cols>2</cols>
+						<vgap>5</vgap>
+						<hgap>5</hgap>
+						<growablecols>1</growablecols>
+
+						<!-- Function -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Function:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="functionComboBox">
+								<focused>1</focused>
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Function -->
+
+						<!-- Department -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Department:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="departmentComboBox">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Department -->
+
+						<!-- Salutation -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Salutation:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="salutationComboBox">
+								<maxlength>64</maxlength>
+							</object>
+						</object>
+						<!-- /Salutation -->
+
+						<!-- Title -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Title:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="titleComboBox">
+								<maxlength>64</maxlength>
+							</object>
+						</object>
+						<!-- /Title -->
+
+						<!-- Firstname -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Firstname:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="firstnameTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Firstname -->
+
+						<!-- Lastname -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Lastname:</label>
+								<fg>#c65d00</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="lastnameTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Lastname -->
+
+						<!-- Telephone -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+							
+							<object class="wxStaticText">
+								<label>Telephone:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<growablecols>2</growablecols>
+
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="telephoneCountryTextCtrl">
+										<size>70, -1</size>
+										<maxlength>8</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="telephonePrefixTextCtrl">
+										<size>70, -1</size>
+										<maxlength>16</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="telephoneNumberTextCtrl">
+										<maxlength>32</maxlength>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Telephone -->
+
+						<!-- Mobile -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+							
+							<object class="wxStaticText">
+								<label>Mobile:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<growablecols>2</growablecols>
+
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="mobileCountryTextCtrl">
+										<size>70, -1</size>
+										<maxlength>8</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="mobilePrefixTextCtrl">
+										<size>70, -1</size>
+										<maxlength>16</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="mobileNumberTextCtrl">
+										<maxlength>32</maxlength>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Mobile -->
+
+						<!-- Fax -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+							
+							<object class="wxStaticText">
+								<label>Fax:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxFlexGridSizer">
+								<hgap>5</hgap>
+								<vgap>5</vgap>
+								<growablecols>2</growablecols>
+
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="faxCountryTextCtrl">
+										<size>70, -1</size>
+										<maxlength>8</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="faxPrefixTextCtrl">
+										<size>70, -1</size>
+										<maxlength>16</maxlength>
+									</object>
+								</object>
+								<object class="sizeritem">
+									<flag>wxEXPAND</flag>
+
+									<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="faxNumberTextCtrl">
+										<maxlength>32</maxlength>
+									</object>
+								</object>
+							</object>
+						</object>
+						<!-- /Fax -->
+
+						<!-- Email -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Email:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="emailTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Email -->
+
+						<!-- Internet -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Internet:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="internetTextCtrl">
+								<maxlength>255</maxlength>
+							</object>
+						</object>
+						<!-- /Internet -->
+
+						<!-- Information -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT</flag>
+
+							<object class="wxStaticText" name="informationStaticText">
+								<label>Information:</label>
+								<fg>#0000ff</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="informationTextCtrl">
+								<style>wxTE_MULTILINE</style>
+								<size>-1, 100</size>
+							</object>
+						</object>
+						<!-- /Information -->
+
+					</object>
+					<!-- /Main data -->
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

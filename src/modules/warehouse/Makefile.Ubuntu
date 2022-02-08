@@ -1,0 +1,42 @@
+CPP       = c++
+LINK      = c++
+
+include Makefile.Objects
+
+LIBS      = -L"/usr/local/pgsql/lib" \
+			-L"/usr/local/lib/mysql" \
+			-L"/usr/lib" \
+			-lds \
+			-lfcgi \
+			-lpq \
+			-lmcrypt \
+			`wx-config --libs` -lmysqlclient
+
+INCS      = -I"/usr/include" \
+			-I"/usr/local/include" \
+			-I"/usr/local/pgsql/include" \
+			-I"/usr/include/postgresql" 
+
+BIN       = Warehouse
+
+CXXFLAGS  = $(INCS) \
+			-O3 \
+			`wx-config --cppflags`
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+open: all
+	./$(BIN)
+
+start: all
+	./$(BIN)
+
+$(BIN): $(OBJ)
+	$(LINK) $(OBJ) -o $(BIN) $(LIBS)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -c $*.cpp -o $*.o

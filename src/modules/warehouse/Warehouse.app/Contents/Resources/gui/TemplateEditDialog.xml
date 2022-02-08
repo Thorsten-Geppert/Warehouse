@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="TemplateEditDialog">
+		<title>Edit template</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="cancelToolbarButton">
+								<label>Cancel</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND | wxALL</flag>
+					<border>15</border>
+					<option>1</option>
+
+					<object class="wxBoxSizer">
+						<orient>wxVERTICAL</orient>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Name:</label>
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<object class="wxTextCtrl" name="nameTextCtrl">
+								<focused>1</focused>
+								<size>500, -1</size>
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<object class="wxStaticText">
+								<label>Content:</label>
+							</object>
+						</object>
+
+						<object class="spacer">
+							<size>5</size>
+						</object>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" name="contentTextCtrl">
+								<style>wxTE_MULTILINE</style>
+							</object>
+						</object>
+					</object>
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

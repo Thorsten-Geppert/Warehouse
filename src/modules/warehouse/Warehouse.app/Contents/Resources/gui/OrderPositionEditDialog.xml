@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxDialog" name="OrderPositionEditDialog">
+		<title>Edit position</title>
+
+		<object class="wxPanel" name="mainPanel">
+			<object class="wxBoxSizer">
+				<orient>wxVERTICAL</orient>
+
+				<object class="sizeritem">
+					<flag>wxEXPAND</flag>
+
+					<object class="Toolbar" name="mainToolbar">
+						<buttons>
+							<ToolbarButton name="saveToolbarButton">
+								<label>Save</label>
+								<bitmap platform="win|unix">resources/images/Save.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Save.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="findArticleToolbarButton">
+								<label>Find article</label>
+								<bitmap platform="win|unix">resources/images/Find.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Find.png</bitmap>
+							</ToolbarButton>
+
+							<ToolbarButtonStretchSpacer />
+
+							<ToolbarButton name="closeToolbarButton">
+								<label>Close</label>
+								<bitmap platform="win|unix">resources/images/Cancel.png</bitmap>
+								<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Cancel.png</bitmap>
+							</ToolbarButton>
+						</buttons>
+					</object>
+				</object>
+
+				<object class="sizeritem">
+					<flag>wxALL | wxEXPAND</flag>
+					<option>1</option>
+					<border>15</border>
+
+					<!-- Main data -->
+					<object class="wxFlexGridSizer">
+						<cols>2</cols>
+						<vgap>5</vgap>
+						<hgap>5</hgap>
+						<growablecols>1</growablecols>
+						<growablerows>4</growablerows>
+
+						<!-- Amount -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Amount:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="amountTextCtrl">
+								<focused>1</focused>
+							</object>
+						</object>
+						<!-- /Amount -->
+
+						<!-- Article number -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Product id:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="productIdTextCtrl">
+							</object>
+						</object>
+						<!-- /Article number -->
+
+						<!-- Stock reservation -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Stock reservation:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxComboBox" subclass="DynSoft::DSComboBox" name="stocksComboBox">
+								<style>wxCB_READONLY</style>
+							</object>
+						</object>
+						<!-- /Stock reservation -->
+
+						<!-- Stock quantity -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+
+							<object class="wxStaticText" name="stockQuantityStaticText">
+							</object>
+						</object>
+						<!-- /Stock quantity -->
+
+						<!-- Article informations -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT</flag>
+
+							<object class="wxStaticText">
+								<label>Product informations:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" name="productInformationsTextCtrl">
+								<style>wxTE_READONLY | wxTE_MULTILINE</style>
+								<size>-1, 150</size>
+							</object>
+						</object>
+						<!-- /Article number -->
+
+						<!-- Text -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT</flag>
+
+							<object class="wxStaticText" name="textStaticText">
+								<label>Text:</label>
+								<fg>#0000ff</fg>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<flag>wxEXPAND</flag>
+							<option>1</option>
+
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="textTextCtrl">
+								<style>wxTE_MULTILINE</style>
+								<size>-1, 150</size>
+							</object>
+						</object>
+						<!-- /Text -->
+
+						<!-- Price -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Price:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="priceTextCtrl">
+							</object>
+						</object>
+						<!-- /Price -->
+
+						<!-- Reduction -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Reduction (%):</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="reductionTextCtrl">
+							</object>
+						</object>
+						<!-- /Reduction -->
+
+						<!-- Sum -->
+						<object class="sizeritem">
+							<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+							<object class="wxStaticText">
+								<label>Sum:</label>
+							</object>
+						</object>
+						<object class="sizeritem">
+							<object class="wxStaticText" name="sumStaticText">
+								<label>0,00</label>
+							</object>
+						</object>
+						<!-- /Sum -->
+					</object>
+					<!-- /Main data -->
+				</object>
+
+			</object>
+		</object>
+	</object>
+
+</resource>

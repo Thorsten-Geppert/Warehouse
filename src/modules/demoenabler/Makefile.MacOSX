@@ -1,0 +1,43 @@
+CPP       = g++
+LINK      = g++
+
+include Makefile.Objects
+
+LIBS      = `wx-config --libs`
+
+INCS      = 
+
+BIN       = WarehouseDemoEnabler
+
+CXXFLAGS  = $(INCS) \
+			-Wall \
+			-O3 \
+			`wx-config --cppflags`
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+bundle: all
+	if test -d WarehouseDemoEnabler.app; then rm -Rf WarehouseDemoEnabler.app; fi
+	mkdir -p WarehouseDemoEnabler.app/Contents/MacOS
+	mkdir WarehouseDemoEnabler.app/Contents/Resources
+	cp WarehouseDemoEnabler WarehouseDemoEnabler.app/Contents/MacOS
+	cp WarehouseIcon.icns WarehouseDemoEnabler.app/Contents/Resources
+	cp WarehouseIcon.png WarehouseDemoEnabler.app/Contents/Resources
+	cp Logo.png WarehouseDemoEnabler.app/Contents/Resources
+	cp Info.plist WarehouseDemoEnabler.app/Contents
+
+open: bundle
+	open WarehouseDemoEnabler.app
+
+start: bundle
+	open WarehouseDemoEnabler.app
+
+$(BIN): $(OBJ)
+	$(LINK) $(LIBS) $(OBJ) -m32 -o $(BIN)
+
+.cpp.o:
+	$(CPP) $(CXXFLAGS) -m32 -g -c $*.cpp -o $*.o

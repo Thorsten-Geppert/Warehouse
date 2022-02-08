@@ -1,0 +1,1879 @@
+<?xml version="1.0"?>
+<resource version="2.3.0.1">
+
+	<object class="wxPanel" name="PreferencesModulePanel">
+	
+		<object class="wxBoxSizer">
+			<orient>wxVERTICAL</orient>
+
+			<object class="sizeritem">
+				<flag>wxEXPAND</flag>
+
+				<object class="Toolbar" name="mainToolbar">
+					<buttons>
+
+						<ToolbarButton name="logToolbarButton">
+							<label>Log</label>
+							<bitmap platform="win|unix">resources/images/Log.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Log.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+<!--
+						<ToolbarButton name="contactToolbarButton">
+							<label>Contact us</label>
+							<bitmap platform="win|unix">resources/images/Mail.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Mail.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="bugToolbarButton">
+							<label>Send bug</label>
+							<bitmap platform="win|unix">resources/images/Bug.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Bug.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButtonStretchSpacer />
+-->
+						<ToolbarButton name="helpToolbarButton">
+							<label>Help</label>
+							<bitmap platform="win|unix">resources/images/Help.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Help.png</bitmap>
+						</ToolbarButton>
+
+						<ToolbarButton name="informationToolbarButton">
+							<label>Information</label>
+							<bitmap platform="win|unix">resources/images/Information.png</bitmap>
+							<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Information.png</bitmap>
+						</ToolbarButton>
+
+					</buttons>
+				</object>
+			</object>
+	
+			<object class="sizeritem">
+				<flag>wxEXPAND | wxALL</flag>
+				<option>1</option>
+				<border>15</border>
+
+				<object class="wxPanel">
+					<object class="wxBoxSizer">
+						<orient>wxHORIZONTAL</orient>
+
+						<object class="sizeritem">
+							<flag>wxEXPAND | wxALL</flag>
+							<option>1</option>
+							<border>5</border>
+							
+							<object class="wxTreebook" name="optionTreebook">
+
+								<!-- Informations -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Informations</label>
+									<bitmap platform="win|unix">resources/images/InformationPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/InformationPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<!-- Informations -->
+													<object class="notebookpage">
+														<label>Informations</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+																
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+
+																		<!-- Version -->
+																		<object class="sizeritem">
+																			<object class="wxStaticText">
+																				<label>Version:</label>
+																				<font>
+																					<weight>bold</weight>
+																				</font>
+																			</object>
+																		</object>
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxLEFT</flag>
+																			<border>30</border>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText" name="versionStaticText">
+																						<label>0.0.0</label>
+																					</object>
+																				</object>
+																				<object class="spacer">
+																					<size>30</size>
+																				</object>
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxButton" name="checkUpdatesButton">
+																						<label>Check for updates now</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Version -->
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+																			
+																			<object class="wxStaticLine" />
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<!-- Changelog informations -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxALL</flag>
+																			<option>1</option>
+																			<border>5</border>
+
+																			<object class="wxHtmlWindow">
+																				<borders>5d</borders>
+																				<url platform="win|unix">resources/informations/Changelog.html</url>
+																				<url platform="mac">Warehouse.app/Contents/Resources/informations/Changelog.html</url>
+																			</object>
+																		</object>
+																		<!-- /Changelog informations -->
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Informations -->
+
+													<!-- Connection -->
+													<object class="notebookpage">
+														<label>Connection</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+																
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+																		
+																	<object class="wxTextCtrl" name="connectionTextCtrl">
+																		<style>wxTE_READONLY | wxTE_MULTILINE</style>
+																		<font>
+																			<family>teletype</family>
+																		</font>
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Connection -->
+
+													<!-- System -->
+													<object class="notebookpage">
+														<label>System</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+																
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+																		
+																	<object class="wxTextCtrl" name="systemTextCtrl">
+																		<style>wxTE_READONLY | wxTE_MULTILINE</style>
+																		<font>
+																			<family>teletype</family>
+																		</font>
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /System -->
+
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Informations -->
+
+								<!-- Enterprise preferences -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Enterprises preferences</label>
+									<bitmap platform="win|unix">resources/images/EnterprisePreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/EnterprisePreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<!-- Master data -->
+													<object class="notebookpage">
+														<label>Master data</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+																
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxFlexGridSizer">
+																		<vgap>5</vgap>
+																		<hgap>5</hgap>
+																		<cols>2</cols>
+																		<growablecols>1</growablecols>
+
+																		<!-- Company -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Company:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="companyTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Company -->
+
+																		<!-- Executive -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Executive:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="executiveTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Executive -->
+
+																		<!-- Address 1 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Address 1:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="address1TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Address 1 -->
+
+																		<!-- Address 2 -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Address 2:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="address2TextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Address 2 -->
+
+																		<!-- Zipcode / City -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Zipcode/city:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<object class="wxTextCtrl" name="zipcodeTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" name="cityTextCtrl">
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																			</object>
+																		</object>
+																		<!-- /Zipcode / City -->
+
+																		<!-- Telephone -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Telephone:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="telephoneTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Telephone -->
+
+																		<!-- Fax -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Fax:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="faxTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Fax -->
+
+																		<!-- Email -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Email:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="emailTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Email -->
+
+																		<!-- Web -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Web:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="webTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Web -->
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Master data -->
+
+													<!-- Financial -->
+													<object class="notebookpage">
+														<label>Financial</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+																
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxFlexGridSizer">
+																		<vgap>5</vgap>
+																		<hgap>5</hgap>
+																		<cols>2</cols>
+																		<growablecols>1</growablecols>
+
+																		<!-- Sales tax identification number -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Sales tax identification number:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="salesTaxIdentificationNumberTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Sales tax identification number -->
+
+																		<!-- Tax number -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Tax number:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="taxNumberTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Tax number -->
+
+																		<!-- Sales tax indicator -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Sales tax indicator:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" name="salesTaxIndicatorTextCtrl">
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Sales tax indicator -->
+
+																		<!-- Bank -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Bank:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxALIGN_CENTER_VERTICAL</flag>
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+																				
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxTextCtrl" name="bankTextCtrl">
+																						<size>300, -1</size>
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxButton" name="bankFindButton">
+																						<label>Find</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Bank -->
+
+																		<!-- Bank code -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Bank code:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bankCodeTextCtrl">
+																				<size>120, -1</size>
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Bank code -->
+
+																		<!-- Account number -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Account number:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="accountNumberTextCtrl">
+																				<size>120, -1</size>
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Account number -->
+
+																		<!-- BIC -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>BIC:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="bicTextCtrl">
+																				<size>120, -1</size>
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /BIC -->
+
+																		<!-- IBAN -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>IBAN:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="ibanTextCtrl">
+																				<size>120, -1</size>
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /IBAN -->
+
+																		<!-- Holder -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Holder:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" name="holderTextCtrl">
+																				<size>250, -1</size>
+																				<maxlength>255</maxlength>
+																			</object>
+																		</object>
+																		<!-- /Holder -->
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Financial -->
+
+													<!-- Mandatory fields -->
+													<object class="notebookpage">
+														<label>Mandatory fields</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText">
+																						<label>Clients</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<option>1</option>
+																					<object class="wxStaticLine" />
+																				</object>
+																			</object>
+																		</object>
+																		
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxALL</flag>
+																			<option>1</option>
+																			<border>5</border>
+
+																			<object class="wxFlexGridSizer">
+																				<vgap>5</vgap>
+																				<hgap>5</hgap>
+																				<cols>1</cols>
+
+																				<object class="sizeritem">
+																					<object class="wxCheckBox" name="mandatoryClientsOwnClientIdCheckBox">
+																						<label>Own customer id</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>30</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText">
+																						<label>Products</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<option>1</option>
+																					<object class="wxStaticLine" />
+																				</object>
+																			</object>
+																		</object>
+																		
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxALL</flag>
+																			<option>1</option>
+																			<border>5</border>
+
+																			<object class="wxFlexGridSizer">
+																				<vgap>5</vgap>
+																				<hgap>5</hgap>
+																				<cols>1</cols>
+
+																				<object class="sizeritem">
+																					<object class="wxCheckBox" name="mandatoryProductsArticleNumberCheckBox">
+																						<label>Article number</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Mandatory fields -->
+
+												</object>
+											</object>
+
+											<!-- Save Enterprise Preferences -->
+											<object class="sizeritem">
+												<flag>wxTOP | wxEXPAND | wxBOTTOM</flag>
+												<border>5</border>
+
+												<object class="wxButton" name="saveEnterprisePreferencesButton">
+													<label>Save changes</label>
+												</object>
+											</object>
+											<!-- /Save Enterprise Preferences -->
+										</object>
+									</object>
+								</object>
+								<!-- /Enterprise preferences -->
+								
+								<!-- Common preferences -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Common preferences</label>
+									<bitmap platform="win|unix">resources/images/CommonPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/CommonPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<object class="notebookpage">
+														<label>Common Preferences</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxFlexGridSizer">
+																		<cols>3</cols>
+																		<hgap>5</hgap>
+																		<vgap>5</vgap>
+																		<growablecols>1</growablecols>
+
+																		<!-- Minor value added tax -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Minor value added tax:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="minorValueAddedTaxTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label translate="0">%</label>
+																			</object>
+																		</object>
+																		<!-- /Minor value added tax -->
+
+																		<!-- Major value added tax -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Major value added tax:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="majorValueAddedTaxTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>%</label>
+																			</object>
+																		</object>
+																		<!-- /Major value added tax -->
+
+																		<!-- Monition states -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Monition states:</label>
+																				<fg>#c65d00</fg>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxSpinCtrl" name="monitionStatesSpinCtrl">
+																				<min>1</min>
+																				<max>10</max>
+																				<value>3</value>
+																				<size>50, -1</size>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxStaticText" />
+																		</object>
+																		<!-- /Monition states -->
+
+																		<!-- Monition price -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Monition price:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="monitionPriceTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxStaticText" />
+																		</object>
+																		<!-- /Monition price -->
+
+																		<!-- Use reports -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Use reports:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxCheckBox" subclass="DynSoft::DSCheckBox" name="reportUseCheckBox">
+																				<label>yes</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxStaticText" />
+																		</object>
+																		<!-- /Use reports -->
+
+																		<!-- JRE Home -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>JRE windows path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="jreHomeWindowsTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="jreHomeWindowsBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /JRE Home -->
+
+																		<!-- Report Windows Path -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Report windows path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="reportPathWindowsTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="reportPathWindowsBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /Report Windows Path -->
+
+																		<!-- JRE Unix Home -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>JRE unix path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="jreHomeUnixTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="jreHomeUnixBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /JRE Unix Home -->
+
+																		<!-- Report Unix Path-->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Report unix path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="reportPathUnixTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="reportPathUnixBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /Report Unix Path -->
+
+																		<!-- JRE macOS Home -->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>JRE macOS path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="jreHomeMacOSTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="jreHomeMacOSBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /JRE macOS Home -->
+
+																		<!-- Report macOS Path-->
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT | wxALIGN_CENTER_VERTICAL</flag>
+
+																			<object class="wxStaticText">
+																				<label>Report macOS path:</label>
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl" subclass="DynSoft::DSTextCtrl" name="reportPathMacOSTextCtrl">
+																			</object>
+																		</object>
+																		<object class="sizeritem">
+																			<object class="wxButton" name="reportPathMacOSBrowseButton">
+																				<label>browse...</label>
+																			</object>
+																		</object>
+																		<!-- /Report macOS Path -->
+																	</object>
+																</object>
+															</object>
+
+														</object>
+													</object>
+												</object>
+											</object>
+
+											<!-- Save Common Preferences -->
+											<object class="sizeritem">
+												<flag>wxTOP | wxEXPAND | wxBOTTOM</flag>
+												<border>5</border>
+
+												<object class="wxButton" name="saveCommonPreferencesButton">
+													<label>Save changes</label>
+												</object>
+											</object>
+											<!-- /Save Common Preferences -->
+
+										</object>
+									</object>
+								</object>
+								<!-- /Common preferences -->
+
+								<!-- Advanced preferences -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Advanced preferences</label>
+									<bitmap platform="win|unix">resources/images/AdvancedPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/AdvancedPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<object class="notebookpage">
+														<label>Advanced Preferences</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="advancedPreferencesListCtrl">
+																		<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+																	</object>
+																</object>
+															</object>
+
+														</object>
+													</object>
+												</object>
+											</object>
+
+										</object>
+									</object>
+								</object>
+								<!-- /Advanced preferences -->
+
+								<!-- User management -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>User management</label>
+									<bitmap platform="win|unix">resources/images/UserManagementPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/UserManagementPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<object class="notebookpage">
+														<label>Users</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="userListCtrl">
+																		<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxLEFT | wxRIGHT | wxBOTTOM | wxEXPAND</flag>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxHORIZONTAL</orient>
+
+																		<object class="sizeritem">
+																			<option>1</option>
+
+																			<object class="wxButton" name="exportUsersButton">
+																				<label>Export user list</label>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<option>1</option>
+
+																			<object class="wxButton" name="removeUserButton">
+																				<label>Remove selected user</label>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<option>1</option>
+
+																			<object class="wxButton" name="addUserButton">
+																				<label>Add user</label>
+																			</object>
+																		</object>
+																	</object>
+																</object>
+
+															</object>
+														</object>
+
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /User management -->
+
+								<!-- Fill in data -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Fill in data</label>
+									<bitmap platform="win|unix">resources/images/FillInDataPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/FillInDataPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<!-- Lists -->
+													<object class="notebookpage">
+														<label>Lists</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxHORIZONTAL</orient>
+
+																<!-- List with tables -->
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<border>5</border>
+
+																	<object class="wxListBox" name="fillInDataTablesListBox">
+																		<size>250, -1</size>
+																	</object>
+																</object>
+																<!-- /List with tables -->
+
+																<!-- Table data -->
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+
+																		<!-- Input -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText" name="fillInDataEntryStaticText">
+																						<label>Data:</label>
+																						<fg>#c65d00</fg>
+																					</object>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxLEFT | wxRIGHT | wxALIGN_CENTER_VERTICAL</flag>
+																					<border>5</border>
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" name="fillInDataEntryTextCtrl">
+																						<style>wxTE_PROCESS_ENTER</style>
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+																					<object class="wxButton" name="fillInDataSaveEntryButton">
+																						<label>Save entry</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Input -->
+
+																		<!-- List -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND | wxTOP | wxBOTTOM</flag>
+																			<option>1</option>
+																			<border>5</border>
+
+																			<object class="wxListBox" name="fillInDataEntriesListBox">
+																			</object>
+																		</object>
+																		<!-- /List -->
+
+																		<!-- Options -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="fillInDataRemoveEntryButton">
+																						<label>Remove selected entry</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Options -->
+																	</object>
+																</object>
+																<!-- /Table data -->
+
+															</object>
+														</object>
+													</object>
+													<!-- /Lists -->
+
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Fill in data -->
+
+								<!-- Banks -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Banks</label>
+									<bitmap platform="win|unix">resources/images/Banks.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Banks.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<!-- Banks -->
+													<object class="notebookpage">
+														<label>Banks</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxHORIZONTAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxALL | wxEXPAND</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+																		
+																		<!-- Input -->
+																		<object class="sizeritem">
+																			<flag>wxALL | wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText">
+																						<label>Bank code:</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxTextCtrl" name="fillInDataBankCodeTextCtrl" subclass="DynSoft::DSTextCtrl">
+																						<style>wxTE_PROCESS_ENTER</style>
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText">
+																						<label>BIC:</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxTextCtrl" name="fillInDataBankBicTextCtrl" subclass="DynSoft::DSTextCtrl">
+																						<style>wxTE_PROCESS_ENTER</style>
+																						<size>300, -1</size>
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxStaticText">
+																						<label>Bank:</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxTextCtrl" name="fillInDataBankTextCtrl">
+																						<style>wxTE_PROCESS_ENTER</style>
+																						<size>300, -1</size>
+																						<maxlength>255</maxlength>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxButton" name="fillInDataBankSaveButton">
+																						<label>Save</label>
+																					</object>
+																				</object>
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<object class="sizeritem">
+																					<flag>wxALIGN_CENTER_VERTICAL</flag>
+
+																					<object class="wxButton" name="fillInDataBankFindButton">
+																						<label>Find</label>
+																					</object>
+																				</object>
+																			</object>
+																		</object>
+																		<!-- /Input -->
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<!-- List -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+																			<option>1</option>
+
+																			<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="fillInDataBankListCtrl">
+																				<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+																			</object>
+																		</object>
+																		<!-- /List -->
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Import -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="fillInDataBankImportButton">
+																						<label>Import from file</label>
+																					</object>
+																				</object>
+																				<!-- /Import -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Export -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="fillInDataBankExportButton">
+																						<label>Export</label>
+																					</object>
+																				</object>
+																				<!-- /Export -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Remove -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="fillInDataBankRemoveButton">
+																						<label>Remove bank</label>
+																					</object>
+																				</object>
+																				<!-- /Remove -->
+																			</object>
+																		</object>
+																			
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+													<!-- /Banks -->
+
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Banks -->
+
+								<!-- Text templates -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Texts</label>
+									<bitmap platform="win|unix">resources/images/TextTemplates.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/TextTemplates.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<!-- Texts -->
+													<object class="notebookpage">
+														<label>Text templates</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxALL | wxEXPAND</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<!-- List and view -->
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+																		
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+																			<option>1</option>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- List -->
+																				<object class="sizeritem">
+																					<flag>wxEXPAND</flag>
+
+																					<object class="wxListBox" name="textTemplateListBox">
+																						<size>300, -1</size>
+																					</object>
+																				</object>
+																				<!-- /List -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Text -->
+																				<object class="sizeritem">
+																					<flag>wxEXPAND</flag>
+																					<option>1</option>
+
+																					<object class="wxTextCtrl" name="textTemplateTextCtrl">
+																						<style>wxTE_MULTILINE | wxTE_READONLY</style>
+																					</object>
+																				</object>
+																				<!-- /Text -->
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<!-- Options -->
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxBoxSizer">
+																				<orient>wxHORIZONTAL</orient>
+
+																				<!-- Refresh -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="textTemplateRefreshButton">
+																						<label>Refresh</label>
+																					</object>
+																				</object>
+																				<!-- /Refresh -->
+
+																				<object class="spacer">
+																					<size>15</size>
+																				</object>
+
+																				<!-- Remove -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="textTemplateRemoveButton">
+																						<label>Remove template</label>
+																					</object>
+																				</object>
+																				<!-- /Remove -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Edit -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="textTemplateEditButton">
+																						<label>Edit template</label>
+																					</object>
+																				</object>
+																				<!-- /Edit -->
+
+																				<object class="spacer">
+																					<size>5</size>
+																				</object>
+
+																				<!-- Add -->
+																				<object class="sizeritem">
+																					<option>1</option>
+
+																					<object class="wxButton" name="textTemplateAddButton">
+																						<label>Add template</label>
+																					</object>
+																				</object>
+																				<!-- /Add -->
+																			</object>
+																		</object>
+																		<!-- /Options -->
+																	</object>
+																	<!-- /List and view -->
+																</object>
+
+															</object>
+														</object>
+													</object>
+													<!-- /Texts -->
+
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Text templates -->
+
+								<!-- Stock management -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Stock management</label>
+									<bitmap platform="win|unix">resources/images/StockManagementPreferences.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/StockManagementPreferences.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<object class="notebookpage">
+														<label>Stocks</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxEXPAND | wxALL</flag>
+																	<option>1</option>
+																	<border>5</border>
+
+																	<object class="wxListCtrl" subclass="DynSoft::DSListCtrl" name="stockListCtrl">
+																		<style>wxLC_REPORT | wxLC_VRULES | wxBORDER_SUNKEN | wxLC_SINGLE_SEL</style>
+																	</object>
+																</object>
+
+																<object class="sizeritem">
+																	<flag>wxLEFT | wxRIGHT | wxBOTTOM | wxEXPAND</flag>
+																	<border>5</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxHORIZONTAL</orient>
+
+																		<object class="sizeritem">
+																			<option>1</option>
+
+																			<object class="wxButton" name="removeStockButton">
+																				<label>Remove selected stock</label>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<option>1</option>
+
+																			<object class="wxButton" name="addStockButton">
+																				<label>Add stock</label>
+																			</object>
+																		</object>
+																	</object>
+																</object>
+
+															</object>
+														</object>
+
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Stock management -->
+
+								<!-- Reports -->
+								<object class="treebookpage">
+									<depth>0</depth>
+									<label>Reports</label>
+									<bitmap platform="win|unix">resources/images/Reports.png</bitmap>
+									<bitmap platform="mac">Warehouse.app/Contents/Resources/images/Reports.png</bitmap>
+
+									<object class="wxPanel">
+										<object class="wxBoxSizer">
+											<orient>wxVERTICAL</orient>
+
+											<object class="sizeritem">
+												<flag>wxEXPAND</flag>
+												<option>1</option>
+
+												<object class="wxNotebook">
+													
+													<object class="notebookpage">
+														<label>Reports</label>
+
+														<object class="wxPanel">
+															<object class="wxBoxSizer">
+																<orient>wxVERTICAL</orient>
+
+																<object class="sizeritem">
+																	<flag>wxALL | wxEXPAND</flag>
+																	<option>1</option>
+																	<border>15</border>
+
+																	<object class="wxBoxSizer">
+																		<orient>wxVERTICAL</orient>
+
+																		<object class="sizeritem">
+																			<object class="wxStaticText">
+																				<label>Report Generator</label>
+																				<font>
+																					<weight>bold</weight>
+																				</font>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxStaticLine" />
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxTextCtrl">
+																				<style>wxTE_READONLY | wxTE_MULTILINE</style>
+																				<value>
+Dear user, please use the report generator very careful. You are able
+to destroy the report you are editing. You should first try it out on
+a test mandator. Please refer the handbook.
+																				</value>
+																				<size>-1, 100</size>
+																				<fg>#ff0000</fg>
+																			</object>
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxEXPAND</flag>
+
+																			<object class="wxStaticLine" />
+																		</object>
+
+																		<object class="spacer">
+																			<size>5</size>
+																		</object>
+
+																		<object class="sizeritem">
+																			<flag>wxALIGN_RIGHT</flag>
+
+																			<object class="wxButton" name="reportGeneratorStartButton">
+																				<label>Start new Report Generator Instance</label>
+																			</object>
+																		</object>
+																	</object>
+																</object>
+															</object>
+														</object>
+													</object>
+												</object>
+											</object>
+										</object>
+									</object>
+								</object>
+								<!-- /Reports -->
+
+							</object>
+						</object>
+					</object>
+				</object>
+			</object>
+		</object>
+
+	</object>
+
+</resource>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Order-DinA4-Amount-Weight" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="40561199-44b6-44c4-b68e-bce2cb87301b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+	COALESCE(SUM(orders_positions.amount), 0) + COALESCE(SUM(orders_positions_linked.amount), 0) AS amount,
+	((COALESCE(SUM(orders_positions.amount), 0) * COALESCE(SUM(orders_positions.weight), 0)) + (COALESCE(SUM(orders_positions_linked.amount), 0) * COALESCE(SUM(orders_positions_linked.weight), 0))) / 1000 AS weight
+FROM
+	orders
+LEFT JOIN
+	orders_positions ON orders_positions."orderId" = orders."orderId"
+LEFT JOIN
+	orders AS orders_linked ON orders_linked."linkedOrderId" = orders."orderId"
+LEFT JOIN
+	orders_positions AS orders_positions_linked ON orders_positions_linked."orderId" = orders_linked."orderId"
+WHERE
+	orders."orderId" = $P{id}]]>
+	</queryString>
+	<field name="amount" class="java.lang.Double"/>
+	<field name="weight" class="java.lang.Double"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="112" height="20" uuid="1651e70f-feb8-4e11-89b1-36bb33a43663"/>
+				<text><![CDATA[Gesamtmenge:]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="112" y="0" width="100" height="20" uuid="b74eb52e-443c-4a9b-a0fe-d30cc48461a6"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="112" height="20" uuid="8cb0076b-fd5c-4d1a-a9cf-891fcbe9a4a8"/>
+				<text><![CDATA[Gesamtgewicht (kg):]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00">
+				<reportElement x="112" y="20" width="100" height="20" uuid="ddec2785-0326-490f-a987-62c1e68cd049"/>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

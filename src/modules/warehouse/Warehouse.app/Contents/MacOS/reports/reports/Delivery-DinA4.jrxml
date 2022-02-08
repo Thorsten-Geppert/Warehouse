@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Delivery-DinA4" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7acf372f-79bf-48e8-8f08-0b589887363f">
+	<property name="ireport.zoom" value="1.464100000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="291"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[50016]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+	(SELECT SUM(amount) FROM orders_positions WHERE "orderId" = orders."orderId") AS amount,
+	(SELECT SUM(amount * weight) FROM orders_positions WHERE "orderId" = orders."orderId") AS weight,
+	*
+FROM
+	orders
+WHERE
+	"orderId" = $P{id}]]>
+	</queryString>
+	<field name="amount" class="java.lang.Double"/>
+	<field name="weight" class="java.lang.Double"/>
+	<field name="orderId" class="java.lang.Integer"/>
+	<field name="kind" class="java.lang.Integer"/>
+	<field name="clientId" class="java.lang.Integer"/>
+	<field name="ownClientId" class="java.lang.Integer"/>
+	<field name="basedOn" class="java.lang.Integer"/>
+	<field name="taxRate" class="java.lang.Integer"/>
+	<field name="when" class="java.sql.Date"/>
+	<field name="billAddressSalutation" class="java.lang.String"/>
+	<field name="billAddressTitle" class="java.lang.String"/>
+	<field name="billAddressFirstname" class="java.lang.String"/>
+	<field name="billAddressName1" class="java.lang.String"/>
+	<field name="billAddressName2" class="java.lang.String"/>
+	<field name="billAddressName3" class="java.lang.String"/>
+	<field name="billAddressName4" class="java.lang.String"/>
+	<field name="billAddressAddress" class="java.lang.String"/>
+	<field name="billAddressNumber" class="java.lang.String"/>
+	<field name="billAddressZipcode" class="java.lang.String"/>
+	<field name="billAddressCity" class="java.lang.String"/>
+	<field name="billAddressFederalState" class="java.lang.String"/>
+	<field name="billAddressLand" class="java.lang.String"/>
+	<field name="billAddressTranslated" class="java.lang.String"/>
+	<field name="shippingAddressSalutation" class="java.lang.String"/>
+	<field name="shippingAddressTitle" class="java.lang.String"/>
+	<field name="shippingAddressFirstname" class="java.lang.String"/>
+	<field name="shippingAddressName1" class="java.lang.String"/>
+	<field name="shippingAddressName2" class="java.lang.String"/>
+	<field name="shippingAddressName3" class="java.lang.String"/>
+	<field name="shippingAddressName4" class="java.lang.String"/>
+	<field name="shippingAddressAddress" class="java.lang.String"/>
+	<field name="shippingAddressNumber" class="java.lang.String"/>
+	<field name="shippingAddressZipcode" class="java.lang.String"/>
+	<field name="shippingAddressCity" class="java.lang.String"/>
+	<field name="shippingAddressFederalState" class="java.lang.String"/>
+	<field name="shippingAddressLand" class="java.lang.String"/>
+	<field name="shippingAddressTranslated" class="java.lang.String"/>
+	<field name="payment" class="java.lang.Integer"/>
+	<field name="bank" class="java.lang.String"/>
+	<field name="bankCode" class="java.lang.String"/>
+	<field name="accountNumber" class="java.lang.String"/>
+	<field name="bic" class="java.lang.String"/>
+	<field name="iban" class="java.lang.String"/>
+	<field name="bankOwner" class="java.lang.String"/>
+	<field name="liableToTax" class="java.lang.Boolean"/>
+	<field name="beforeTax" class="java.lang.Double"/>
+	<field name="fullTax" class="java.lang.Double"/>
+	<field name="reducedTax" class="java.lang.Double"/>
+	<field name="afterTax" class="java.lang.Double"/>
+	<field name="fullTaxPercent" class="java.lang.Double"/>
+	<field name="reducedTaxPercent" class="java.lang.Double"/>
+	<field name="invoiceId" class="java.lang.Integer"/>
+	<field name="invoiceDate" class="java.sql.Date"/>
+	<field name="condition" class="java.lang.String"/>
+	<field name="orderNumber" class="java.lang.String"/>
+	<field name="delivery" class="java.lang.String"/>
+	<field name="prepandText" class="java.lang.String"/>
+	<field name="appendText" class="java.lang.String"/>
+	<field name="prints" class="java.lang.Integer"/>
+	<field name="payed" class="java.sql.Timestamp"/>
+	<field name="linkedOrderId" class="java.lang.Integer"/>
+	<field name="linkedOrderIndex" class="java.lang.Integer"/>
+	<field name="taxNumber" class="java.lang.String"/>
+	<field name="salesTaxIdentificationNumber" class="java.lang.String"/>
+	<field name="monition" class="java.lang.Boolean"/>
+	<field name="monitionState" class="java.lang.Integer"/>
+	<field name="owner" class="java.lang.String"/>
+	<field name="createdBy" class="java.lang.String"/>
+	<field name="createdAt" class="java.sql.Timestamp"/>
+	<field name="changedBy" class="java.lang.String"/>
+	<field name="changedAt" class="java.sql.Timestamp"/>
+	<variable name="WH_ADDRESS" class="java.lang.String">
+		<variableExpression><![CDATA[]]></variableExpression>
+		<initialValueExpression><![CDATA[($F{billAddressTranslated} != null
+    ?
+    $F{billAddressTranslated}
+    :
+    ($F{billAddressSalutation} != null ? $F{billAddressSalutation} + " " : "") +
+    ($F{billAddressFirstname} != null ? $F{billAddressFirstname} + "\n" : "") +
+    ($F{billAddressName1} != null ? $F{billAddressName1} + "\n" : "") +
+    ($F{billAddressName2} != null ? $F{billAddressName2} + "\n" : "") +
+    ($F{billAddressName3} != null ? $F{billAddressName3} + "\n" : "") +
+    ($F{billAddressName4} != null ? $F{billAddressName4} + "\n" : "") +
+    ($F{billAddressZipcode} != null ? $F{billAddressZipcode} + " " : "") +
+    ($F{billAddressCity} != null ? $F{billAddressCity} + "\n" : "") +
+    ($F{billAddressFederalState} != null ? $F{billAddressFederalState} + "\n" : "") +
+    ($F{billAddressLand} != null ? $F{billAddressLand} + "\n" : "")
+)]]></initialValueExpression>
+	</variable>
+	<variable name="WH_COMPANY_LINE" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="219" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="144" width="244" height="47" uuid="346ee5f7-19e5-4c2e-9ce2-b1c68106622c"/>
+				<textFieldExpression><![CDATA[$V{WH_ADDRESS}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="132" width="244" height="12" uuid="9b099442-3a9a-4dd5-b1a7-d7a3b86c9b6a"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Company-Line.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="357" y="0" width="198" height="83" uuid="1b35a2d2-cc67-4718-9171-310524436a52"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Enterprise.jasper"]]></subreportExpression>
+			</subreport>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="93" width="112" height="13" uuid="b43a6411-a431-49ee-ae70-2503ed5c0472"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ownClientId} != null ? $F{ownClientId} : $F{clientId}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="106" width="112" height="13" uuid="055e53b7-73a5-41f9-bad6-5eff7b60438d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salesTaxIdentificationNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="119" width="112" height="13" uuid="57f59028-9075-49aa-9b81-5e356e1897ce"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxNumber}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="132" width="112" height="13" uuid="fb3a5ab2-db45-4103-9ffb-cbf1fee6d090"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{invoiceId}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement x="443" y="145" width="112" height="13" uuid="6c6939c3-5167-477d-bf0d-0fb54108e09d"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{invoiceDate}]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd.MM.yyyy" isBlankWhenNull="true">
+				<reportElement x="443" y="158" width="112" height="13" uuid="e550d168-c4c7-452e-8dbb-15322e9d12b0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{when}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="171" width="112" height="13" uuid="d4ca94f1-93c6-4ac4-9b9d-ccb9d17a5ec9"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{delivery}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="197" width="112" height="13" uuid="e8dbf33e-b4de-4e29-8767-ff1ac86a3918"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{owner}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="443" y="184" width="112" height="13" uuid="0a348d33-c336-495d-8131-23caf9cfdd76"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orderNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="356" y="106" width="86" height="13" uuid="85307144-4a36-4f14-b580-848b1e252c31"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[USt-IdNr:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="119" width="86" height="13" uuid="5b7655ce-0da8-414a-9369-96cb0b71754f"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Steuernummer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="132" width="86" height="13" uuid="90c7a150-8430-41f5-b47d-4def54840f4b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rechnungsnummer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="145" width="86" height="13" uuid="951409ce-a8ce-4b3c-b0d0-6a6c89b4197a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Rechnungsdatum:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="158" width="86" height="13" uuid="21e98514-f521-4eed-9fc2-21b50c13cc92"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Datum:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="171" width="86" height="13" uuid="696faf70-b71a-4544-a86c-bc1712d1caf1"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Versand:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="184" width="86" height="13" uuid="9f866ef0-772b-46b8-92d7-2f1759a72830"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Zeichen:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="93" width="86" height="13" uuid="462a46bc-334d-4c9e-a2bb-af793922bc85"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Kundennummer:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="197" width="86" height="13" uuid="7aeb12e0-a62b-47d2-9e4f-3050de908207"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Eigentümer:]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="108" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="39" width="555" height="43" uuid="90cb6ec1-41f1-48be-9454-56bdca50c76c"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{invoiceId} == null
+?
+"Lieferschein: " + $F{orderId}
+:
+"Lieferschein: " + $F{invoiceId}
+]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="24" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="110" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="110" uuid="f725fa20-1b8c-4ac8-8e9e-2b942c5481d3"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Positions.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="75">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="75" uuid="784f9dc5-fd07-41be-bff9-27bc286fef71"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Linked.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<subreport>
+				<reportElement x="0" y="0" width="555" height="18" uuid="37f4607c-fa5d-45e8-97b4-2bc2103e9d35"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Bank.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="96" splitType="Stretch">
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="455" y="0" width="100" height="20" uuid="340d9724-01e8-4797-9a0e-16c4c3377cdb"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{beforeTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="455" y="20" width="100" height="20" uuid="37ac8917-d2e9-42e4-a66a-677b8f6b9919"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{fullTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="455" y="40" width="100" height="20" uuid="7b39fedc-a299-42c9-ba2f-719121e348aa"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{reducedTax}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="455" y="60" width="100" height="20" uuid="2199a56c-710b-4d3c-a61a-9376d5caec39"/>
+				<textElement textAlignment="Right">
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{afterTax}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="9" width="432" height="20" uuid="be633ff8-395f-4c6c-94d7-836c3076ee6d"/>
+				<textFieldExpression><![CDATA[$F{condition}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="29" width="432" height="67" uuid="ea0ce36b-86b3-4a6a-a9f7-75c897b0151f"/>
+				<subreportParameter name="id">
+					<subreportParameterExpression><![CDATA[$P{id}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "Delivery-DinA4-Amount-Weight.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>
